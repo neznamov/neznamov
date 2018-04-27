@@ -1,4 +1,4 @@
-body{
+﻿body{
 	margin: 0 0;
 	padding: 0 0;
 	font-family: "Roboto", Arial, sans-serif;
@@ -36,7 +36,7 @@ a{
 .list-navigation .sub-list{
 	position: relative;
 	z-index: 20;
-	display: inline-flex;
+	display: block;
 	padding-bottom: 5px;
 	vertical-align: top;
 }
