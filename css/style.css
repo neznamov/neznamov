@@ -1,4 +1,4 @@
-﻿body{
+body{
 	margin: 0 0;
 	padding: 0 0;
 	font-family: "Roboto", Arial, sans-serif;
@@ -378,7 +378,6 @@ a{
 
 .promo-raspberry p,
 .promo-chocolate p{
-	color: #ffffff;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
@@ -911,7 +910,6 @@ a{
 
 .filter legend{
 	font-size: 14px;
-	line-height: 16px;
 }
 
 .filter ul{
@@ -930,35 +928,135 @@ a{
 	vertical-align: top;
 }
 
+
+.filter-cost .scale {
+	position: absolute;
+	top: 16px;
+	left: 15px;
+	width: 188px;
+	height: 4px;
+	background-color: #fff;
+	opacity: .5;
+}
+
+.filter-cost .bar, .filter-cost .range-toggle {
+	position: absolute;
+	top: 16px;
+	left: 44px;
+	width: 98px;
+	height: 4px;
+	background-color: #fff;
+}
+
+.filter-cost .range-toggle {
+	top: 8px;
+	left: 34px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.filter-cost .range-toggle:last-child {
+	position: absolute;
+	top: 8px;
+	left: 132px;
+}
+
+.filter-cost {
+	position: relative;
+	width: 218px;
+	margin-top: 5px;
+	background-color: #a9bab0;
+	height: 37px;
+	border-radius: 18px;
+}
+
+.container-buttons {
+	margin-top: 5px;
+	background-color: #a9bab0;
+	height: 21px;
+	padding: 10px 3px 6px 16px;
+	border-radius: 18px;
+}
+
+.container-buttons label {
+	padding-left: 29px;
+}
+
+fieldset label {
+	position: relative;
+	margin-right: 15px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.container-buttons input{
+	display: none;
+}
+
+.container-buttons label::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+fieldset:last-of-type label::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 19px;
+	height: 19px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+
+input[type=checkbox]:checked+label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background-color: inherit;
+	background-image: url(../img/checkbox-on.svg);
+}
+
+input[type=radio]:checked+label::before {
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
 .sort-list {
 	height: 36px;
 	padding: 0 35px 0 15px;
 	font-size: 16px;
 	line-height: 36px;
 	color: #fff;
-	background: rgba(255,255,255,.2) url(../img/select-arrow.svg) no-repeat 170px 51%;
+	background: url(../img/select-arrow.svg) no-repeat 170px 51%;
 	border: none;
 	border-radius: 18px;
 	outline: none;
+	margin-top: 5px;
 	-webkit-appearance: none;
+	background-color: #a9bab0;
 }
 
 .filter select:hover {
 	color: #343434;
-	background: #fff url(../img/icon-down-dir.svg) no-repeat 170px 50%;
-}
-
-.wrapper-form{
-	height: 36px;
-	padding: 0 15px;
-	line-height: 36px;
-	border-radius: 18px;
-	font-size: 16px;
-	color: #fff;
-	background-color: rgba(255,255,255,.2);
-}
-
-.range-wrapper{
+	background: #fff url(../img/down-mark.svg) no-repeat 170px 50%;
 }
 
 input[type=range] {
@@ -979,9 +1077,6 @@ input.second-range {
 .filter legend {
 	padding-left: 16px;
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 16px;
-	color: #fff;
 }
 
 .filter-input-radio{}
@@ -1197,11 +1292,6 @@ input.second-range {
 #product-2:checked ~ .main-wrapper label[for="product-2"],
 #product-3:checked ~ .main-wrapper label[for="product-3"] {
 	background-color: #ffffff;
-}
-
-.filter-category{
-	display: inline-flex;
-	font-size: 16px;
 }
 
 .catalog-list .item{
