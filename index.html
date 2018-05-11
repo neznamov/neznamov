@@ -37,7 +37,7 @@
 								<span class="button-search"></span>
 								<div class="search-form search-show">
 									<form action="https://echo.htmlacademy.ru" method="post">
-										<input class="search-input" type="search" name="search" placeholder="Что ищем?">
+										<input class="input-field search-input" type="search" name="search" placeholder="Что ищем?">
 										<label class="visually-hidden"><span>Что ищем?</span></label>
 									</form>
 								</div>
@@ -207,7 +207,7 @@
 							<label class="visually-hidden" for="guest-email">Ваша почта для ответа?</label>
 							<input class="input-field input-guest-email" type="email" name="email" id="guest-email" placeholder="Ваша почта для ответа?"><br>
 							<label class="visually-hidden" for="guest-text">Напишите что-нибудь...</label>
-							<textarea class="input-field input-textarea" name="text" id="guest-text" placeholder="Напишите что-нибудь..."></textarea><br>
+							<textarea class="input-field input-textarea" name="text" id="guest-text" type="text" placeholder="Напишите что-нибудь..."></textarea><br>
 							<button class="button" type="submit">Отправить</button>
 						</form>
 					</div>
@@ -216,7 +216,7 @@
 			<div class="footer-wrapper">
 				<footer class="main-footer">
 					<section class="footer-social-button">
-						<ul class="main-social-list">
+						<ul class="main-social-list main-social-list-index">
 							<li><a class="social-button social-tw" href="#"></a></li>
 							<li><a class="social-button social-instagram" href="#"></a></li>
 							<li><a class="social-button social-facebook" href="#"></a></li>
@@ -276,14 +276,13 @@
 			});
 
 			window.addEventListener("keydown", function(evt){
-				if(evt.keyCode ===27){
+				if(evt.keyCode === 27){
 					evt.preventDefault();
 					if(popup.classList.contains("wrapper-popup-feedback-show")){
 						popup.classList.remove("wrapper-popup-feedback-show");
 					}
 				}	
 			});
-
 		</script>
 	</body>
 </html>
