@@ -1077,7 +1077,7 @@ fieldset:last-of-type label::after {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: -2px;
+	top: -1px;
 	width: 23px;
 	height: 23px;
 	border: none;
@@ -1091,7 +1091,7 @@ input[type=checkbox]:checked+label::before {
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -3px;
+	bottom: -4px;
 	width: 51px;
 	height: 24px;
 	background-color: inherit;
@@ -1993,13 +1993,12 @@ input.second-range {
 	padding-left: 28px;
 }
 
-.overlay{
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 90;
-	display: none;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,.3);
+.popup-feedback-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 90;
 }

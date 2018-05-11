@@ -248,11 +248,11 @@
 			var link = document.querySelector(".feedback-button-link");
 			var popup = document.querySelector(".wrapper-popup-feedback");
 			var close = document.querySelector(".modal-close");
-			var overlay = document.querySelector(".overlay");
 			var form = popup.querySelector("form");
 			var name = popup.querySelector("[name=name]");
 			var email = popup.querySelector("[name=email]");
 			var text = popup.querySelector("[name=text]");
+			var overlay = document.querySelector(".popup-feedback");
 
 			form.addEventListener("submit", function(evt){
 				if(!name.value || !email.value || !text.value){
@@ -268,11 +268,12 @@
 			link.addEventListener("click", function(){
 				console.log("Клик");
 				popup.classList.add("wrapper-popup-feedback-show");
-				overlay.classList.add("wrapper-popup-feedback-overlay");
+				overlay.classList.add("popup-feedback-overlay");
 			});
 
 			close.addEventListener("click", function(){
 				popup.classList.remove("wrapper-popup-feedback-show");
+				overlay.classList.remove("popup-feedback-overlay");
 			});
 
 			window.addEventListener("keydown", function(evt){
@@ -280,8 +281,9 @@
 					evt.preventDefault();
 					if(popup.classList.contains("wrapper-popup-feedback-show")){
 						popup.classList.remove("wrapper-popup-feedback-show");
+						overlay.classList.remove("popup-feedback-overlay");
 					}
-				}	
+				}
 			});
 		</script>
 	</body>
