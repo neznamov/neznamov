@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700,900" rel="stylesheet">
+		<title>HTML Academy: Sedona</title>
+	</head>
+	<body>
+		<div class="main-wrapper main-shadow">
+			<header class="main-header">
+				<nav class="main-navigation">
+					<ul class="navigation">
+						<li><a class="item disable" href="">информация</a></li>
+						<li><a class="item" href="photo.html">фото и видео</a></li>
+						<li class="logo"><a class="item" href="index.html"></a></li>
+						<li><a class="item disable">карта штата</a></li>
+						<li><a class="item" href="catalog.html">гостиница</a></li>
+					</ul>
+				</nav>	
+			</header>
+			<main class="main main-wrapper">
+				<div class="wrapper-img">
+					<div class="img"></div>
+				</div>	
+				<div class="main-content-wrapper">
+					<section class="picture-section">
+						<h1 class="section-about">фото и видео</h1>
+						<p class="section-title">не можете на путешествие из-за курса?<br>фотографии помогут вам забыть о политике и экономике.</p>
+						<div class="picture-wrapper">
+							<figure class="main-figure">
+								<picture>
+									<img src="img/photo-1-desktop.jpg" width="1200" height="400" alt="">
+								</picture>
+								<figcaption class="post-text">
+									<span class="text-container-author">
+										<h4 class="title-place">неродные просторы</h4>
+										<p class="title-author">Автор фото: Борис</p>
+									</span>	
+									<span class="text-container-like">
+										<i class="svg-like-icon"></i>
+										<p class="title-cost">1350</p>
+									</span>
+								</figcaption>
+							</figure>
+							<div class="figure-wrapper">
+								<figure class="main-figure">
+									<picture>
+										<img src="img/photo-2-desktop.jpg" width="400" height="268" alt="">
+									</picture>
+									<figcaption class="post-text">
+										<span class="text-container-author">
+											<h4 class="title-place">неродные просторы</h4>
+											<p class="title-author">Автор фото: Сергей</p>
+										</span>	
+										<span class="text-container-like">
+											<i class="svg-like-icon"></i>
+											<p class="title-cost">143</p>
+										</span>
+									</figcaption>
+								</figure>
+								<figure class="main-figure">
+									<picture>
+										<img src="img/photo-3-desktop.jpg" width="400" height="268" alt="">
+									</picture>
+									<figcaption class="post-text">
+										<span class="text-container-author">
+											<h4 class="title-place">неродные просторы</h4>
+											<p class="title-author">Автор фото: Петр</p>
+										</span>	
+										<span class="text-container-like">
+											<i class="svg-like-icon"></i>
+											<p class="title-cost">96</p>
+										</span>
+									</figcaption>
+								</figure>
+								<figure class="main-figure">
+									<picture>
+										<img src="img/photo-4-desktop.jpg" width="400" height="268" alt="">
+									</picture>
+									<figcaption class="post-text">
+										<span class="text-container-author">
+											<h4 class="title-place">неродные просторы</h4>
+											<p class="title-author">Автор фото: Антон</p>
+										</span>	
+										<span class="text-container-like">
+											<i class="svg-like-icon"></i>
+											<p class="title-cost">254</p>
+										</span>
+									</figcaption>
+								</figure>
+							</div>	
+						</div>
+					</section>
+					<section class="video-section">
+						<h3 class="section-about">всё еще сомневаетесь</h3>
+						<p class="section-title">смотри видеопрезентацию и скорее за билетами, пока<br>
+						они не подорожали в очередной раз!</p>
+						<div class="figure-wrapper figure-wrapper-video">
+							<figure class="main-figure">
+								<picture>
+									<img src="img/video-desktop.jpg" width="800" height="500" alt="">
+								</picture>
+								<figcaption class="post-text">
+									<button class="button-replace"></button>
+									<div class="range"></div>
+									<button class="button-subtitles"></button>
+									<button class="fullscreen-button"></button>
+								</figcaption>
+							</figure>
+						</div>		
+					</section>
+				</div>
+			</main>
+			<footer class="footer-block">
+					<div class="wrapper-footer footer-catalog">
+						<div class="container footer-block-item1">
+							<h3><a href="">#visitsedona</a></h3>
+						</div>
+						<div class="container footer-block-item2">
+							<ul>
+								<li><a class="social-button tw-icon" href="#"></a></li>
+								<li><a class="social-button fb-icon" href="#"></a></li>
+								<li><a class="social-button youtube-icon" href="#"></a></li>
+							</ul>
+						</div>
+						<div class="container footer-block-item3">
+							<span>website by
+								<img src="img/logo_name.jpg" width="115" height="41" alt="">
+							</span>
+						</div>
+					</div>
+			</footer>
+		</div>
+		<script>
+			var link = document.querySelector(".link-button");
+			var popup = document.querySelector(".wrapper-search-form");
+
+			link.addEventListener("click", function(){
+				popup.classList.add("popup-show");
+			});
+		</script>	
+	</body>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>

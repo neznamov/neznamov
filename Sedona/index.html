@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700,900" rel="stylesheet">
+		<title>HTML Academy: Sedona</title>
+	</head>
+	<body>
+		<div class="main-wrapper main-shadow">
+			<header class="main-header">
+				<nav class="main-navigation">
+					<ul class="navigation">
+						<li><a class="item disable" href="">информация</a></li>
+						<li><a class="item" href="photo.html">фото и видео</a></li>
+						<li class="logo"><a class="item" href=""></a></li>
+						<li><a class="item disable">карта штата</a></li>
+						<li><a class="item" href="catalog.html">гостиница</a></li>
+					</ul>
+				</nav>	
+			</header>
+			<main class="main-wrapper">
+				<div class="wrapper-img">
+					<div class="img"></div>
+				</div>	
+				<section class="about-us">
+					<h2>СЕДОНА — небольшой городок в АРИЗОНЕ,<br> зАСЛУЖИвающий большего!</h2>
+					<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				</section>	
+				<section class="about-city">
+					<div class="info-city">
+						<h3>настоящий<br> городок</h3>
+						<p>— №1 —</p>
+						<p>седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
+					</div>
+					<div class="city-img"></div>
+					<div class="picture">
+						<img src="" alt="">
+					</div>	
+				</section>
+				<section class="feature-city">
+					<div class="home-item">
+						<img src="img/home.jpg" alt="" width="75" height="76">
+						<h3>жилье</h3>
+						<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</div>
+					<div class="eat-item">
+						<img src="img/burger.jpg" alt="" width="74" height="76">
+						<h3>еда</h3>
+						<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</div>
+					<div class="souvenirs-item">
+						<img src="img/gift.jpg" alt="" width="64" height="76">
+						<h3>сувениры</h3>
+						<p>не только китайского, но и местного производства</p>
+					</div>
+				</section>
+				<section class="feature-canyon">
+					<div class="wrapper-canyon">
+						<div class="bridge-img"></div>
+						<div class="about-canyon">
+							<h3>там есть<br> мост дьявола</h3>
+							<p>— №2 —</p>
+							<p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+						</div>
+					</div>
+				</section>
+				<section class="feature-canyon-item">
+					<div class="canyon-item canyon-area">
+						<h3>небольшая площадь</h3>
+						<p>— №3 —</p>
+						<p>все достопримечательсности находяься очень близко</p>
+					</div>
+					<div class="canyon-item canyon-road">
+						<h3>красивая дорога</h3>
+						<p>— №4 —</p>
+						<p>ехать в седону из лас-вегаса совсем не скучно!</p>
+					</div>
+					<div class="canyon-item canyon-tourists">
+						<h3>мало туристов</h3>
+						<p>— №5 —</p>
+						<p>большинство едет в гранд каньон и топлпится там</p>
+					</div>
+				</section>
+				<section class="interesting">
+					<div class="wrapper-interesting"> 
+						<h2>заинтересовались?</h2>
+						<p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+						<button class="search-button link-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+					</div>	
+				</section>
+			</main>	
+			<footer class="footer-block">
+				<section class="main-map">
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13567338082!2d-111.8302437364937!3d34.8544437907229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1527757253110" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<div class="wrapper-search-form fadeInDown">
+							<form action="https://echo.htmlacademy.ru" class="main-search-form" method="get">
+								<div class="field-in">
+									<label for="" class="field-label">Дата заезда:</label>
+									<input type="text" class="field-input" placeholder="24 апреля 2017" readonly="readonly" >
+								</div>
+								<div class="field-out">
+									<label for="" class="field-label">дата выезда:</label>
+									<input type="text" class="field-input" placeholder="4 июля 2017" readonly="readonly" >
+								</div>
+								<div class="wrapper-people">
+									<div class="adults-wrapper">
+										<label for="" class="field-label">Взрослые:</label>
+										<div class="adult">
+											<button class="minus-button"></button>
+											<input class="field-input value-field" type="text" value="2">
+											<button class="plus-button"></button>
+										</div>
+									</div>	
+									<div class="children-wrapper">
+										<label for="" class="field-label">дети:</label>
+										<div class="children">
+											<button class="minus-button"></button>
+											<input class="field-input value-field" type="text" value="0">
+											<button class="plus-button"></button>
+										</div>
+									</div>	
+								</div>
+								<button class="submit-button button" type="submit">найти</button>	
+							</form>
+						</div>	
+						<div class="wrapper-footer">
+							<div class="container footer-block-item1">
+								<h3><a href="">#visitsedona</a></h3>
+							</div>
+							<div class="container footer-block-item2">
+								<ul>
+									<li><a class="social-button tw-icon" href="#"></a></li>
+									<li><a class="social-button fb-icon" href="#"></a></li>
+									<li><a class="social-button youtube-icon" href="#"></a></li>
+								</ul>
+							</div>
+							<div class="container footer-block-item3">
+								<span>website by
+									<img src="img/logo_name.jpg" width="115" height="41" alt="">
+								</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+		<script>
+			var link = document.querySelector(".link-button");
+			var popup = document.querySelector(".wrapper-search-form");
+
+			link.addEventListener("click", function(){
+				popup.classList.add("popup-show");
+			});
+		</script>	
+	</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
+</html>
+
