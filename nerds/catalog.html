@@ -11,7 +11,7 @@
 	<body>
 		<header class="wrapper-header">
 			<div class="main-header">
-				<a href="index.html"><img src="img/nerds-logo.png" alt=""></a>
+				<a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип"></a>
 				<nav class="main-navigation">
 					<ul class="main-list">
 						<li>
@@ -37,7 +37,7 @@
 				<div class="filter">
 					<form action="https://echo.htmlacademy.ru" method="get">
 						<fieldset class="filter-item">
-							<legend>Стоимость:</legend>
+							<legend class="legend-cost">Стоимость:</legend>
 							<div class="range-filter">
 								<div class="range-controls">
 									<div class="scale">
@@ -47,8 +47,8 @@
 									<div class="toggle toggle-max"></div>
 								</div>
 								<div class="price-controls">
-									<label for="" class="min-price">от <input name="min-price" type="text" value="0"></label>
-									<label for="" class="max-price">до <input class="max-price" name="max-price" type="text" value="15000"></label>
+									<label for="min-price" class="min-price">от <input name="min-price" id="min-price" type="text" value="0"></label>
+									<label for="max-price" class="max-price">до <input class="max-price" id="max-price" name="max-price" type="text" value="15000"></label>
 								</div>
 							</div>
 						</fieldset>
@@ -56,16 +56,16 @@
 							<legend>Сетка:</legend>
 								<div class="container-buttons">
 									<div class="wrapper-buttons">
-										<input class="visually-hidden" id="adaptive" type="radio" name="Сетка" value="Адаптивная" checked>
-										<label for="adaptive">Адаптивная</label>
+										<input class="visually-hidden radio" id="adaptive" type="radio" name="Сетка" value="Адаптивная" checked>
+										<label class="title-button" for="adaptive">Адаптивная</label>
 									</div>	
 									<div class="wrapper-buttons">
-										<input class="visually-hidden" id="fixed" type="radio" name="Сетка" value="Фиксированная" >
-										<label for="fixed">Фиксированная</label>
+										<input class="visually-hidden radio" id="fixed" type="radio" name="Сетка" value="Фиксированная" >
+										<label class="title-button" for="fixed">Фиксированная</label>
 									</div>
 									<div class="wrapper-buttons">
-										<input class="visually-hidden" id="rubber" type="radio" name="Сетка" value="Резиновая">
-										<label for="rubber">Резиновая</label>
+										<input class="visually-hidden radio" id="rubber" type="radio" name="Сетка" value="Резиновая">
+										<label class="title-button" for="rubber">Резиновая</label>
 									</div>	
 								</div>
 						</fieldset>
@@ -73,28 +73,28 @@
 							<legend>Особенности:</legend>
 								<div class="container-buttons">
 									<div class="wrapper-buttons features-button">
-										<input class="visually-hidden" id="slider" type="checkbox" name="Особенности" value="Слайдер" checked>
-										<label for="slider">Слайдер</label>
+										<input class="visually-hidden checkbox" id="slider" type="checkbox" name="Особенности" value="Слайдер" checked >
+										<label class="title-button"  for="slider">Слайдер</label>
 									</div>	
 									<div class="wrapper-buttons features-button">
-										<input class="visually-hidden" id="advantages" type="checkbox" name="Особенности" value="Блок преимуществ">
-										<label for="advantages">Блок преимуществ</label>
+										<input class="visually-hidden checkbox" id="advantages" type="checkbox" name="Особенности" value="Блок преимуществ">
+										<label class="title-button" for="advantages">Блок преимуществ</label>
 									</div>	
 									<div class="wrapper-buttons features-button">
-										<input class="visually-hidden" id="news" type="checkbox" name="Особенности" value="Новости" checked>
-										<label for="news">Новости</label>
+										<input class="visually-hidden checkbox" id="news" type="checkbox" name="Особенности" value="Новости" checked >
+										<label class="title-button" for="news">Новости</label>
 									</div>
 									<div class="wrapper-buttons features-button">	
-										<input class="visually-hidden" id="gallery" type="checkbox" name="Особенности" value="Галерея">
-										<label for="gallery">Галерея</label>
+										<input class="visually-hidden checkbox" id="gallery" type="checkbox" name="Особенности" value="Галерея">
+										<label class="title-button" for="gallery">Галерея</label>
 									</div>	
 									<div class="wrapper-buttons features-button">
-										<input class="visually-hidden" id="basket" type="checkbox" name="Особенности" value="Корзина">
-										<label for="basket">Корзина</label>
+										<input class="visually-hidden checkbox" id="basket" type="checkbox" name="Особенности" value="Корзина">
+										<label class="title-button" for="basket">Корзина</label>
 									</div>
 								</div>
 						</fieldset>
-						<button class="show-button" method="post">показать</button>
+						<button class="show-button">показать</button>
 					</form>
 				</div>
 			</section>
@@ -111,16 +111,16 @@
 				</div>
 				<section class="catalog-list">
 					<ul class="services">
-						<li class="services-list">
+						<li class="services-list services-active">
 							<article class="service-item">
-								<div class="item-head">
+								<div class="item-head item-head-active">
 									<svg class="svg-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
 										<path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z">
 										</path>
 									</svg>
 								</div>
 								<div class="item-picture"><img src="img/img-sedona.jpg" width="360" height="576" alt=""></div>
-								<div class="item-info">
+								<div class="item-info active-info ">
 									<a href="#">
 										<h3>sedona</h3>
 									</a>
