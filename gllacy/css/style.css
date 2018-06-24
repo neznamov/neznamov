@@ -2029,9 +2029,9 @@ input.second-range {
 }
 
 .site-wrapper::before {
-  background-image: url("slider-ice-cream-chocolate.png");
+  background-image: url("../img/slider-ice-cream-chocolate.png");
 }
 
 .site-wrapper::after {
-  background-image: url("slider-ice-cream.png");
+  background-image: url("../img/slider-ice-cream.png");
 }
