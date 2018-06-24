@@ -2021,17 +2021,17 @@ input.second-range {
 	margin: 0 auto;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
+.main-wrapper::before,
+.main-wrapper::after {
   content: "";
 
   visibility: hidden;
 }
 
-.site-wrapper::before {
+.main-wrapper::before {
   background-image: url(../img/slider-ice-cream-chocolate.png);
 }
 
-.site-wrapper::after {
+.main-wrapper::after {
   background-image: url(../img/slider-ice-cream.png);
 }
