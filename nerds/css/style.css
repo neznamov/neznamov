@@ -51,8 +51,8 @@ a {
 	opacity: .8;
 }
 
-.main-logo img:active {
-	opacity: 0.5;
+.main-header .main-logo:active {
+	opacity: .5;
 }
 
 .main-navigation {
