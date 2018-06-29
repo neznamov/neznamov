@@ -18,7 +18,8 @@
 		}
 	});
 
-	link.addEventListener("click", function(){
+	link.addEventListener("click", function(evt){
+		evt.preventDefault();
 		popup.classList.add("feedback-wrapper-show");
 		login.focus();
 	});
@@ -34,7 +35,6 @@
 			if(popup.classList.contains("feedback-wrapper-show")){
 				popup.classList.remove("feedback-wrapper-show");
 				popup.classList.remove("shake");
-			}	
-		}	
+			}
+		}
 	});
-

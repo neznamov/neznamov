@@ -4,16 +4,18 @@
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<title>HTML Academy: Nerds</title>
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+		<title>HTML Academy: Нёрдс</title>
 	</head>
 	<body>
 		<header class="wrapper-header">
 			<div class="main-header">
-				<a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип"></a>
 				<nav class="main-navigation">
-					<ul class="main-list">
+					<a class="main-logo" href="index.html">
+						<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
+					</a>
+					<ul class="main-list catalog-list">
 						<li>
 							<a href="">Студия</a>
 						</li>
@@ -23,14 +25,16 @@
 						<li>
 							<a class="active" href="#">Магазин</a>
 						</li>
-						<li><a href="#">Контакты</a></li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
 						<li class="basket">
 							<a href="#">Корзина</a>
 						</li>
 					</ul>
 				</nav>
-				<h1>Магазин готовых шаблонов</h1>
 			</div>
+			<h1>Магазин готовых шаблонов</h1>
 		</header>
 		<main class="wrapper-main catalog">
 			<section class="filter-wrapper">
@@ -43,8 +47,8 @@
 									<div class="scale">
 										<div class="bar"></div>
 									</div>
-									<div class="toggle toggle-min"></div>
-									<div class="toggle toggle-max"></div>
+									<div class="toggle toggle-min" tabindex="0"></div>
+									<div class="toggle toggle-max" tabindex="0"></div>
 								</div>
 								<div class="price-controls">
 									<label for="min-price" class="min-price">от <input name="min-price" id="min-price" type="text" value="0"></label>
@@ -60,21 +64,21 @@
 										<label class="title-button" for="adaptive">Адаптивная</label>
 									</div>	
 									<div class="wrapper-buttons">
-										<input class="visually-hidden radio" id="fixed" type="radio" name="Сетка" value="Фиксированная" >
+										<input class="visually-hidden radio" id="fixed" type="radio" name="Сетка" value="Фиксированная">
 										<label class="title-button" for="fixed">Фиксированная</label>
 									</div>
 									<div class="wrapper-buttons">
 										<input class="visually-hidden radio" id="rubber" type="radio" name="Сетка" value="Резиновая">
 										<label class="title-button" for="rubber">Резиновая</label>
-									</div>	
+									</div>
 								</div>
 						</fieldset>
 						<fieldset class="filter-item filter-features">
 							<legend>Особенности:</legend>
 								<div class="container-buttons">
 									<div class="wrapper-buttons features-button">
-										<input class="visually-hidden checkbox" id="slider" type="checkbox" name="Особенности" value="Слайдер" checked >
-										<label class="title-button"  for="slider">Слайдер</label>
+										<input class="visually-hidden checkbox" id="slider" type="checkbox" name="Особенности" value="Слайдер" checked>
+										<label class="title-button" for="slider">Слайдер</label>
 									</div>	
 									<div class="wrapper-buttons features-button">
 										<input class="visually-hidden checkbox" id="advantages" type="checkbox" name="Особенности" value="Блок преимуществ">
@@ -84,7 +88,7 @@
 										<input class="visually-hidden checkbox" id="news" type="checkbox" name="Особенности" value="Новости" checked >
 										<label class="title-button" for="news">Новости</label>
 									</div>
-									<div class="wrapper-buttons features-button">	
+									<div class="wrapper-buttons features-button">
 										<input class="visually-hidden checkbox" id="gallery" type="checkbox" name="Особенности" value="Галерея">
 										<label class="title-button" for="gallery">Галерея</label>
 									</div>	
@@ -112,7 +116,7 @@
 				<section class="catalog-list">
 					<ul class="services">
 						<li class="services-list services-active">
-							<article class="service-item">
+							<article class="service-item" tabindex="0">
 								<div class="item-head item-head-active">
 									<svg class="svg-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
 										<path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z">
@@ -120,7 +124,7 @@
 									</svg>
 								</div>
 								<div class="item-picture"><img src="img/img-sedona.jpg" width="360" height="576" alt=""></div>
-								<div class="item-info active-info ">
+								<div class="item-info active-info">
 									<a href="#">
 										<h3>sedona</h3>
 									</a>
@@ -129,7 +133,7 @@
 								</div>
 							</article>
 						</li>
-						<li class="services-list">
+						<li class="services-list" tabindex="0">
 							<article class="service-item">
 								<div class="item-head">
 									<svg class="svg-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
@@ -137,7 +141,9 @@
 										</path>
 									</svg>
 								</div>
-								<div class="item-picture"><img src="img/img-pink.jpg" width="360" height="576" alt=""></div>
+								<div class="item-picture">
+									<img src="img/img-pink.jpg" width="360" height="576" alt="">
+								</div>
 								<div class="item-info">
 									<a href="#">
 										<h3>pink app</h3>
@@ -147,7 +153,7 @@
 								</div>
 							</article>
 						</li>
-						<li class="services-list">
+						<li class="services-list" tabindex="0">
 							<article class="service-item">
 								<div class="item-head">
 									<svg class="svg-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
@@ -155,7 +161,9 @@
 										</path>
 									</svg>
 								</div>
-								<div class="item-picture"><img src="img/img-barbershop.jpg" width="360" height="576" alt=""></div>
+								<div class="item-picture">
+									<img src="img/img-barbershop.jpg" width="360" height="576" alt="">
+								</div>
 								<div class="item-info">
 									<a href="#">
 										<h3>barbershop</h3>
@@ -165,7 +173,7 @@
 								</div>
 							</article>
 						</li>
-						<li class="services-list">
+						<li class="services-list" tabindex="0" >
 							<article class="service-item">
 								<div class="item-head">
 									<svg class="svg-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
@@ -173,7 +181,9 @@
 										</path>
 									</svg>
 								</div>
-								<div class="item-picture"><img src="img/img-mishka.jpg" width="360" height="576" alt=""></div>
+								<div class="item-picture">
+									<img src="img/img-mishka.jpg" width="360" height="576" alt="">
+								</div>
 								<div class="item-info">
 									<a href="#">
 										<h3>miska</h3>
@@ -183,7 +193,7 @@
 								</div>
 							</article>
 						</li>
-						<li class="services-list">
+						<li class="services-list" tabindex="0" >
 							<article class="service-item">
 								<div class="item-head">
 									<svg class="svg-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
@@ -203,7 +213,7 @@
 								</div>
 							</article>
 						</li>
-						<li class="services-list">
+						<li class="services-list" tabindex="0" >
 							<article class="service-item">
 								<div class="item-head">
 									<svg class="svg-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
@@ -249,16 +259,28 @@
 						<h3>nёrds design studio</h3>
 						<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
 						<p class="number">тел. +7 (812) 275-75-75</p>
-						<button class="button link-button">напишите нам</button>
+						<a class="button link-button" href="form.html" title="open-popup">напишите нам</a>
 					</section>
 				</div>	
 			</section>
 			<section class="social">
 				<div class="social-button">
 					<ul>
-						<li class="social-item"><a class="social-icon icon-vk" href=""></a></li>
-						<li class="social-item"><a class="social-icon icon-facebook" href=""></a></li>
-						<li class="social-item"><a class="social-icon icon-instagram" href=""></a></li>
+						<li class="social-item">
+							<a class="social-icon icon-vk" href="" title="link-vkontakte">
+								<span class="visually-hidden">Иконка перехода на сайт Вконтакте</span>
+							</a>
+						</li>
+						<li class="social-item">
+							<a class="social-icon icon-facebook" href="" title="link-facebook">
+								<span class="visually-hidden">Иконка перехода на сайт Фейсбук</span>
+							</a>
+						</li>
+						<li class="social-item">
+							<a class="social-icon icon-instagram" href="" title="link-instagram">
+								<span class="visually-hidden">Иконка перехода на сайт Инстаграм</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 				<div class="social-text">
@@ -287,9 +309,11 @@
 					</div>
 					<button class="button" type="submit">Отправить</button>
 				</form>
-				<button class="modal-close" type="submit"></button>
+				<button class="modal-close" title="close-popup" type="submit">
+					<span class="visually-hidden">Клик по иконке закрытия попапа закрывает попап</span>
+				</button>
 			</div>
 		</section>
-		<script src="js/main.js"></script>
+		<script src="js/main.min.js"></script>
 	</body>
-</html>	
+</html>
