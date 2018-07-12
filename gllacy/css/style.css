@@ -419,7 +419,7 @@ a {
 	padding: 0 0 0 0;
 
 	border-radius: 15px;
-	background-color: red;
+	background-color: #9b3939;
 	background-image: url(../img/crimson-background.png);
 }
 
@@ -432,19 +432,15 @@ a {
 }
 
 .wrap-promo .button {
-	position: relative;
-	top: -3px;
-	right: 20px;
-
-	width: 131px;
-
-	white-space: nowrap;
+    position: absolute;
+    right: 20px;
+    width: 131px;
+    white-space: nowrap;
+    bottom: 20px;
 }
 
 .promo-chocolate .button {
-	position: relative;
-	top: -3px;
-	right: 21px;
+	position: absolute;
 
 	width: 152px;
 
@@ -454,7 +450,8 @@ a {
 
 
 .wrap-promo {
-	padding-bottom: 65px;
+	padding-bottom: 80px;
+	position: relative;
 }
 
 .promo-svg::before {
