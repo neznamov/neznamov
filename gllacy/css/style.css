@@ -436,8 +436,6 @@ a {
 	top: -3px;
 	right: 20px;
 
-	float: right;
-
 	width: 131px;
 
 	white-space: nowrap;
@@ -447,8 +445,6 @@ a {
 	position: relative;
 	top: -3px;
 	right: 21px;
-
-	float: right;
 
 	width: 152px;
 
@@ -824,10 +820,8 @@ a {
 }
 
 .wrapper-subscribe .button {
-	float: right;
-
 	margin-top: 15px;
-	margin-right: -3px;
+	margin-right: 1px;
 }
 
 .subscribe-block p {
@@ -1296,8 +1290,7 @@ a {
 
 .filter-category:nth-child(4) {
 	margin-top: 17px;
-	margin-left: -1px;
-	padding: 0 0 0 2px;
+	margin-left: 0px;
 }
 
 .filter-cost .scale {
@@ -2046,11 +2039,13 @@ input.second-range {
 
 .modal-map {
 	position: relative;
-
+	
 	height: 431px;
 	margin-bottom: 18px;
+	margin: 0 auto;
 
 	background: url(../img/map.png);
+	background-repeat: no-repeat;
 }
 
 .feedback-button-link {
@@ -2062,8 +2057,6 @@ input.second-range {
 }
 
 .header-menu {
-	float: right;
-
 	width: 267px;
 	margin-top: 22px;
 	margin-right: -7px;
@@ -2534,4 +2527,9 @@ input.second-range {
 
 .site-wrapper::after {
 	background-image: url('../img/slider-ice-cream.png');
+}
+
+.slide__1{
+	background-image: url(../img/Layer-slider-2.png);
+	background-repeat: no-repeat;
 }
