@@ -1,0 +1,17 @@
+.user-photo--card{
+	width: 280px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.user-photo--card .user-photo__wrapper{
+	padding: 0px;
+	width: 100%;
+}
+
+@media (min-width: $tablet){
+	.post-list{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

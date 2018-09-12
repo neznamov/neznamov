@@ -1,0 +1,52 @@
+@media (min-width: $tablet){
+	.footer__developed p{
+		font-size: 18px;
+		line-height: 18px;
+		color: $text-color;
+	}
+
+	.footer__developed{
+		width: 147px;
+		display: flex;
+		padding-top: 20px;
+	}
+
+	.developed__academy-logo{
+		fill: #d22856;
+		position: relative;
+		left: 13px;
+		bottom: 5px;
+		&:hover{
+			fill: #283645;
+		}
+	}
+
+	.copyright__develop-txt{
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+
+@media(min-width: $desktop){
+	.footer__developed p{
+		font-size: 18px;
+		line-height: 18px;
+		color: $text-color;
+	}
+
+	.footer__developed{
+		width: 280px;
+		display: flex;
+		padding-top: 25px;
+	}
+
+	.developed__academy-logo{
+		fill: #d22856;
+		position: relative;
+		left: 13px;
+		bottom: 5px;
+		&:hover{
+			fill: #283645;
+		}
+	}
+}

@@ -1,0 +1,139 @@
+.downloads-app{
+	background-color: $download-background;
+	min-height: 200px;
+	text-align: center;
+	padding: 29px 0 1px 0;
+}
+
+.download-app__title{
+	display: none;
+}
+
+.download-app__downloads-button{
+	color: #ffffff;
+    font-weight: 700;
+    border-radius: 30px;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 3px solid #ffffff;
+    padding: 15px 30px 16px;
+    font-size: 18px;
+		
+		&:hover{
+			background-color: $white-color;
+			color: $color-pink;
+		}
+}
+
+.downloads-app__apps{
+	display: flex;
+	width: 300px;
+	margin: 32px auto;
+	justify-content: space-around;
+	padding: 0px 38px 0 29px;
+
+}
+
+.downloads-app__item{
+	display: inline-flex;
+	vertical-align: top;
+	width: 47px;
+	height: 56px;
+}
+
+.downloads-app__item--apple{
+    background: url(../img/logo-apple.svg) no-repeat;
+	background-repeat: no-repeat;
+}
+
+.downloads-app__item--android{
+	background: url(../img/logo-android.svg) no-repeat center 7px;
+	background-repeat: no-repeat;
+}
+
+.downloads-app__item--windows{
+    background: url(../img/logo-microsoft.svg) no-repeat right 12px;
+	background-repeat: no-repeat;
+}
+
+.downloads-app__title{
+	width: 300px;
+	margin: 0 auto;
+	color: $white-color;
+}
+
+.downloads-app__title p{
+	font-weight: 300;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding: 0 0px 0px 11px;
+}
+
+@media (min-width: $tablet){
+	.download-app__title{
+		display: block;
+		font-size: 40px;
+		line-height: 48px;
+		font-weight: 300;
+		color: $white-color;
+		margin-bottom: 51px;
+		padding-left: 55px;
+    	padding-right: 55px;
+	}
+
+	.downloads-app{
+		width: 300px;
+		background-color: inherit;
+		position: relative;
+		z-index: 5;
+		margin: -10px 0 0 0;
+	}
+
+	.download-app__downloads-button{
+	font-size: 18px;
+    line-height: 18px;
+    padding: 14px 20px;
+	}
+
+	.downloads-app__title p{
+	font-size: 18px;
+    line-height: 24px;
+    margin-top: 55px;
+    padding: 0 0 0 0;
+	}
+
+}
+
+@media (min-width: $desktop){
+	.download-app__title{
+		display: block;
+		font-size: 50px;
+		line-height: 60px;
+		font-weight: 300;
+		color: $white-color;
+		margin-bottom: 51px;
+		padding: 0px;
+	}
+
+	.downloads-app{
+		width: 300px;
+		background-color: inherit;
+		position: relative;
+		z-index: 5;
+		margin: -10px 0 0 0;
+	}
+
+	.download-app__downloads-button{
+	font-size: 21px;
+    line-height: 21px;
+    padding: 14px 20px;
+	}
+
+	.downloads-app__title p{
+	font-size: 18px;
+    line-height: 24px;
+    margin-top: 55px;
+    padding: 0 0 0 0;
+	}
+}

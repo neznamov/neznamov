@@ -1,0 +1,189 @@
+.table-header{
+	background-color: #283645;
+	color: #e0e1e2;
+	text-transform: uppercase;
+	border: 2px solid #e5e5e5;
+	border-top: none;
+	height: 98px;
+	width: 236px;
+}
+
+.table-date{
+	border: 2px solid #e5e5e5;
+	height: 59px;
+	width: 236px;
+	position: relative;
+}
+
+.table-header:nth-child(2),
+.table-header:nth-child(4){
+	border: 0;
+	border-radius: 2px;
+}
+
+.table-row{
+	background-color: #ffffff;
+}
+
+.table__name{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 17px;
+}
+
+.table__title{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 100;
+}
+
+.table-date__name{
+	font-size: 18px;
+	line-height: 30px;
+	margin: 15px 0 0px 19px;
+	display: block;
+	text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+}
+
+.configuration__wrapper{
+	overflow: hidden;
+	position: relative;
+	
+	&:before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat center top;
+		z-index: 0;
+		background-size: 100% 31px;
+	}
+
+}
+
+.configuration__table{
+	position: relative;
+	right: 73%;
+	width: 251%;
+	margin-top: 110px;
+}
+
+.table-date--desk{
+	display: none;
+}
+
+.table-header--del{
+	display: none;
+}
+
+.table-date__status{
+	position: absolute;
+	display: block;
+	width: 31px;
+	height: 30px;
+	top: 13px;
+	right: 17px;
+}
+
+.table-date__status--on{
+	background: url(../img/icon-yes.svg) no-repeat center;
+	background-size: 31px 21px;
+}
+
+.table-date__status--off{
+	background: url(../img/icon-no.svg) no-repeat center;
+	background-size: 27px 26px;
+}
+
+.configuration__wrapper .reviews__pagination{
+	margin-bottom: 20px;
+}
+
+@media (min-width: $tablet){
+	.configuration__table{
+		position: static;
+		margin: 0 auto;
+		width: 660px;
+	}
+
+	.table-date--desk{
+		display: table-cell;
+	}
+
+	.table-header--del{
+		display: table;
+	}
+
+	.table-date__name--del,
+	{
+		display: none;
+	}
+	
+	.table-date--desk .table-date__status {
+		display: none;
+	}
+
+	.table-date__status{
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.configuration__table{
+		right: 0px;
+		position: relative;
+		z-index: 10;
+		margin-top: 60px;
+		margin-bottom: 60px
+	}
+
+	.configuration__wrapper .reviews__pagination{
+		display: none;
+	}
+
+}
+
+@media (min-width: $desktop){
+	.configuration__table{
+		position: static;
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	.table-date--desk{
+		display: table-cell;
+	}
+
+	.table-header--del{
+		display: table;
+	}
+
+	.table-date__name--del,
+	{
+		display: none;
+	}
+	
+	.table-date--desk .table-date__status {
+		display: none;
+	}
+
+	.table-date__status{
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.configuration__table{
+		right: 0px;
+		position: relative;
+		z-index: 10;
+		margin-top: 120px;
+		margin-bottom: 60px
+	}
+
+	.configuration__wrapper:before{
+		background-size: 100% 65px;
+	}
+}

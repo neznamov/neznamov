@@ -1,0 +1,33 @@
+.footer{
+	display: none;
+}
+
+@media(min-width: $tablet){
+	.footer__wrapper{
+		width: 660px;
+		margin: 0 auto;
+		justify-content: space-between;
+		padding-top: 36px;
+		padding-bottom: 34px;
+		flex-direction: row;
+		display: flex;
+
+	}
+
+	.footer{
+		display: block;
+	}
+}
+
+@media (min-width: $desktop){
+	.footer__wrapper{
+	display: flex;
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100px;
+	justify-content: space-between;
+	padding-top: 60px;
+    padding-bottom: 60px;
+
+	}
+}	

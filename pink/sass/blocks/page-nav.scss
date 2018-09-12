@@ -1,0 +1,129 @@
+.list__item a{
+	color: $white-color;
+	display: block;
+	padding: 20px 0px 20px 0;
+	box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255,255,255,.15);
+	font-family: $font-family;
+	font-weight: bold;
+		&:hover,
+		&:focus{
+			color: $color-pink;
+		}
+}
+
+.list__item:last-child a{
+	box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255,255,255,.15), inset 0 -1px 0 #000;
+}
+
+.page-nav__list{
+	display: inline-block;
+	width: 100%;
+	background-color: $nav-color;
+}
+
+.list__item{
+	text-align: center;
+}
+
+.page-nav__toggle{
+    position: absolute;
+    top: 21px;
+    right: 40px;
+    width: 30px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+.page-nav--opened .page-nav__toggle span::after, .page-nav--opened .page-nav__toggle span::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 29px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.page-nav--opened .page-nav__toggle span::before {
+    transform: rotate(45deg);
+}
+
+.page-nav--opened .page-nav__toggle span::after {
+    transform: rotate(-45deg);
+}
+
+.page-nav--closed .page-nav__toggle span{
+	display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.page-nav--closed .page-nav__toggle span::after,
+.page-nav--closed .page-nav__toggle span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.page-nav--closed .page-nav__toggle span::before {
+    top: 0;
+}
+
+.page-nav--closed .page-nav__toggle span::after {
+    bottom: 0;
+}
+
+.page-nav--closed .page-nav__list {
+	display: none;
+}
+
+@media (min-width: $desktop){
+	.page-nav__list{
+		display: flex;
+		width: 800px;
+		justify-content: flex-end;
+		margin-top: 25px;
+		background-color: transparent;
+	}
+
+	.list__item a{
+		font-family: $font-family;
+		box-shadow: none;
+		padding: 0px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.list__item{
+		margin: 20px 0 0 89px;
+	}
+	
+	.header-page{
+		min-height: 110px;
+	}
+
+	.list__item:last-child a{
+		box-shadow: none;
+	}
+
+	.page-nav .page-nav__list{
+		display: flex;
+	}
+	
+	.page-nav__toggle{
+		display: none;
+	}
+
+}

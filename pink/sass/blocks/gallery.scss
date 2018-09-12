@@ -1,0 +1,45 @@
+.gallery__text{
+	font-size: 14px;
+	text-align: center;
+	color: $text-color;
+	line-height: 30px;
+}
+
+.gallery{
+	margin-top: 40px;
+}
+
+.gallery__title{
+	width: 320px;
+	margin: 0 auto;
+	padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 48px;
+}
+
+@media (min-width: $tablet){
+	.gallery__text{
+		font-size: 18px;
+		line-height: 30px;	
+	}
+
+	.gallery__title{
+		width: 660px;
+		padding-left: 60px;
+    	padding-right: 60px;
+    	margin-bottom: 76px;
+	}
+
+	.gallery__inner{
+    	width: 660px;
+    	margin: 0 auto;
+    	padding-left: 1px;
+    	padding-right: 19px;
+	}
+}
+
+@media (min-width: $desktop){
+	.gallery__title{
+		width: 700px;
+	}
+}

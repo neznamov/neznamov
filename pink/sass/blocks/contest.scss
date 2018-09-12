@@ -1,0 +1,49 @@
+.contest{
+	padding-top: 45px;
+}
+
+.contest__title{
+	line-height: 30px;
+	text-align: center;
+	width: 320px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	color: $text-color;
+}
+
+@media (min-width: $tablet){
+	.contest__title{
+		width: 600px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	.contest__title h3{
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.contest__title--visible{
+		display: block;
+	}
+
+	.contens__inner{
+		width: 660px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: $desktop){
+	.contest__title{
+		padding-left: 80px;
+    	padding-right: 80px;
+    	width: 960px;
+	}
+
+		.contest__title--visible{
+		display: inline;
+	}
+}

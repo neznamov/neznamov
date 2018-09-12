@@ -1,0 +1,52 @@
+.header-page{
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	position: absolute;
+	z-index: 100;
+}
+
+.header-page--closed{
+	position: absolute;
+}
+
+.header-page--opened{
+	position: relative;
+}
+
+.header-page__logo{
+	margin: 10px 0 20px -48px;
+	display: inline-block;
+}
+
+.header-page__wrapper--closed{
+	background-color: rgba(0,0,0,0.0);
+}
+
+.header-page__wrapper--opened{
+	background-color: #25313d;
+}
+
+.logo__mobile-logo--shine,
+.logo__mobile-logo--glasses{
+	display: none;
+}
+
+@media (min-width:$desktop){
+	.header-page__wrapper,
+	.header-page__wrapper--close{
+		width: 940px;
+		margin: 0 auto;
+		display: flex;
+		background-color: rgba(0,0,0,0.0);
+	}
+
+	.header-page__logo{
+		display: block;
+		margin: 40px 0 0 0;
+	}
+
+	.logo__mobile-logo--shine,
+	.logo__mobile-logo--glasses{
+	display: block;
+	}
+}
