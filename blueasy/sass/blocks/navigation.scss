@@ -1,0 +1,27 @@
+.navigation{
+	display: flex;
+}
+
+.navigation ul{
+	display: flex;
+}
+
+.navigation__list-item{
+	font-size: 14px;
+	line-height: 24px;
+	color: $white-color;
+	text-transform: uppercase;
+	&:hover{
+		color: #4bcaff;
+	}
+}
+
+.navigation__list-item--mod{
+	color: #4bcaff;
+	border: 2px solid #4bcaff;
+	padding: 10px 16px 10px 16px;
+}
+
+.navigation__list{
+	margin: 0px 0 0 50px;
+}

@@ -1,0 +1,39 @@
+.contact{
+	background: $white-color url(../img/bg-layer.jpg) no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.contact__wrapper{
+	width: 61.5%;
+	margin: 0 auto;
+	padding: 80px 0 0 0;
+}
+
+.contact__wrapper h3{
+	font-size: 30px;
+	line-height: 24px;
+	color: $white-color;
+	font-weight: lighter;
+	margin-bottom: 30px;
+	position: relative;
+	text-transform: uppercase;
+		&:after{
+		content: "";
+		position: absolute;
+		height: 2px;
+		width: 45px;
+		background-color: $white-color;
+    	bottom: -10px;
+    	left: 2px;
+	}
+}
+
+@media(max-width: 960px){
+	.contact__wrapper h3{
+		text-align: center;
+		&:after{
+			content: none;
+		}
+	}
+}
