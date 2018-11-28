@@ -201,13 +201,14 @@ html {
           animation: fadeIn 4.0s; }
 
 @media (max-width: 960px) {
-  .header__wrapper {
-    width: 100%;
-    padding-left: 2%;
-    padding-right: 2%; }
   .header__title {
     padding: 130px 0 130px 0; }
   .header__inner--fixed .header__wrapper {
+    padding: 18px 2% 0px 2%; }
+  .header__inner {
+    min-height: 60px; }
+  .header__wrapper {
+    width: 100%;
     padding: 18px 2% 0px 2%; } }
 
 .navigation {
@@ -306,7 +307,8 @@ html {
 
 .portfolio__wrapper {
   width: 61.5%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .picture {
   margin-bottom: 80px; }
@@ -403,7 +405,8 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  overflow: hidden; }
 
 .default__title {
   width: 470px; }
@@ -476,7 +479,8 @@ html {
 .twitter__wrapper {
   width: 61.5%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .twitter__wrapper:before {
     content: "";
     position: absolute;
@@ -536,7 +540,8 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  overflow: hidden; }
 
 .john__wrapper h3 {
   font-size: 30px;

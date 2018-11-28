@@ -8,6 +8,7 @@
 	width: 61.5%;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 	&:before{
 		content: "";
 		position: absolute;

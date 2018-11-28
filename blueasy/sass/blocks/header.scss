@@ -72,18 +72,23 @@
 }
 
 @media(max-width: 960px){
-	.header__wrapper{
-		width: 100%;
-		padding-left: 2%;
-    	padding-right: 2%;
-	}
 
 	.header__title{
 		padding: 130px 0 130px 0;
 	}
 
 	.header__inner--fixed .header__wrapper{
-	padding: 18px 2% 0px 2%;
+		padding: 18px 2% 0px 2%;
 	}
-}
 
+	.header__inner{
+		min-height: 60px;
+	}
+
+	.header__wrapper{
+		width: 100%;
+    	padding: 18px 2% 0px 2%;
+	}
+
+
+}
