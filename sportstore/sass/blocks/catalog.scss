@@ -1,0 +1,151 @@
+.catalog__items{
+	display: flex;
+}
+
+.catalog__items-item{
+    width: 25%;
+	display: flex;
+    flex-direction: column;
+    border-right: 1px solid #c7c7c7;
+    height: 375px;
+    &:last-child{
+    	border: none;
+    }
+}
+
+.catalog__items-item picture{
+	align-self: center;
+}
+
+.catalog__items-item h3{
+	font-size: 25px;
+	line-height: 25px;
+	font-family: $bebas-font;
+	color: #0d2e57;
+	padding: 0 0 0 10%;
+}
+
+.catalog__items-item span{
+	display: flex;
+	padding: 0 0 0 10%;
+}
+
+.catalog__items-item p{
+	font-size: 13px;
+	line-height: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #3753da;
+	&:last-child{
+		color: #818181;
+		margin: 0 0 0 9px;
+	}
+}
+
+.catalog__items-item__wrapper{
+	height: 222px;
+	display: flex;
+    align-self: center;
+    margin: 30px 0 20px 0;
+}
+
+.catalog__items--column-2 .catalog__items-item:first-child{
+	background-color: #232323;
+}
+
+.catalog__items--column-2 h3:first-child{
+	font-size: 59px;
+	line-height: 61px;
+	font-family: $bebas-font;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 70px 0 20px 0;
+}
+
+.catalog__items--column-2 .catalog__items-item__price{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	letter-spacing: 9.5px;
+    padding: 0 0 0 9%;
+}
+
+.catalog__items--column-2 a:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    background-color: #3954d9;
+    border-radius: 25px;
+    height: 43px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 0 0 0;
+    width: 125px;
+    margin: 35px 0 0 9%;
+    &:last-child{
+    	background-color: #65cbff;
+    	color: #000000;
+    }
+}
+
+.catalog__items--column-2 a:last-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    background-color: #65cbff;
+    border-radius: 25px;
+    height: 43px;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 0 0 0;
+    width: 125px;
+    margin: 35px 0 0 9%;
+}
+
+.catalog__items--column-2 .catalog__items-item:nth-child(2){
+	border-top: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.catalog__items-item--run{
+	background-image: url("../img/girl-bg.jpg");
+	width: 50%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.catalog__items-item--run p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 59px;
+	line-height: 61px;
+	color: #ffffff;
+	padding: 0 0 0 4%;
+	margin: 70px 0 20px 0;
+}
+
+.catalog__items--column-2 .catalog__items-item--run a{
+	margin: 0 0 0 4%;
+}
+
+.catalog__items--column-3 .catalog__items-item{
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.catalog__footer{
+	display: flex;
+}
+
+.catalog__footer a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+	color: #3753da;
+	text-align: center;
+	font-weight: bold;
+	margin: 20px auto;
+}

@@ -1,0 +1,38 @@
+.form{
+	display: flex;
+	flex-direction: column;
+}
+
+.form input{
+	width: 94%;
+	background-color: #2f2f2f;
+	border: none;
+	border-right: 24px;
+	border-radius: 24px;
+	padding: 10px 0 10px 10px;
+	margin: 0px 0 20px 0;
+	color: #ffffff;
+}
+
+.footer__social-form:last-child h3{
+	margin: 0px 0 10px 0;
+}
+
+.form a{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    background-color: #3954d9;
+    max-width: 125px;
+    border-radius: 25px;
+    height: 35px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 9px 0 0 0;
+}
+
+.footer__social{
+	padding: 0 0px 0px 10%;
+}

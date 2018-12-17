@@ -1,0 +1,132 @@
+.offer{
+	display: flex;
+	background-color: #f2f0f0;
+	width: 100%;
+}
+
+.offer__block{
+	width: 50%
+}
+
+.offer__left-caption{
+	font-size: 20px;
+	line-height: 25px;
+	color: #616161;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 25px;
+}
+
+.offer__left-title{
+	font-size: 42px;
+	line-height: 44px;
+	color: #0d2e57;
+	font-family: $bebas-font;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.offer__left-text{
+	font-family: $myriad-font;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: none;
+	font-weight: normal;
+	color: #8a8a8a;
+	padding-right: 16%;
+    padding-left: 16%;
+}
+
+.offer__left-cost p:first-child{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 52px;
+	line-height: 62px;
+	color: #3954d9;
+	font-weight: bold;
+}
+
+.offer__left-cost p:last-child{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	line-height: 58px;
+	color: #121212;
+	font-weight: 700;
+}
+
+.offer__left-cost{
+	width: 37.4%;
+	display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.offer__left-time{
+	display: flex;
+	justify-content: space-around;
+	width: 41.6%;
+	margin: 0 auto;
+	margin-top: 55px;
+	margin-bottom: 40px;
+}
+
+.offer__left-time__container{
+	background-color: #ffffff;
+	width: 29%;
+	border-radius: 27px;
+}
+
+.offer__left-time__container p:first-child{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 31px;
+	margin-top: 25px;
+}
+
+.offer__left-time__container p:last-child{
+	text-align: center;
+	font-size: 11px;
+	line-height: 8px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin-bottom: 22px;
+}
+
+.offer__left-time__container p:nth-child(2){
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.offer__left a{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    background-color: #3954d9;
+    max-width: 125px;
+    border-radius: 25px;
+    height: 48px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 14px 0 0 0;
+    margin-bottom: 120px;
+}
+
+.offer__right{
+	background: url("../img/Image.jpg") no-repeat center center;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+}
+

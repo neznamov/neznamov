@@ -1,0 +1,47 @@
+.social{
+	width: 295px;
+	display: flex;
+	border-right: 0.5px solid rgba(255,255,255, 0.5);
+}
+
+.social-list{
+	display: flex;
+    margin: auto auto;
+}
+
+.social-list__item-icon{
+	background-repeat: no-repeat;
+	display: block;
+	margin: auto;
+}
+
+.social-list__item-icon--facebook{
+	background-image: url("../img/fb.png");
+	width: 15px;
+	height: 27px;
+}
+
+.social-list__item-icon--tw{
+	background-image: url("../img/tw.png");
+	width: 26px;
+	height: 22px;
+}
+
+.social-list__item-icon--google{
+	background-image: url("../img/g++.png");
+	width: 27px;
+	height: 22px;
+}
+
+.social-list__item-icon--inst{
+	background-image: url("../img/insta.png");
+	width: 28px;
+	height: 28px;
+}
+
+.social-list__item{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	margin: 0 30px 0 0px;
+}

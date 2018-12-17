@@ -1,0 +1,80 @@
+body{
+	font-family: 'Montserrat', sans-serif;	
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+img{
+	box-sizing: content-box;
+	max-width: 100%;
+	height: auto;
+}
+
+picture{
+	display: flex;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+.visually-hidden{
+	position: absolute;
+
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+
+	border: 0;
+}
+
+.main{
+	background-color: #fbfbfb;
+}
+
+.main__wrapper{
+	width: 78.87%;
+	margin: 0 auto;
+	box-shadow: 0 0 20px -5px;
+	background-color: #ffffff;
+	position: relative;
+	top: -70px;
+}
+
+.main__wrapper-inner{
+
+}
+
+@font-face{
+	font-family: 'Bebas';
+	src: url('../fonts/Bebas.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+@font-face{
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+

@@ -1,0 +1,31 @@
+.photo{
+	display: flex;
+	flex-direction: column;
+}
+
+.photo__image{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	max-height: 375px;
+	background: #000000;
+	cursor: pointer;
+	width: 100%;
+    margin: 0 auto;
+}
+
+.photo__image img{
+	transition: all 1s ease-out;
+    position: relative;
+    opacity: 0.56;
+    width: 100%;
+    &:hover{
+    	transform: scale(1.1);
+    	opacity: 1;
+    }
+}
+
+.photo__wrapper{
+	display: flex;
+}
