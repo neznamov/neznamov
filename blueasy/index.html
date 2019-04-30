@@ -3,21 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Blueasy</title>
 	</head>
-	<body>
-		<header id=" " class="header">
+	<body class="body">
+		<header id="header" class="header">
 			<div class="header__inner">
 				<div class="header__wrapper">
 					<div class="header__logo">
-						<a href=""><h1>blu<span class="header__logo-color">e</span>asy</h1></a>
-					</div>		
+						<a href="#header"><h1>blu<span class="header__logo-color">e</span>asy</h1></a>
+					</div>
+					<input type="checkbox" id="menu-checkbox"> 	
 					<nav class="navigation">
-						<ul>
-							<li class="navigation__list"><a class="navigation__list-item navigation__list-item--mod" href="#home">Home</a></li>
+						<label for="menu-checkbox" class="toggle-button">
+							<span class="menu-checkbox__burger"></span>
+							<span class="menu-checkbox__burger"></span>
+							<span class="menu-checkbox__burger"></span>
+						</label>
+						<ul class="navigation__menu">
+							<li class="navigation__list"><a class="navigation__list-item navigation__list-item--mod" href="#header">Home</a></li>
 							<li class="navigation__list"><a class="navigation__list-item" href="#services">Services</a></li>
 							<li class="navigation__list"><a class="navigation__list-item" href="#portfolio">Portfolio</a></li>
 							<li class="navigation__list"><a class="navigation__list-item" href="#default">Features</a></li>
@@ -26,9 +32,12 @@
 					</nav>
 				</div>
 			</div>
-			<div class="header__title bounceInDown">
+			<div class="header__title">
 				<p class="header__title-text"><span>“I’m looking for the unexpected.</span></p><p class="header__title-text"><span>I’m looking for things I’ve never seen before.”</p></span>
 			</div>
+			<div class="header__link">
+				<a class="header__link-item" href="#header"><span>></span></a>
+			</div>	
 		</header>
 		<main class="main">
 			<section id="services" class="services">
@@ -72,42 +81,42 @@
 						<div class="portfolio__header-title">
 							<h3>Portfolio</h3>
 						</div>
-						<div class="portfolio__header-nav">
-							<ul>
-								<li><a class="mod" href="">All</a></li>
-								<li><a href="">Panoramas</a></li>
-								<li><a href="">Portraits</a></li>
-								<li><a href="">Marco</a></li>
-								<li><a href="">Journal</a></li>
+						<div class="portfolio__header-nav portfolio__toggles">
+							<ul class="portfolio__toggles">
+								<li><a id="showall" class="mod" >All</a></li>
+								<li><a id="panoramas">Panoramas</a></li>
+								<li><a id="portraits">Portraits</a></li>
+								<li><a id="marco">Marco</a></li>
+								<li><a id="journal">Journal</a></li>
 							</ul>
 						</div>
 					</header>
 					<div class="picture">
 						<div class="picture__column picture__column--1 revealator-slideleft revealator-once">
-							<div class="picture__column-item revealator-slideleft revealator-delay2 revealator-once">
+							<div class="picture__column-item panoramas revealator-slideleft revealator-delay2 revealator-once">
 								<img src="img/portfolio-photo1.jpg" alt="">
 							</div>
-							<div class="picture__column-item revealator-slideleft revealator-delay3 revealator-once">
+							<div class="picture__column-item panoramas revealator-slideleft revealator-delay3 revealator-once">
 								<img src="img/portfolio-photo2.jpg" alt="">
 							</div>
-							<div class="picture__column-item revealator-slideleft revealator-delay4 revealator-once">
+							<div class="picture__column-item portraits revealator-slideleft revealator-delay4 revealator-once">
 								<img src="img/portfolio-photo3.jpg" alt="">
 							</div>
-							<div class="picture__column-item revealator-slideleft revealator-delay5 revealator-once">
+							<div class="picture__column-item portraits revealator-slideleft revealator-delay5 revealator-once">
 								<img src="img/portfolio-photo4.jpg" alt="">
 							</div>
 						</div>
 						<div class="picture__column picture__column--2 revealator-slideright revealator-once">
-							<div class="picture__column-item revealator-slideright revealator-delay2 revealator-once">
+							<div class="picture__column-item marco revealator-slideright revealator-delay2 revealator-once">
 								<img src="img/portfolio-photo5.jpg" alt="">
 							</div>
-							<div class="picture__column-item revealator-slideright revealator-delay3 revealator-once">
+							<div class="picture__column-item revealator-slideright marco revealator-delay3 revealator-once">
 								<img src="img/portfolio-photo6.jpg" alt="">
 							</div>
-							<div class="picture__column-item revealator-slideright revealator-delay4 revealator-once">
+							<div class="picture__column-item journal revealator-slideright revealator-delay4 revealator-once">
 								<img src="img/portfolio-photo7.jpg" alt="">
 							</div>
-							<div class="picture__column-item revealator-slideright revealator-delay5 revealator-once">
+							<div class="picture__column-item journal revealator-slideright revealator-delay5 revealator-once">
 								<img src="img/portfolio-photo8.jpg" alt="">
 							</div>
 						</div>

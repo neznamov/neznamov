@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+	<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+		<title>Cake</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__inner">
+					<div class="header__logo">
+						<a class="header__logo-link" href="">Cakes</a>
+					</div>
+					<nav class="navigation navigation--closed">
+						<ul class="navigation__list">
+							<li class="navigation__list-item"><a href="">Наши товары</a></li>
+							<li class="navigation__list-item navigation__list-item--mod"><a href="">Индивидуальный заказ</a></li>
+							<li class="navigation__list-item"><a href="">Отзывы</a></li>
+							<li class="navigation__list-item"><a href="">О нас</a></li>
+							<li class="navigation__list-item"><a href="">Как заказать</a></li>
+							<li class="navigation__list-item"><a href="">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>	
+				<div class="header__number">
+					<span>+7 906 899 92 96</span>
+				</div>
+				<button class="navigation__button-toggle"></button>
+			</div>
+		</header>
+		<main>
+			<section class="features">
+				<div class="features__wrapper">
+					<div class="features__about">
+						<h3 class="features__about-title">Торты на заказ</h3>
+						<p class="features__about-text">Ручная работа</p>
+					</div>
+					<div class="features__service">
+						<div class="features__service--wrapper">
+							<svg class="features__service-svg" fill="#f50b51" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="33" height="32">
+							<g>
+								<g>
+									<g>
+										<path class="st0" d="M438,75C389.7,26.6,325.4,0,257,0S124.3,26.6,76,75C27.6,123.3,1,187.6,1,256s26.6,132.7,75,181
+										c48.4,48.4,112.6,75,181,75s132.7-26.6,181-75c48.4-48.4,75-112.6,75-181S486.4,123.3,438,75z M427.3,426.3
+										c-45.5,45.5-105.9,70.5-170.3,70.5s-124.8-25-170.3-70.5C41.3,380.8,16.2,320.3,16.2,256s25-124.8,70.5-170.3
+										C132.2,40.3,192.7,15.2,257,15.2s124.8,25,170.3,70.5c45.5,45.5,70.5,105.9,70.5,170.3S472.7,380.8,427.3,426.3z"/>
+										<path class="st0" d="M451.8,173l-13.8,6.4c13,27.8,19.6,57.8,19.6,88.9h15.2C472.8,234.9,465.8,202.9,451.8,173z"/>
+										<path class="st0" d="M409.5,107.1C366.9,64.5,310.2,41,250,41v15.2c56.2,0,109,21.9,148.8,61.6c12.9,12.9,24,27.3,33.1,42.8
+										l13.1-7.7C435.2,136.3,423.3,120.9,409.5,107.1z"/>
+									</g>
+									<g>
+										<g>
+											<path class="st1" d="M340.6,309.2c0,0-3.4,0-8.7,0c-15,0-43,2.8-61.2,21c-2.4,2.4-4.5,5-6.4,7.8v-41.4h0.9c15,0,43-2.7,61.2-21
+											c25-25,20.8-68.1,20.7-69.9c-0.4-3.4-3.1-6.1-6.5-6.5c0,0-3.4,0-8.7,0c-15,0-43,2.8-61.2,21c-2.4,2.4-4.5,5-6.4,7.8v-19
+											c8.2-7.3,32.1-31.8,32.1-61.7c0-35.3-33.4-62.9-34.8-64c-2.7-2.2-6.5-2.2-9.2,0c-1.5,1.2-34.8,28.8-34.8,64
+											c0,29.9,24,54.3,32.1,61.7v18.6c-1.9-2.8-4-5.4-6.4-7.9c-18.3-18.3-46.2-21-61.2-21c-5.3,0-8.7,0-8.7,0
+											c-3.4,0.4-6.1,3.1-6.5,6.5c0,1.8-4.3,44.9,20.7,69.9c18.3,18.3,46.2,21,61.2,21h0.9v41c-1.9-2.7-4.1-5.1-6.5-7.4
+											c-18.3-18.3-46.2-21-61.2-21c-5.3,0-8.7,0-8.7,0c-3.4,0.4-6.1,3.1-6.5,6.5c0,1.8-4.3,44.9,20.7,69.9c18.3,18.3,46.2,21,61.2,21
+											h0.9v59.6c0,4,3.3,7.3,7.3,7.3s7.3-3.3,7.3-7.3v-59.1h0.8c15,0,43-2.7,61.2-21c25-25,20.8-68.1,20.7-69.9
+											C346.7,312.3,344,309.6,340.6,309.2z M198,265.4c-15.1-15.1-16.8-40.3-16.8-51.9h0.9c10.3,0,35.8,1.6,51,16.8
+											s16.8,40.3,16.8,51.9C240,282.4,213.6,281,198,265.4z M249.9,392c-9.9,0.2-36.3-1.2-51.9-16.8c-15.1-15.1-16.8-40.3-16.8-51.9
+											c10,0,36.4,1.2,51.9,16.8S250,380.5,249.9,392z M257.3,196L257.3,196c-8.4-8.2-24.9-27.2-24.9-48.6s16.6-40.3,24.8-48.5
+											c8.3,8.2,24.8,27.2,24.8,48.5S265.6,187.8,257.3,196z M281.3,230.2l-0.4,0.1c15.1-15.1,40.7-16.8,51-16.8h0.9
+											c0,11.6-1.5,36.4-16.8,51.9s-41.9,17-51.9,16.8C264.4,270.3,266.1,245.4,281.3,230.2z M316.4,375.3
+											c-15.2,15.5-40.6,16.8-51,16.8h-0.9c0-11.7,1.7-36.8,16.8-51.9l-0.1-0.1c15.1-15.1,40.7-16.8,51-16.8h0.9
+											C333.1,334.9,331.6,359.8,316.4,375.3z"/>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
+							<p class="features__service-seed features__service--mod">Натуральные ингредиенты</p>
+						</div>
+						<div class="features__service--wrapper">
+							<svg class="features__service-svg features__service-svg--gift" width="33" height="32" viewBox="0 0 33 32" fill="#f50b51">
+							  <path  class="cls-1" d="M51.239,356.211H46.662a4.387,4.387,0,0,0,1.2-3.016s0-.178,0-0.228a4.05,4.05,0,0,0-2.136-3.423,4.31,4.31,0,0,0-4.187,0L39.459,350.7a7.182,7.182,0,0,0-2.959,3.085,7.181,7.181,0,0,0-2.959-3.085l-2.082-1.151a4.311,4.311,0,0,0-4.187,0,4.05,4.05,0,0,0-2.136,3.423c0,0.05,0,.228,0,0.228a4.388,4.388,0,0,0,1.2,3.016H21.761A1.745,1.745,0,0,0,20,357.936v4.094a1.745,1.745,0,0,0,1.761,1.725h0.806v15.52A1.745,1.745,0,0,0,24.327,381H48.673a1.745,1.745,0,0,0,1.761-1.725v-15.52h0.806A1.745,1.745,0,0,0,53,362.03v-4.094A1.745,1.745,0,0,0,51.239,356.211Zm-11.06-4.264,2.082-1.151a2.831,2.831,0,0,1,2.748,0,2.627,2.627,0,0,1,1.388,2.218c0,0.035,0,.18,0,0.18a3.051,3.051,0,0,1-3.078,3.016H37.275A5.686,5.686,0,0,1,40.18,351.947ZM26.6,353.015A2.628,2.628,0,0,1,27.99,350.8a2.834,2.834,0,0,1,2.748,0l2.082,1.151a5.686,5.686,0,0,1,2.9,4.264H29.678A3.051,3.051,0,0,1,26.6,353.2S26.6,353.05,26.6,353.015Zm6.6,12.926H30.181a0.719,0.719,0,1,0,0,1.437H33.2v12.185H24.327a0.291,0.291,0,0,1-.294-0.288v-15.52H33.2v2.186h0Zm0-3.623H21.761a0.291,0.291,0,0,1-.294-0.288v-4.094a0.291,0.291,0,0,1,.294-0.288H33.2v4.67Zm5.133,17.245H34.667V357.648h3.666v21.915Zm10.633-.288a0.291,0.291,0,0,1-.294.288H39.8V367.378h2.794a0.719,0.719,0,1,0,0-1.437H39.8v-2.186h9.167v15.52h0Zm2.567-17.245a0.291,0.291,0,0,1-.294.288H39.8v-4.67H51.24a0.291,0.291,0,0,1,.294.288v4.094h0Zm-5.456,5.348h0.073a0.719,0.719,0,1,0,0-1.437H46.078A0.719,0.719,0,1,0,46.078,367.378Zm-19.453,0H26.7a0.719,0.719,0,1,0,0-1.437H26.624A0.719,0.719,0,1,0,26.624,367.378Z" transform="translate(-20 -349)"/>
+						  </svg>
+							<p class="features__service-gift features__service--mod">Доставка бесплатно при заказе от 2000 рублей*</p>
+						</div>
+					</div>
+					<div class="features__order">
+						<a class="features__order-link button" href="">Выбрать торт</a>
+					</div>
+				</div>
+			</section>
+			<section class="product">
+				<div class="product__wrapper">
+					<h3 class="product__title">Наши торты</h3>
+					<div class="cake__wrapper">
+						<div class="cake__column cake__column--1">
+							<article class="cake cake--mod">
+								<a class="cake__item" href="#">
+									<span class="cake__item-about">
+									   <p class="cake__item-title">Классические</p>
+									   <p class="cake__item-text">24 вида</p>
+									</span>
+								<p class="cake__item-show">Смотреть</p>	
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/class-cake-ds@1x.jpg, img/class-cake-ds@2x.jpg" 2x>
+										<source media="(min-width: 768px)" srcset="img/class-photo-tablet.jpg, img/class-photo-tablet@2x.jpg" 2x>
+										<img src="img/class-photo.jpg" srcset="img/class-photo@2x.jpg 2x" alt>
+									</picture>
+								</a>
+							</article>
+							<div class="cake__inner">
+								<article class="cake">
+									<a class="cake__item" href="#">
+										<span class="cake__item-about">
+										   <p class="cake__item-title">Муссовые</p>
+										   <p class="cake__item-text">12 видов</p> 
+										</span>
+										<picture>
+											<source media="(min-width: 960px)" srcset="img/mousse-cake-ds@1x.jpg, img/mousse-cake-ds@2x.jpg" 2x>
+											<source media="(min-width: 768px)" srcset="img/mousse-cake-tablet@1x.jpg, img/mousse-cake-tablet@2x.jpg" 2x>
+											<img src="img/mousse-cake@1x.jpg" srcset="img/mousse-cake@2x.jpg 2x" alt>
+										</picture>
+									</a>
+								</article>
+								<article class="cake">
+									<a class="cake__item" href="#">
+										<span class="cake__item-about">
+										   <p class="cake__item-title">Свадебные</p>
+										   <p class="cake__item-text">20 видов</p> 
+										</span>
+										<picture>
+											<source media="(min-width: 960px)" srcset="img/wedding-cake-ds@1x.jpg, img/wedding-cake-ds@2x.jpg" 2x>
+											<source media="(min-width: 768px)" srcset="img/wedding-cake-tablet@1x.jpg, img/wedding-cake-tablet@2x.jpg" 2x>
+											<img src="img/wedding-cake@1x.jpg" srcset="img/wedding-cake@2x.jpg 2x" alt>
+										</picture>
+									</a>
+								</article>
+							</div>	
+						</div>
+						<div class="cake__column cake__column--2">	
+							<div class="cake__inner">
+								<article class="cake">
+									<a class="cake__item" href="#">
+										<span class="cake__item-about">
+										   <p class="cake__item-title">Мужчинам</p>
+										   <p class="cake__item-text">12 видов</p> 
+										</span>
+										<picture>
+											<source media="(min-width: 960px)" srcset="img/man-cake-ds@1x.jpg, img/man-cake-ds@2x.jpg" 2x>
+											<source media="(min-width: 768px)" srcset="img/man-cake-tablet@1x.jpg, img/man-cake-tablet@2x.jpg" 2x>
+											<img src="img/man-cake@1x.jpg" srcset="img/man-cake@2x.jpg 2x" alt>
+										</picture>
+									</a>
+								</article>
+								<article class="cake">
+									<a class="cake__item" href="#">
+										<span class="cake__item-about">
+										   <p class="cake__item-title">Женщинам</p>
+										   <p class="cake__item-text">16 видов</p> 
+										</span>
+										<picture>
+											<source media="(min-width: 960px)" srcset="img/woman-cake-ds@1x.jpg, img/woman-cake-ds@2x.jpg" 2x>
+											<source media="(min-width: 768px)" srcset="img/woman-cake-tablet@1x.jpg, img/woman-cake-tablet@2x.jpg" 2x>
+											<img src="img/woman-cake@1x.jpg" srcset="img/woman-cake@2x.jpg 2x" alt>
+										</picture>
+									</a>
+								</article>
+							</div>	
+							<article class="cake cake--mod">
+								<a class="cake__item" href="#">
+									<span class="cake__item-about">
+									   <p class="cake__item-title">Детские</p>
+									   <p class="cake__item-text">18 видов</p> 
+									</span>
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/chilld-cake-ds@1x.jpg, img/chilld-cake-ds@2x.jpg" 2x>
+										<source media="(min-width: 768px)" srcset="img/chilld-cake-tablet@1x.jpg, img/chilld-cake-tablet@2x.jpg" 2x>
+										<img src="img/chilld-cake@1x.jpg" srcset="img/chilld-cake@2x.jpg 2x" alt>
+									</picture>
+								</a>
+							</article>
+						</div>	
+					</div>	
+				</div>
+			</section>
+			<section class="order">
+				<div class="order__wrapper">
+					<h3 class="order__title">Индивидуальный заказ</h3>
+					<p class="order__faeture">Соберите торт в 3 шага</p>
+					<div class="filling container">
+						<div class="filling__arrow">
+							<span class="filling__arrow-icon filling__arrow-icon--left">
+								<svg class="arrow__svg arrow-left__svg" xmlns="http://www.w3.org/2000/svg" width="9.031" height="16" viewBox="0 0 9.031 16">
+									<path d="M125.441,1977.05a1.487,1.487,0,0,1,0-2.12l6.843-6.64a1.021,1.021,0,0,1,1.431,0,0.987,0.987,0,0,1,0,1.41l-6.487,6.29,6.487,6.29a0.987,0.987,0,0,1,0,1.41,1.021,1.021,0,0,1-1.431,0l-6.843-6.64h0Z" transform="translate(-125 -1968)"/>
+								</svg>
+							</span>
+							<span class="filling__arrow-icon filling__arrow-icon--right">
+								<svg class="arrow__svg arrow__svg--right xmlns="http://www.w3.org/2000/svg" width="8.969" height="16" viewBox="0 0 8.969 16">
+									<path d="M682.561,1977.05a1.492,1.492,0,0,0,0-2.12l-6.82-6.64a1.015,1.015,0,0,0-1.426,0,0.991,0.991,0,0,0,0,1.41l6.464,6.29-6.464,6.29a0.991,0.991,0,0,0,0,1.41,1.015,1.015,0,0,0,1.426,0l6.82-6.64h0Z" transform="translate(-674.031 -1968)"/>
+								</svg>
+							</span>
+						</div>
+						<div class="filling__container">
+							<p class="filling__number">01</p>
+							<p class="filling__select">Выберите начинку</p>
+						</div>
+						<div class="filling__cake">
+							<span class="filling__cake-title">
+								<p>1/12</p>
+							</span>
+							<picture>
+								<source media="(min-width: 960px)" srcset="img/filling-cake-ds@1x.jpg, img/man-cake-ds@2x.jpg" 2x>
+								<source media="(min-width: 768px)" srcset="img/filling-cake-tablet@1x.jpg, img/man-cake-tablet@2x.jpg" 2x>
+								<img src="img/filling-cake@1x.jpg" srcset="img/filling-cake@2x.jpg 2x" alt>
+							</picture>
+						</div>
+						<div class="filling__pagination">
+							<span class="filling__pagination-item filling__pagination-item--active"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+						</div>
+						<div class="filling__title">
+							<h3 class="filling__title-caption">Шоколадный ганаш</h3>
+							<p class="filling__title-text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+							<p class="filling__title-cost">1000 руб/кг</p>
+							<button class="filling__title-submit button">Выбрать</button>
+						</div>
+					</div>
+					<div class="size container">
+						<div class="filling__container size__container">
+							<p class="filling__number size__number">02</p>
+							<p class="filling__select size__select">Размер</p>
+						</div>
+						<div class="size__weight">
+							<div class="size__weight-wrapper size__weight-wrapper--first">
+								<span class="size__circle size__circle--first">
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/circle-first-ds@1x.png, img/circle-first-ds@2x.png" 2x>
+										<source media="(min-width: 768px)" srcset="img/circle-first-tablet@1x.png, img/circle-first-tablet@2x.png" 2x>
+										<img class="size__circle-img size__circle-img--first" src="img/circle-first@1x.png" srcset="img/circle-first@2x.png 2x" alt="">
+									</picture>
+								</span>
+								<div class="size__title-container">
+									<p class="filling__title-caption size__title-caption">17-18 см</p>
+									<p class="filling__title-cost size__title-person">(1 кг - 6 персон)</p>
+								</div>	
+							</div>
+							<div class="size__weight-wrapper size__weight-wrapper--second">
+								<span class="size__circle size__circle--second">
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/circle-two-ds@1x.png, img/circle-two-ds@2x.png" 2x>
+										<img class="size__circle-img size__circle-img--two" src="img/circle-two-tablet@1x.png" srcset="img/circle-two-tablet@2x.png 2x" alt="">
+									</picture>
+								</span>
+								<div class="size__title-container">
+									<p class="filling__title-caption size__title-caption">23-24 см</p>
+									<p class="filling__title-cost size__title-person">(10-12 персон)</p>
+								</div>	
+							</div>
+							<div class="size__weight-wrapper size__weight-wrapper--third">
+								<span class="size__circle size__circle--third">
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/circle-three-ds@1x.png, img/circle-three-ds@2x.png" 2x>
+										<img class="size__circle-img size__circle-img--three" src="img/circle-three-tablet@1x.png" srcset="img/circle-three-tablet@2x.png 2x" alt="">
+									</picture>
+								</span>
+								<div class="size__title-container">
+									<p class="filling__title-caption size__title-caption">Два яруса 25 и 20 см</p>
+									<p class="filling__title-cost size__title-person">(15-20 персон)</p>
+								</div>		
+							</div>	
+							<div class="size__weight-wrapper size__weight-wrapper--four">
+								<span class="size__circle size__circle--four">
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/circle-four-ds@1x.png, img/circle-four-ds@2x.png" 2x>
+										<img class="size__circle-img size__circle-img--four" src="img/circle-four-tablet@1x.png" srcset="img/circle-four-tablet@2x.png 2x" alt="">
+									</picture>
+								</span>
+								<div class="size__title-container">
+									<p class="filling__title-caption size__title-caption">Три яруса 30,25 и 18 см</p>
+									<p class="filling__title-cost size__title-person">(25-30 персон)</p>
+								</div>
+							</div>	
+						</div>
+						<div class="filling__pagination filling__pagination--size">
+							<span class="filling__pagination-item filling__pagination-item--active"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+						</div>
+						<div class="filling__title size__title">
+							<button class="filling__title-submit size__title-submit">Выбрать</button>
+						</div>
+					</div>
+						<div class="issue__wrapper-mod container">
+							<div class="issue">
+							<div class="filling__container issue__container">
+								<p class="filling__number issue__number">03</p>
+								<p class="filling__select issue__select">Оформление</p>
+							</div>
+							<div class="issue__wrapper">
+							<div class="filling__arrow">
+								<span class="filling__arrow-icon filling__arrow-icon--left">
+									<svg class="arrow__svg arrow-left__svg" xmlns="http://www.w3.org/2000/svg" width="9.031" height="16" viewBox="0 0 9.031 16">
+										<path d="M125.441,1977.05a1.487,1.487,0,0,1,0-2.12l6.843-6.64a1.021,1.021,0,0,1,1.431,0,0.987,0.987,0,0,1,0,1.41l-6.487,6.29,6.487,6.29a0.987,0.987,0,0,1,0,1.41,1.021,1.021,0,0,1-1.431,0l-6.843-6.64h0Z" transform="translate(-125 -1968)"/>
+									</svg>
+								</span>
+								<span class="filling__arrow-icon filling__arrow-icon--right">
+									<svg class="arrow__svg arrow__svg--right xmlns="http://www.w3.org/2000/svg" width="8.969" height="16" viewBox="0 0 8.969 16">
+										<path d="M682.561,1977.05a1.492,1.492,0,0,0,0-2.12l-6.82-6.64a1.015,1.015,0,0,0-1.426,0,0.991,0.991,0,0,0,0,1.41l6.464,6.29-6.464,6.29a0.991,0.991,0,0,0,0,1.41,1.015,1.015,0,0,0,1.426,0l6.82-6.64h0Z" transform="translate(-674.031 -1968)"/>
+									</svg>
+								</span>
+							</div>
+								<div class="filling__cake filling__cake--berry">
+									<span class="filling__cake-title issue__cake-title issue__cake-title--first">
+										<p>1/35</p>
+									</span>
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/bery-cake-ds@1x.jpg, img/bery-cake-ds@2x.jpg" 2x>
+										<source media="(min-width: 768px)" srcset="img/bery-cake-tablet@1x.jpg, img/bery-cake-tablet@2x.jpg" 2x>
+										<img src="img/bery-cake-tablet@1x.jpg" srcset="img/bery-cake-tablet@2x.jpg 2x" alt>
+									</picture>
+								<div class="filling__pagination">
+								<span class="filling__pagination-item filling__pagination-item--active"></span>
+								<span class="filling__pagination-item"></span>
+								<span class="filling__pagination-item"></span>
+								<span class="filling__pagination-item"></span>
+								<span class="filling__pagination-item"></span>
+								</div>
+									<div class="filling__title issue__title">
+										<p class="filling__title-caption issue__title-caption">Ягодное ассорти</p>
+										<p class="filling__title-cost issue__title-cost">700 руб/кг</p>
+										<button class="filling__title-submit issue__title-submit">Выбрать</button>
+									</div>
+								</div>
+								<div class="filling__cake issue__cake--bery">
+									<picture>
+										<source media="(min-width: 960px)" srcset="img/issue-cake-ds@1x.jpg, img/issue-cake-ds@2x.jpg" 2x>
+										<source media="(min-width: 768px)" srcset="img/issue-cake-tablet@1x.jpg, img/issue-cake-tablet@2x.jpg" 2x>
+										<img src="img/issue-cake@1x.jpg" srcset="img/issue-cake@2x.jpg 2x" alt>
+									</picture>
+									<div class="filling__title issue__title">
+										<p class="filling__title-caption issue__title-caption">Маршмэллоу</p>
+										<p class="filling__title-cost issue__title-cost">600 руб/кг</p>
+										<button class="filling__title-submit issue__title-submit">Выбрать</button>
+										<span class="filling__cake-title issue__cake-title--second">
+											<p>2/35</p>
+										</span>
+									</div>
+								</div>
+							</div>	
+							</div>
+							<div class="option">
+							<h3 class="option__title">Ваш выбор</h3>
+							<div class="option__wrapper">
+								<div class="option__choice">
+									<p class="option__choice-caption">Начинка</p>
+									<p class="option__choice-title">Шоколадный ганаш</p>
+								</div>
+								<div class="option__choice">
+									<p class="option__choice-caption">Размер</p>
+									<p class="option__choice-title">2 кг</p>
+								</div>
+								<div class="option__choice">
+									<p class="option__choice-caption">Оформление</p>
+									<p class="option__choice-title option__choice-title--mod">Маршмэллоу</p>
+								</div>
+								<button class="option__submit filling__title-submit button">Заказать торт</button>
+							</div>	
+							</div>
+						</div>		
+				</div>
+			</section>
+			<section class="feedback">
+				<div class="feedback__wrapper">
+					<div class="filling__arrow">
+						<span class="filling__arrow-icon filling__arrow-icon--left">
+							<svg class="arrow__svg arrow-left__svg" xmlns="http://www.w3.org/2000/svg" width="9.031" height="16" viewBox="0 0 9.031 16">
+								<path d="M125.441,1977.05a1.487,1.487,0,0,1,0-2.12l6.843-6.64a1.021,1.021,0,0,1,1.431,0,0.987,0.987,0,0,1,0,1.41l-6.487,6.29,6.487,6.29a0.987,0.987,0,0,1,0,1.41,1.021,1.021,0,0,1-1.431,0l-6.843-6.64h0Z" transform="translate(-125 -1968)"/>
+							</svg>
+						</span>
+						<span class="filling__arrow-icon filling__arrow-icon--right">
+							<svg class="arrow__svg arrow__svg--right xmlns="http://www.w3.org/2000/svg" width="8.969" height="16" viewBox="0 0 8.969 16">
+								<path d="M682.561,1977.05a1.492,1.492,0,0,0,0-2.12l-6.82-6.64a1.015,1.015,0,0,0-1.426,0,0.991,0.991,0,0,0,0,1.41l6.464,6.29-6.464,6.29a0.991,0.991,0,0,0,0,1.41,1.015,1.015,0,0,0,1.426,0l6.82-6.64h0Z" transform="translate(-674.031 -1968)"/>
+							</svg>
+						</span>
+					</div>
+					<h3 class="feedback__title">Отзывы</h3>
+					<div class="feedback__user">
+						<div class="feedback__user-wrapper--photo">
+							<span class="feedback__user-photo"></span>
+						</div>
+						<div class="feedback__user-wrapper--about">
+							<p class="feedback__user-name">Мария</p>
+							<p class="feedback__user-age">юрист, 33 года</p>
+							<p class="feedback__user-text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <em class="feedback__user-expand">Развернуть</em>
+							<p class="feedback__user-page">1/26</p>	
+							</p>
+						</div>
+						<div class="filling__pagination">
+							<span class="filling__pagination-item filling__pagination-item--active"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+							<span class="filling__pagination-item"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<h3>О нас</h3>
+				<div class="about__wrapper">
+					<div class="about__confectioner">
+						<div class="about__confectioner-img">
+							<picture>
+								<source media="(min-width: 960px)" srcset="img/cond-photo-ds@1x.png, img/cond-photo-ds@1x.png" 2x>
+								<source media="(min-width: 768px)" srcset="img/cond-photo-tablet@1x.png, img/cond-photo-tablet@1x.png" 2x>
+								<img src="img/cond-photo@1x.png" srcset="img/cond-photo@2x.png 2x" alt>
+							</picture>
+						</div>
+					</div>
+					<div class="about__social-inner">
+						<div class="about__social">
+							<ul class="about__social-list">
+								<li>
+									<a href="">
+										<svg class="icon-svg" version="1.1" id="Layer_1"
+										viewBox="0 0 512 512" width="18" height="18" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+										<g>
+											<g>
+												<path class="st0" d="M373.7,0H138.3C62.1,0,0,62.1,0,138.3v235.3C0,449.9,62.1,512,138.3,512h235.3c76.3,0,138.3-62.1,138.3-138.3
+												V138.3C512,62.1,449.9,0,373.7,0z M470.6,373.7c0,53.5-43.5,97-97,97H138.3c-53.5,0-97-43.5-97-97V138.3c0-53.5,43.5-97,97-97
+												h235.3c53.5,0,97,43.5,97,97V373.7z"/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M370.6,238.1c-3.6-24.5-14.8-46.8-32.4-64.3c-17.5-17.5-39.8-28.7-64.3-32.4c-11.2-1.7-22.5-1.7-33.7,0
+												c-30.3,4.5-57.1,20.5-75.4,45.2s-25.9,54.9-21.4,85.2c4.5,30.3,20.5,57.1,45.2,75.4c20,14.8,43.7,22.6,68.2,22.6
+												c5.7,0,11.4-0.4,17.1-1.3c30.3-4.5,57.1-20.5,75.4-45.2C367.5,298.7,375.1,268.5,370.6,238.1z M267.8,327.6
+												c-19.4,2.9-38.8-2-54.5-13.7s-26-28.8-28.9-48.2c-2.9-19.4,2-38.8,13.7-54.5c11.7-15.8,28.8-26,48.2-28.9
+												c3.6-0.5,7.2-0.8,10.8-0.8c3.6,0,7.2,0.3,10.8,0.8c32.2,4.8,57.1,29.6,61.9,61.9C335.6,284.3,307.9,321.7,267.8,327.6z"/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M400,112c-3.9-3.9-9.2-6.1-14.6-6.1s-10.8,2.2-14.6,6.1c-3.9,3.9-6.1,9.2-6.1,14.6c0,5.5,2.2,10.8,6.1,14.6
+												c3.9,3.9,9.2,6.1,14.6,6.1s10.8-2.2,14.6-6.1c3.9-3.9,6.1-9.2,6.1-14.6C406.1,121.1,403.9,115.8,400,112z"/>
+											</g>
+										</g>
+									</svg>
+								</a>
+								</li>
+								<li>
+									<a href="">
+										<svg class="icon-svg" width="25" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+										<g>
+											<g>
+												<path class="st0" d="M489.2,385.6c-11.1-13.3-23.7-25.3-35.9-36.8c-4.3-4.1-8.7-8.2-13-12.4l0,0c-5.7-5.6-8.5-9.6-8.8-12.5
+												s1.7-7.2,6.2-13.5c6.8-9.5,14-19,21-28.2c6.2-8.2,12.6-16.6,18.8-25.1l1.4-1.9c12-16.6,24.4-33.8,31-54.7c1.9-6,3.9-14.9-0.9-22.7
+												c-4.8-7.8-13.6-10.1-19.8-11.2c-3-0.5-5.9-0.6-8.6-0.6l-77.8-0.1c-13.5-0.2-22.8,6.2-27.9,19c-4.1,10.2-8.9,22.1-14.4,33.3
+												c-10.7,21.7-24.2,46.7-43.8,67.5l-0.9,0.9c-1.3,1.4-3.5,3.8-4.6,4.3c-2.1-1.3-4.6-9-4.5-13c0-0.1,0-0.2,0-0.3l-0.1-89.9
+												c0-0.5,0-0.9-0.1-1.4c-1.7-12.8-5.1-25.7-25.4-29.7c-0.7-0.1-1.3-0.2-2-0.2h-80.9c-15.2,0-23.3,7-29.7,14.5
+												c-1.9,2.2-6.8,8.1-4.3,15.2c2.6,7.2,10.2,8.7,12.7,9.2c8.8,1.7,13.4,6.7,14.8,16.2c2.8,18.5,3.1,38.3,1.1,62.3
+												c-0.6,6.4-1.6,11.3-3.4,15.4c-0.5,1.1-0.9,1.8-1.2,2.2c-0.5-0.2-1.2-0.5-2.2-1.2c-6.2-4.2-10.9-10.8-15.4-17.2
+												c-18-25.5-33.2-53.6-46.4-86c-5.4-13.3-15.6-20.7-28.7-20.9c-24.9-0.4-48-0.4-70.5,0c-10.6,0.2-18,3.5-22.1,9.9
+												s-3.9,14.6,0.4,24.3c31.2,69.4,59.5,119.8,91.8,163.6c22.8,30.8,45.7,52.2,72.1,67.4c27.8,15.9,59.1,23.7,95.4,23.7
+												c4.1,0,8.3-0.1,12.6-0.3c22.4-1,31.5-9.9,32.5-31.8c0.6-11.5,1.8-20.9,6.3-29c1.2-2.3,2.7-3.8,3.8-4.1c1.2-0.3,3.3,0.4,5.6,1.9
+												c4.2,2.8,7.9,6.5,10.9,9.8s6.1,6.8,9.1,10.1c6.3,7.1,12.9,14.4,19.8,21.4c15.5,15.8,33.5,23.1,53.3,21.6h71.2l0,0
+												c0.2,0,0.5,0,0.7,0c8.2-0.5,15.3-5.1,19.5-12.5c5-8.9,4.9-20.2-0.2-30.1C502.4,401.9,495.4,393,489.2,385.6z M490.2,432.4
+												c-1,1.7-2.2,2.1-2.8,2.1h-71.2l0,0c-0.3,0-0.6,0-0.8,0c-14,1.2-25.9-3.8-37.5-15.5c-6.5-6.7-12.9-13.8-19.1-20.7
+												c-3-3.4-6.1-6.9-9.3-10.3c-3.9-4.2-8.7-9.1-14.9-13.1c-9.2-6-16.9-5.8-21.7-4.6c-4.7,1.2-11.5,4.6-16.7,14
+												c-6.7,12.2-8.2,25.4-8.8,37.9c-0.3,7.6-1.6,9.6-2.2,10.1c-0.7,0.7-3.1,1.8-10.9,2.2c-37.8,1.8-69.5-5-96.9-20.7
+												c-23.9-13.7-44.8-33.3-65.8-61.8c-31.4-42.5-59-91.8-89.6-159.8c-1.1-2.5-1.5-4-1.5-4.8c0.8-0.3,2.3-0.6,5-0.6
+												c22.2-0.4,45.1-0.4,69.8,0c3.4,0.1,7.2,1.1,10.1,8.2c13.8,33.9,29.7,63.3,48.6,90.1c5,7.1,11.3,15.9,20.5,22.2
+												c8.4,5.8,15.3,5.5,19.5,4.3c4.3-1.2,10.2-4.7,14.2-14.1c2.6-6.1,4.1-12.9,4.9-21.6c2.2-25.7,1.8-47-1.2-67.1
+												c-2.1-14.4-9.6-24.8-21.3-30.1c2.1-1.1,4.4-1.5,7.7-1.5h79.9c4.5,1,5.4,2.2,5.7,2.6c1.3,1.7,2,5.8,2.5,9l0.1,89.1
+												c-0.2,8.5,4,27.5,18.1,32.7c0.1,0,0.2,0.1,0.4,0.1c12.9,4.2,21.4-4.9,25.9-9.8l0.8-0.9c21.5-22.8,36-49.5,47.3-72.5
+												c5.9-11.9,10.9-24.2,15.1-34.8c2.1-5.3,4-6.2,8.6-6.1c0.1,0,0.1,0,0.2,0l77.9,0.1c1.8,0,3.7,0,5.2,0.3c3.7,0.6,5.2,1.4,5.7,1.7
+												c0.1,0.6,0,2.3-1.1,5.8c-5.7,17.8-16.6,32.9-28.1,48.9l-1.4,1.9c-6,8.3-12.4,16.7-18.5,24.8c-7.1,9.3-14.4,19-21.3,28.7
+												c-14.8,20.7-13.5,34.4,5,52.4c4.4,4.3,8.8,8.5,13.2,12.6c12.3,11.6,23.9,22.6,34.2,35c5.4,6.5,11.6,14.4,16,23
+												C492,426.2,491.4,430.3,490.2,432.4z"/>
+											</g>
+										</g>
+									</svg>
+								</a>
+								</li>
+								<li>
+									<a href="">
+										<svg class="icon-svg" id="Capa_1" data-name="Capa 1" width="19" height="16" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 625.98 514.41">
+											<g id="twitter">
+												<path d="M606,114.16a13.83,13.83,0,0,0-16.14.32c-3.29,2.45-8.19,4.63-13.9,6.53,18.82-23.34,19.1-38.94,18.82-42.79A13.88,13.88,0,0,0,572.83,68a121.8,121.8,0,0,1-66.31,22.89,130.49,130.49,0,0,0-89.41-35.07c-72.5,0-131.48,59-131.48,131.46a130.11,130.11,0,0,0,.93,15.67c-121-3-219.1-117-220.09-118.21a13.86,13.86,0,0,0-22.55,2C13.13,139.31,25.7,189.18,46.8,224.06a13.87,13.87,0,0,0-20.44,12c-.9,55.3,24.36,88.45,49.83,107.75a13.88,13.88,0,0,0-8,16.94c17.72,57.12,59.32,78.54,88.52,86.55-33.48,23.61-74.9,29.14-106.36,29.14A219.31,219.31,0,0,1,16.28,474,13.87,13.87,0,0,0,5.53,498.75c63.15,47.48,139.4,57.45,192.25,57.45,41.78,0,70.8-6.11,72.27-6.42,271.31-63.36,281.62-306.62,281.19-350.95,50.85-46.72,59-65,60.23-69.51A13.84,13.84,0,0,0,606,114.16ZM527.9,182.6a13.85,13.85,0,0,0-4.52,11.24c.18,2.63,15,264.8-259.37,328.88-.26,0-27.6,5.75-66.24,5.75-36,0-83.66-4.92-129.13-24.88,41.63-2.66,92.68-15.44,129.41-56.06a13.9,13.9,0,0,0-10.38-23.17c-2.58,0-57.16-.66-84.49-51.4,12.65.4,24.12-1.47,32.62-5.34a13.88,13.88,0,0,0-2.87-26.2c-3-.64-65.79-14.95-77.12-81.23,9.84,3.76,21.83,6.36,33.42,4.66a13.87,13.87,0,0,0,7-24.29C93.42,238.2,33.49,186.13,59.53,118,94.43,153.41,189.42,236.82,304,230.37a13.88,13.88,0,0,0,12.65-17.29A103.81,103.81,0,0,1,417.12,83.54a103,103,0,0,1,73.95,31,13.89,13.89,0,0,0,9.66,4.13l2.13,0a146.69,146.69,0,0,0,44.49-7.14A203.9,203.9,0,0,1,524,132.36a13.87,13.87,0,0,0,9.57,24.79c2.25-.18,12.12-1,24.34-3.23C550.18,161.8,540.38,171.27,527.9,182.6Z" transform="translate(7 -48.78)"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+					<div class="about__confectioner-title">
+							<h3>О кондитере</h3>
+							<p class="about__confectioner-caption">Кондитер – как призвание</p>
+							<p class="about__confectioner-text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br> С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
+							<p class="about__confectioner-caption">Принцип – натуральные ингредиенты</p>
+							<p class="about__confectioner-text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает <span class="about__confectioner-text--del">качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.</span></p>
+							<div class="about__social-inner about__social-inner--mod">
+							<div class="about__social about__social">
+							<ul class="about__social-list">
+								<li>
+									<a href="">
+										<svg class="icon-svg" version="1.1" id="Layer_1"
+										viewBox="0 0 512 512" width="18" height="18" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+										<g>
+											<g>
+												<path class="st0" d="M373.7,0H138.3C62.1,0,0,62.1,0,138.3v235.3C0,449.9,62.1,512,138.3,512h235.3c76.3,0,138.3-62.1,138.3-138.3
+												V138.3C512,62.1,449.9,0,373.7,0z M470.6,373.7c0,53.5-43.5,97-97,97H138.3c-53.5,0-97-43.5-97-97V138.3c0-53.5,43.5-97,97-97
+												h235.3c53.5,0,97,43.5,97,97V373.7z"/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M370.6,238.1c-3.6-24.5-14.8-46.8-32.4-64.3c-17.5-17.5-39.8-28.7-64.3-32.4c-11.2-1.7-22.5-1.7-33.7,0
+												c-30.3,4.5-57.1,20.5-75.4,45.2s-25.9,54.9-21.4,85.2c4.5,30.3,20.5,57.1,45.2,75.4c20,14.8,43.7,22.6,68.2,22.6
+												c5.7,0,11.4-0.4,17.1-1.3c30.3-4.5,57.1-20.5,75.4-45.2C367.5,298.7,375.1,268.5,370.6,238.1z M267.8,327.6
+												c-19.4,2.9-38.8-2-54.5-13.7s-26-28.8-28.9-48.2c-2.9-19.4,2-38.8,13.7-54.5c11.7-15.8,28.8-26,48.2-28.9
+												c3.6-0.5,7.2-0.8,10.8-0.8c3.6,0,7.2,0.3,10.8,0.8c32.2,4.8,57.1,29.6,61.9,61.9C335.6,284.3,307.9,321.7,267.8,327.6z"/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M400,112c-3.9-3.9-9.2-6.1-14.6-6.1s-10.8,2.2-14.6,6.1c-3.9,3.9-6.1,9.2-6.1,14.6c0,5.5,2.2,10.8,6.1,14.6
+												c3.9,3.9,9.2,6.1,14.6,6.1s10.8-2.2,14.6-6.1c3.9-3.9,6.1-9.2,6.1-14.6C406.1,121.1,403.9,115.8,400,112z"/>
+											</g>
+										</g>
+									</svg>
+								</a>
+								</li>
+								<li>
+									<a href="">
+										<svg class="icon-svg" width="25" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+										<g>
+											<g>
+												<path class="st0" d="M489.2,385.6c-11.1-13.3-23.7-25.3-35.9-36.8c-4.3-4.1-8.7-8.2-13-12.4l0,0c-5.7-5.6-8.5-9.6-8.8-12.5
+												s1.7-7.2,6.2-13.5c6.8-9.5,14-19,21-28.2c6.2-8.2,12.6-16.6,18.8-25.1l1.4-1.9c12-16.6,24.4-33.8,31-54.7c1.9-6,3.9-14.9-0.9-22.7
+												c-4.8-7.8-13.6-10.1-19.8-11.2c-3-0.5-5.9-0.6-8.6-0.6l-77.8-0.1c-13.5-0.2-22.8,6.2-27.9,19c-4.1,10.2-8.9,22.1-14.4,33.3
+												c-10.7,21.7-24.2,46.7-43.8,67.5l-0.9,0.9c-1.3,1.4-3.5,3.8-4.6,4.3c-2.1-1.3-4.6-9-4.5-13c0-0.1,0-0.2,0-0.3l-0.1-89.9
+												c0-0.5,0-0.9-0.1-1.4c-1.7-12.8-5.1-25.7-25.4-29.7c-0.7-0.1-1.3-0.2-2-0.2h-80.9c-15.2,0-23.3,7-29.7,14.5
+												c-1.9,2.2-6.8,8.1-4.3,15.2c2.6,7.2,10.2,8.7,12.7,9.2c8.8,1.7,13.4,6.7,14.8,16.2c2.8,18.5,3.1,38.3,1.1,62.3
+												c-0.6,6.4-1.6,11.3-3.4,15.4c-0.5,1.1-0.9,1.8-1.2,2.2c-0.5-0.2-1.2-0.5-2.2-1.2c-6.2-4.2-10.9-10.8-15.4-17.2
+												c-18-25.5-33.2-53.6-46.4-86c-5.4-13.3-15.6-20.7-28.7-20.9c-24.9-0.4-48-0.4-70.5,0c-10.6,0.2-18,3.5-22.1,9.9
+												s-3.9,14.6,0.4,24.3c31.2,69.4,59.5,119.8,91.8,163.6c22.8,30.8,45.7,52.2,72.1,67.4c27.8,15.9,59.1,23.7,95.4,23.7
+												c4.1,0,8.3-0.1,12.6-0.3c22.4-1,31.5-9.9,32.5-31.8c0.6-11.5,1.8-20.9,6.3-29c1.2-2.3,2.7-3.8,3.8-4.1c1.2-0.3,3.3,0.4,5.6,1.9
+												c4.2,2.8,7.9,6.5,10.9,9.8s6.1,6.8,9.1,10.1c6.3,7.1,12.9,14.4,19.8,21.4c15.5,15.8,33.5,23.1,53.3,21.6h71.2l0,0
+												c0.2,0,0.5,0,0.7,0c8.2-0.5,15.3-5.1,19.5-12.5c5-8.9,4.9-20.2-0.2-30.1C502.4,401.9,495.4,393,489.2,385.6z M490.2,432.4
+												c-1,1.7-2.2,2.1-2.8,2.1h-71.2l0,0c-0.3,0-0.6,0-0.8,0c-14,1.2-25.9-3.8-37.5-15.5c-6.5-6.7-12.9-13.8-19.1-20.7
+												c-3-3.4-6.1-6.9-9.3-10.3c-3.9-4.2-8.7-9.1-14.9-13.1c-9.2-6-16.9-5.8-21.7-4.6c-4.7,1.2-11.5,4.6-16.7,14
+												c-6.7,12.2-8.2,25.4-8.8,37.9c-0.3,7.6-1.6,9.6-2.2,10.1c-0.7,0.7-3.1,1.8-10.9,2.2c-37.8,1.8-69.5-5-96.9-20.7
+												c-23.9-13.7-44.8-33.3-65.8-61.8c-31.4-42.5-59-91.8-89.6-159.8c-1.1-2.5-1.5-4-1.5-4.8c0.8-0.3,2.3-0.6,5-0.6
+												c22.2-0.4,45.1-0.4,69.8,0c3.4,0.1,7.2,1.1,10.1,8.2c13.8,33.9,29.7,63.3,48.6,90.1c5,7.1,11.3,15.9,20.5,22.2
+												c8.4,5.8,15.3,5.5,19.5,4.3c4.3-1.2,10.2-4.7,14.2-14.1c2.6-6.1,4.1-12.9,4.9-21.6c2.2-25.7,1.8-47-1.2-67.1
+												c-2.1-14.4-9.6-24.8-21.3-30.1c2.1-1.1,4.4-1.5,7.7-1.5h79.9c4.5,1,5.4,2.2,5.7,2.6c1.3,1.7,2,5.8,2.5,9l0.1,89.1
+												c-0.2,8.5,4,27.5,18.1,32.7c0.1,0,0.2,0.1,0.4,0.1c12.9,4.2,21.4-4.9,25.9-9.8l0.8-0.9c21.5-22.8,36-49.5,47.3-72.5
+												c5.9-11.9,10.9-24.2,15.1-34.8c2.1-5.3,4-6.2,8.6-6.1c0.1,0,0.1,0,0.2,0l77.9,0.1c1.8,0,3.7,0,5.2,0.3c3.7,0.6,5.2,1.4,5.7,1.7
+												c0.1,0.6,0,2.3-1.1,5.8c-5.7,17.8-16.6,32.9-28.1,48.9l-1.4,1.9c-6,8.3-12.4,16.7-18.5,24.8c-7.1,9.3-14.4,19-21.3,28.7
+												c-14.8,20.7-13.5,34.4,5,52.4c4.4,4.3,8.8,8.5,13.2,12.6c12.3,11.6,23.9,22.6,34.2,35c5.4,6.5,11.6,14.4,16,23
+												C492,426.2,491.4,430.3,490.2,432.4z"/>
+											</g>
+										</g>
+									</svg>
+								</a>
+								</li>
+								<li>
+									<a href="">
+										<svg class="icon-svg" id="Capa_1" data-name="Capa 1" width="19" height="16" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 625.98 514.41">
+											<g id="twitter">
+												<path d="M606,114.16a13.83,13.83,0,0,0-16.14.32c-3.29,2.45-8.19,4.63-13.9,6.53,18.82-23.34,19.1-38.94,18.82-42.79A13.88,13.88,0,0,0,572.83,68a121.8,121.8,0,0,1-66.31,22.89,130.49,130.49,0,0,0-89.41-35.07c-72.5,0-131.48,59-131.48,131.46a130.11,130.11,0,0,0,.93,15.67c-121-3-219.1-117-220.09-118.21a13.86,13.86,0,0,0-22.55,2C13.13,139.31,25.7,189.18,46.8,224.06a13.87,13.87,0,0,0-20.44,12c-.9,55.3,24.36,88.45,49.83,107.75a13.88,13.88,0,0,0-8,16.94c17.72,57.12,59.32,78.54,88.52,86.55-33.48,23.61-74.9,29.14-106.36,29.14A219.31,219.31,0,0,1,16.28,474,13.87,13.87,0,0,0,5.53,498.75c63.15,47.48,139.4,57.45,192.25,57.45,41.78,0,70.8-6.11,72.27-6.42,271.31-63.36,281.62-306.62,281.19-350.95,50.85-46.72,59-65,60.23-69.51A13.84,13.84,0,0,0,606,114.16ZM527.9,182.6a13.85,13.85,0,0,0-4.52,11.24c.18,2.63,15,264.8-259.37,328.88-.26,0-27.6,5.75-66.24,5.75-36,0-83.66-4.92-129.13-24.88,41.63-2.66,92.68-15.44,129.41-56.06a13.9,13.9,0,0,0-10.38-23.17c-2.58,0-57.16-.66-84.49-51.4,12.65.4,24.12-1.47,32.62-5.34a13.88,13.88,0,0,0-2.87-26.2c-3-.64-65.79-14.95-77.12-81.23,9.84,3.76,21.83,6.36,33.42,4.66a13.87,13.87,0,0,0,7-24.29C93.42,238.2,33.49,186.13,59.53,118,94.43,153.41,189.42,236.82,304,230.37a13.88,13.88,0,0,0,12.65-17.29A103.81,103.81,0,0,1,417.12,83.54a103,103,0,0,1,73.95,31,13.89,13.89,0,0,0,9.66,4.13l2.13,0a146.69,146.69,0,0,0,44.49-7.14A203.9,203.9,0,0,1,524,132.36a13.87,13.87,0,0,0,9.57,24.79c2.25-.18,12.12-1,24.34-3.23C550.18,161.8,540.38,171.27,527.9,182.6Z" transform="translate(7 -48.78)"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+			<section class="quote">
+				<div class="quote__wrapper">
+					<blockquote class="quote__text">
+						Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.
+					</blockquote>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__wrapper">
+					<div class="advantages-caption">
+						<h3 class="advantages-caption__title">Наши преимущества</h3>
+						<p class="advantages-caption__text">Почему нас выбирают ?</p>	
+					</div>
+					<div class="advantages__feature">
+						<div class="advantages__feature-wrapper">
+							<ul class="advantages-list">
+								<li class="advantages-list__item advantages-list__item--seed">
+									<h4>Без искусственных добавок</h4>
+									<p>Работаем  с натуральными ингредиентами и свежими продуктами</p>
+								</li>
+								<li class="advantages-list__item advantages-list__item--cake">
+									<h4>Свежий торт в день торжества</h4>
+									<p>Торты изготавливаются в течение суток до отправки</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="care">
+				<div class="care__wrapper">
+					<div class="care__inner">
+						<h3 class="care__caption">Забота о клиентах</h3>
+						<p class="care__title">Для нас важна</p>
+						<p class="care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+					</div>	
+				</div>
+			</section>
+			<section class="bespeak">
+				<div class="bespeak__wrapper">
+					<h3 class="bespeak__caption">Как заказать</h3>
+					<ul class="bespeak__list">
+						<li class="bespeak__list-item bespeak__list-item--first">
+							<h3>Срок заказа</h3>
+							<p>Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю. </p>
+						</li>
+						<li class="bespeak__list-item bespeak__list-item--second">
+							<h3>Доставка по городу</h3>
+							<p>Доставка в пределах города 200 рубей, при заказе на сумму более 2000 доставка бесплатно.</p>
+						</li>
+						<li class="bespeak__list-item bespeak__list-item--third">
+							<h3>Доставка за городом</h3>
+							<p>Доставка за пределами города рассчитывается индивидуально.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact__wrapper">
+					<div class="contact__inner-column contact__inner-column--1">
+						<h3 class="contact__caption">Контакты</h3>
+						<p class="conctact__title">Остались вопросы?</p>
+						<p class="contact__text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+						<form class="form" action="">
+							<div class="form__wrapper">
+								<div class="form-fieldset form-fieldset--name">
+									<input class="form__text-input" type="text" placeholder="Ваше имя">	
+								</div>
+								<div class="form-fieldset form-fieldset--email">
+									<input class="form__text-input" type="text" placeholder="Email адрес">	
+								</div>
+								<div class="form-fieldset form-fieldset--textarea">
+									<textarea class="form__text-input form__text-input--textarea" type="text" placeholder="Ваш вопрос" resize="none"></textarea>
+								</div>	
+								<button class="form__button button">Отправить</button>
+							</div>
+						</form>
+					</div>
+					<div class="contact__inner-column contact__inner-column--2">
+						<div class="contact__addres">
+							<div class="contact__addres-phone">
+								<p>Или позвоните по телефону:</p>
+								<p>+7 906 899 92 96</p>
+							</div>
+							<div class="contact__addres-email">
+								<p>Наша почта: bakerybypavel@mail.ru</p>
+							</div>
+							<div class="contact__addres-social">
+								<p>Мы в соц. сетях:</p>
+								<ul>
+									<li>
+										<a href="">
+											<svg class="icon-svg" version="1.1" id="Layer_1"
+											viewBox="0 0 512 512" width="32" height="32" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+											<g>
+												<g>
+													<path class="st0" d="M373.7,0H138.3C62.1,0,0,62.1,0,138.3v235.3C0,449.9,62.1,512,138.3,512h235.3c76.3,0,138.3-62.1,138.3-138.3
+													V138.3C512,62.1,449.9,0,373.7,0z M470.6,373.7c0,53.5-43.5,97-97,97H138.3c-53.5,0-97-43.5-97-97V138.3c0-53.5,43.5-97,97-97
+													h235.3c53.5,0,97,43.5,97,97V373.7z"/>
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M370.6,238.1c-3.6-24.5-14.8-46.8-32.4-64.3c-17.5-17.5-39.8-28.7-64.3-32.4c-11.2-1.7-22.5-1.7-33.7,0
+													c-30.3,4.5-57.1,20.5-75.4,45.2s-25.9,54.9-21.4,85.2c4.5,30.3,20.5,57.1,45.2,75.4c20,14.8,43.7,22.6,68.2,22.6
+													c5.7,0,11.4-0.4,17.1-1.3c30.3-4.5,57.1-20.5,75.4-45.2C367.5,298.7,375.1,268.5,370.6,238.1z M267.8,327.6
+													c-19.4,2.9-38.8-2-54.5-13.7s-26-28.8-28.9-48.2c-2.9-19.4,2-38.8,13.7-54.5c11.7-15.8,28.8-26,48.2-28.9
+													c3.6-0.5,7.2-0.8,10.8-0.8c3.6,0,7.2,0.3,10.8,0.8c32.2,4.8,57.1,29.6,61.9,61.9C335.6,284.3,307.9,321.7,267.8,327.6z"/>
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M400,112c-3.9-3.9-9.2-6.1-14.6-6.1s-10.8,2.2-14.6,6.1c-3.9,3.9-6.1,9.2-6.1,14.6c0,5.5,2.2,10.8,6.1,14.6
+													c3.9,3.9,9.2,6.1,14.6,6.1s10.8-2.2,14.6-6.1c3.9-3.9,6.1-9.2,6.1-14.6C406.1,121.1,403.9,115.8,400,112z"/>
+												</g>
+											</g>
+										</a>
+									</li>
+									<li>
+										<a class="mod" href="">
+											<svg class="icon-svg" width="42" height="26" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+											<g>
+												<g>
+													<path class="st0" d="M489.2,385.6c-11.1-13.3-23.7-25.3-35.9-36.8c-4.3-4.1-8.7-8.2-13-12.4l0,0c-5.7-5.6-8.5-9.6-8.8-12.5
+													s1.7-7.2,6.2-13.5c6.8-9.5,14-19,21-28.2c6.2-8.2,12.6-16.6,18.8-25.1l1.4-1.9c12-16.6,24.4-33.8,31-54.7c1.9-6,3.9-14.9-0.9-22.7
+													c-4.8-7.8-13.6-10.1-19.8-11.2c-3-0.5-5.9-0.6-8.6-0.6l-77.8-0.1c-13.5-0.2-22.8,6.2-27.9,19c-4.1,10.2-8.9,22.1-14.4,33.3
+													c-10.7,21.7-24.2,46.7-43.8,67.5l-0.9,0.9c-1.3,1.4-3.5,3.8-4.6,4.3c-2.1-1.3-4.6-9-4.5-13c0-0.1,0-0.2,0-0.3l-0.1-89.9
+													c0-0.5,0-0.9-0.1-1.4c-1.7-12.8-5.1-25.7-25.4-29.7c-0.7-0.1-1.3-0.2-2-0.2h-80.9c-15.2,0-23.3,7-29.7,14.5
+													c-1.9,2.2-6.8,8.1-4.3,15.2c2.6,7.2,10.2,8.7,12.7,9.2c8.8,1.7,13.4,6.7,14.8,16.2c2.8,18.5,3.1,38.3,1.1,62.3
+													c-0.6,6.4-1.6,11.3-3.4,15.4c-0.5,1.1-0.9,1.8-1.2,2.2c-0.5-0.2-1.2-0.5-2.2-1.2c-6.2-4.2-10.9-10.8-15.4-17.2
+													c-18-25.5-33.2-53.6-46.4-86c-5.4-13.3-15.6-20.7-28.7-20.9c-24.9-0.4-48-0.4-70.5,0c-10.6,0.2-18,3.5-22.1,9.9
+													s-3.9,14.6,0.4,24.3c31.2,69.4,59.5,119.8,91.8,163.6c22.8,30.8,45.7,52.2,72.1,67.4c27.8,15.9,59.1,23.7,95.4,23.7
+													c4.1,0,8.3-0.1,12.6-0.3c22.4-1,31.5-9.9,32.5-31.8c0.6-11.5,1.8-20.9,6.3-29c1.2-2.3,2.7-3.8,3.8-4.1c1.2-0.3,3.3,0.4,5.6,1.9
+													c4.2,2.8,7.9,6.5,10.9,9.8s6.1,6.8,9.1,10.1c6.3,7.1,12.9,14.4,19.8,21.4c15.5,15.8,33.5,23.1,53.3,21.6h71.2l0,0
+													c0.2,0,0.5,0,0.7,0c8.2-0.5,15.3-5.1,19.5-12.5c5-8.9,4.9-20.2-0.2-30.1C502.4,401.9,495.4,393,489.2,385.6z M490.2,432.4
+													c-1,1.7-2.2,2.1-2.8,2.1h-71.2l0,0c-0.3,0-0.6,0-0.8,0c-14,1.2-25.9-3.8-37.5-15.5c-6.5-6.7-12.9-13.8-19.1-20.7
+													c-3-3.4-6.1-6.9-9.3-10.3c-3.9-4.2-8.7-9.1-14.9-13.1c-9.2-6-16.9-5.8-21.7-4.6c-4.7,1.2-11.5,4.6-16.7,14
+													c-6.7,12.2-8.2,25.4-8.8,37.9c-0.3,7.6-1.6,9.6-2.2,10.1c-0.7,0.7-3.1,1.8-10.9,2.2c-37.8,1.8-69.5-5-96.9-20.7
+													c-23.9-13.7-44.8-33.3-65.8-61.8c-31.4-42.5-59-91.8-89.6-159.8c-1.1-2.5-1.5-4-1.5-4.8c0.8-0.3,2.3-0.6,5-0.6
+													c22.2-0.4,45.1-0.4,69.8,0c3.4,0.1,7.2,1.1,10.1,8.2c13.8,33.9,29.7,63.3,48.6,90.1c5,7.1,11.3,15.9,20.5,22.2
+													c8.4,5.8,15.3,5.5,19.5,4.3c4.3-1.2,10.2-4.7,14.2-14.1c2.6-6.1,4.1-12.9,4.9-21.6c2.2-25.7,1.8-47-1.2-67.1
+													c-2.1-14.4-9.6-24.8-21.3-30.1c2.1-1.1,4.4-1.5,7.7-1.5h79.9c4.5,1,5.4,2.2,5.7,2.6c1.3,1.7,2,5.8,2.5,9l0.1,89.1
+													c-0.2,8.5,4,27.5,18.1,32.7c0.1,0,0.2,0.1,0.4,0.1c12.9,4.2,21.4-4.9,25.9-9.8l0.8-0.9c21.5-22.8,36-49.5,47.3-72.5
+													c5.9-11.9,10.9-24.2,15.1-34.8c2.1-5.3,4-6.2,8.6-6.1c0.1,0,0.1,0,0.2,0l77.9,0.1c1.8,0,3.7,0,5.2,0.3c3.7,0.6,5.2,1.4,5.7,1.7
+													c0.1,0.6,0,2.3-1.1,5.8c-5.7,17.8-16.6,32.9-28.1,48.9l-1.4,1.9c-6,8.3-12.4,16.7-18.5,24.8c-7.1,9.3-14.4,19-21.3,28.7
+													c-14.8,20.7-13.5,34.4,5,52.4c4.4,4.3,8.8,8.5,13.2,12.6c12.3,11.6,23.9,22.6,34.2,35c5.4,6.5,11.6,14.4,16,23
+													C492,426.2,491.4,430.3,490.2,432.4z"/>
+												</g>
+											</g>
+										</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__inner">
+					<div class="footer__logo">
+						<a href="">Cakes</a>
+					</div>
+					<ul class="footer-list">
+						<li><a href="">Наши торты</a></li>
+						<li><a href="">Индивидуальный заказ</a></li>
+						<li><a href="">Отзывы</a></li>
+						<li><a href="">О нас</a></li>
+						<li><a href="">Как заказать</a></li>
+						<li><a href="">Контакты</a></li>
+						<li><a href="">+7 906 899 92 96</a></li>
+					</ul>
+				</div>	
+				<div class="footer__deep">
+					<div class="footer__deep-inner">
+						<div class="footer__social-list">
+							<ul>
+								<li>
+									<a href="">
+									<a href="">
+										<svg class="icon-svg" fill="" version="1.1" id="Layer_1"
+										viewBox="0 0 512 512" width="18" height="18" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+										<g>
+											<g>
+												<path class="st0" d="M373.7,0H138.3C62.1,0,0,62.1,0,138.3v235.3C0,449.9,62.1,512,138.3,512h235.3c76.3,0,138.3-62.1,138.3-138.3
+												V138.3C512,62.1,449.9,0,373.7,0z M470.6,373.7c0,53.5-43.5,97-97,97H138.3c-53.5,0-97-43.5-97-97V138.3c0-53.5,43.5-97,97-97
+												h235.3c53.5,0,97,43.5,97,97V373.7z"/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M370.6,238.1c-3.6-24.5-14.8-46.8-32.4-64.3c-17.5-17.5-39.8-28.7-64.3-32.4c-11.2-1.7-22.5-1.7-33.7,0
+												c-30.3,4.5-57.1,20.5-75.4,45.2s-25.9,54.9-21.4,85.2c4.5,30.3,20.5,57.1,45.2,75.4c20,14.8,43.7,22.6,68.2,22.6
+												c5.7,0,11.4-0.4,17.1-1.3c30.3-4.5,57.1-20.5,75.4-45.2C367.5,298.7,375.1,268.5,370.6,238.1z M267.8,327.6
+												c-19.4,2.9-38.8-2-54.5-13.7s-26-28.8-28.9-48.2c-2.9-19.4,2-38.8,13.7-54.5c11.7-15.8,28.8-26,48.2-28.9
+												c3.6-0.5,7.2-0.8,10.8-0.8c3.6,0,7.2,0.3,10.8,0.8c32.2,4.8,57.1,29.6,61.9,61.9C335.6,284.3,307.9,321.7,267.8,327.6z"/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M400,112c-3.9-3.9-9.2-6.1-14.6-6.1s-10.8,2.2-14.6,6.1c-3.9,3.9-6.1,9.2-6.1,14.6c0,5.5,2.2,10.8,6.1,14.6
+												c3.9,3.9,9.2,6.1,14.6,6.1s10.8-2.2,14.6-6.1c3.9-3.9,6.1-9.2,6.1-14.6C406.1,121.1,403.9,115.8,400,112z"/>
+											</g>
+										</g>
+									</svg>
+								</a></li>
+								<li>
+									<a href="">
+										<svg class="icon-svg" id="Capa_1" data-name="Capa 1" width="19" height="16" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 625.98 514.41">
+										<g id="twitter">
+											<path d="M606,114.16a13.83,13.83,0,0,0-16.14.32c-3.29,2.45-8.19,4.63-13.9,6.53,18.82-23.34,19.1-38.94,18.82-42.79A13.88,13.88,0,0,0,572.83,68a121.8,121.8,0,0,1-66.31,22.89,130.49,130.49,0,0,0-89.41-35.07c-72.5,0-131.48,59-131.48,131.46a130.11,130.11,0,0,0,.93,15.67c-121-3-219.1-117-220.09-118.21a13.86,13.86,0,0,0-22.55,2C13.13,139.31,25.7,189.18,46.8,224.06a13.87,13.87,0,0,0-20.44,12c-.9,55.3,24.36,88.45,49.83,107.75a13.88,13.88,0,0,0-8,16.94c17.72,57.12,59.32,78.54,88.52,86.55-33.48,23.61-74.9,29.14-106.36,29.14A219.31,219.31,0,0,1,16.28,474,13.87,13.87,0,0,0,5.53,498.75c63.15,47.48,139.4,57.45,192.25,57.45,41.78,0,70.8-6.11,72.27-6.42,271.31-63.36,281.62-306.62,281.19-350.95,50.85-46.72,59-65,60.23-69.51A13.84,13.84,0,0,0,606,114.16ZM527.9,182.6a13.85,13.85,0,0,0-4.52,11.24c.18,2.63,15,264.8-259.37,328.88-.26,0-27.6,5.75-66.24,5.75-36,0-83.66-4.92-129.13-24.88,41.63-2.66,92.68-15.44,129.41-56.06a13.9,13.9,0,0,0-10.38-23.17c-2.58,0-57.16-.66-84.49-51.4,12.65.4,24.12-1.47,32.62-5.34a13.88,13.88,0,0,0-2.87-26.2c-3-.64-65.79-14.95-77.12-81.23,9.84,3.76,21.83,6.36,33.42,4.66a13.87,13.87,0,0,0,7-24.29C93.42,238.2,33.49,186.13,59.53,118,94.43,153.41,189.42,236.82,304,230.37a13.88,13.88,0,0,0,12.65-17.29A103.81,103.81,0,0,1,417.12,83.54a103,103,0,0,1,73.95,31,13.89,13.89,0,0,0,9.66,4.13l2.13,0a146.69,146.69,0,0,0,44.49-7.14A203.9,203.9,0,0,1,524,132.36a13.87,13.87,0,0,0,9.57,24.79c2.25-.18,12.12-1,24.34-3.23C550.18,161.8,540.38,171.27,527.9,182.6Z" transform="translate(7 -48.78)"/>
+										</g>
+									</svg>
+								</a></li>
+							</ul>
+						</div>
+						<div class="footer__copyright">
+							<p>© 2018 Cakes</p>
+						</div>
+					</div>	
+				</div>	
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>

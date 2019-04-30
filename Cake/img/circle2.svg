@@ -1,0 +1,14 @@
+<svg width="155" height="154" viewBox="0 0 155 154">
+  <defs>
+    <style>
+      .cls-1 {
+      fill: none;
+      stroke: #2d2829;
+      stroke-linecap: round;
+      stroke-width: 5px;
+      stroke-dasharray: 0.001 15;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="77.406" cy="77.234" r="76.625"/>
+</svg>
