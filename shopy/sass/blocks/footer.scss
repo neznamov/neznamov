@@ -67,3 +67,34 @@
         color: #ff5912;
     }
 }
+
+@media(max-width: 920px){
+	.footer__pay{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+}
+
+@media(max-width: 752px){
+	.footer__nav{
+		justify-content: space-around;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.footer__logo{
+		max-width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	margin: 0 auto;
+    	align-items: center;
+    	margin-top: 30px;
+
+    	p{
+    		margin-bottom: 20px;
+    	}
+
+	}
+}

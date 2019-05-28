@@ -5,6 +5,7 @@
 		justify-content: space-between;
 		height: 60px;
 		align-items: center;
+		flex-wrap: wrap;
 	a{
 		color: #34404b;
 		font-size: 12px;
@@ -51,6 +52,8 @@
 
 	ul{
 		display: inline-flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
 	}
 
 	li{
