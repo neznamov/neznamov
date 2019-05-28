@@ -160,6 +160,18 @@ html {
 .header__inner {
   border-bottom: 1px solid #e6e8eb; }
 
+@media (max-width: 600px) {
+  .header__top-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
 .navigation {
   border-bottom: 1px solid #e6e8eb; }
 
