@@ -72,6 +72,7 @@
 @media(max-width: 600px){
 	.header__top-info{
 		flex-direction: column;
+		max-width: 140px;
 		align-items: baseline;
 		justify-content: space-around;
 	}
