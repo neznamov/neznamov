@@ -1,0 +1,168 @@
+.item__column-capture{
+	color: #ff5912;
+font-size: 52px;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 29px;
+}
+
+.item__column-title{
+	color: #3c4751;
+font-size: 18px;
+font-weight: 700;
+margin-bottom: 35px;
+}
+
+.item__column-about{
+color: #495662;
+font-size: 16px;
+font-weight: 400;
+line-height: 29.97px;
+margin-bottom: 40px;
+}
+
+.item{
+	background-color: #ffffff;
+}
+
+.item__wrapper{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.item__column--right{
+	max-width: 612px;
+	width: 100%;
+}
+
+.item__column-choos--left{
+	max-width: 220px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	p{
+		color: #34404b;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	span{
+		display: flex;
+
+		p{
+			color: #34404b;
+		}
+
+		a{
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 18px;
+			color: #34404b;
+			margin: 0 5px 0 5px;
+
+			&:hover{
+				color: #ff5912;
+			}
+		}
+	}
+}
+
+.item__column-choos--inner{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 42px;
+	padding-bottom: 42px;
+	border-top: 1px solid #edeff1;
+	border-bottom: 1px solid #edeff1;
+}
+
+.item__column-choos--right span{
+	display: flex;
+    align-items: baseline;
+	button{
+		color: #34404b;
+		font-size: 18px;
+		font-weight: 400;
+		font-size: 18px;
+		border: none;
+		background-color: inherit;
+		text-align: center;
+		cursor: pointer;
+
+		&:hover{
+			color: #ff5912;
+		}
+	}
+}
+
+.item__column-choos__text{
+	color: #34404b;
+font-size: 18px;
+font-weight: 400;
+    margin: 0 20px 0 0px;
+}
+
+.item__column-choos__number{
+	color: #34404b;
+font-size: 18px;
+font-weight: 400;
+/* Text style for "3" */
+color: #ff5912;
+font-size: 18px;
+}
+
+.item__column-choos__minus{
+	position: relative;
+	top: -2px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.item__column-order{
+	margin-top: 58px;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 138px;
+	p{
+		color: #34404b;
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	span{
+		width: 108px;
+		align-items: center;
+		display: flex;
+
+		p{
+			color: #34404b;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	div{
+		align-items: center;
+		max-width: 280px;
+		width: 100%;
+		justify-content: space-between;
+		display: flex;
+
+		a:nth-child(4){
+			border-radius: 25px;
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 400;
+			background-color: #ff5912;
+			width: 134px;
+			height: 49px;
+			display: flex;
+			align-items: center;
+    		justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+.header__top-info{
+		display: flex;
+		max-width: 248px;
+		width: 100%;
+		justify-content: space-between;
+		height: 60px;
+		align-items: center;
+	a{
+		color: #34404b;
+		font-size: 12px;
+		font-weight: 400;
+		position: relative;
+		margin: 0 0 0 28px;
+		display: flex;
+
+		&:nth-child(1):before{
+			content: "";
+			width: 18px;
+			height: 11px;
+			background-image: url("../img/Mail-icon.png");
+			background-repeat: no-repeat;
+			top: 1px;
+    		left: -25px;
+			position: absolute;
+		}
+
+		&:nth-child(2):before{
+			content: "";
+			width: 12px;
+			height: 12px;
+			background-image: url("../img/Phone-icon.png");
+			background-repeat: no-repeat;
+			top: -1px;
+    		left: -19px;
+			position: absolute;
+		}
+	}
+}
+
+.header__top{
+	display: flex;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__top-social{
+
+	ul{
+		display: inline-flex;
+	}
+
+	li{
+		margin: 0 15px 0 0;
+	}
+
+	a:hover path{
+		fill: #ff7013;
+	}
+}
+
+.header__inner{
+	border-bottom: 1px solid #e6e8eb;
+}
