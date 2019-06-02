@@ -378,6 +378,19 @@ font-weight: 400;
 	}
 }
 
+.arrivals__items__hidden{
+	display: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.arrivals__items__show{
+	flex-wrap: wrap;
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 @media(max-width: 1250px){
 	.catalog .arrivals__items{
 		justify-content: space-around;

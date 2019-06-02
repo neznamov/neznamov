@@ -270,3 +270,19 @@
 		justify-content: space-around;
 	}
 }
+
+@media(max-width: 1054px){
+	.sale__contact-column--left{
+		width: 100%;
+    justify-content: center;
+	}
+
+	.sale__contact-column--right{
+		max-width: 100%;
+		justify-content: space-around;
+
+	}
+
+	.sale__contact-column--right label{
+	}
+}

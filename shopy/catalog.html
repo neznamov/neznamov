@@ -466,13 +466,155 @@
 								</ul>
 							</div>
 						</a>
-						<div class="arrivals__more">
-						<div class="arrivals__more-items">
-							<span></span>
-							<span></span>
-							<span></span>
+								<div class="arrivals__items__hidden">
+							<a href="#" class="arrivals__items-item">
+							<picture>
+								<img src="img/Product_Img-1.jpg"  width="144" height="216" alt="">
+							</picture>
+							<h4>Reebok Track Jacket</h4>
+							<p>$100</p>
+							<div class="arrivals__items-item--inner">
+								<picture>
+									<img src="img/Product_Img-4.jpg" width="70" height="87"  alt="">
+								</picture>
+								<h4>Reebok Track Jacket</h4>
+								<p>sizes    :    s - m - l - xl</p>
+								<div>
+									<span class="red"></span>
+									<span class="black"></span>
+									<span class="blue"></span>
+									<span class="green"></span>
+								</div>
+								<ul>
+									<li>
+										<span >
+											<img class="arrivals-img" src="img/Share_Icon.png" alt="">
+										</span>
+									</li>
+									<li><span >
+											<img class="arrivals-img" src="img/Add_To_Cart_Icon.png" alt="">
+										</span>
+									</li>		
+									<li><span >
+											<img class="arrivals-img" src="img/Like_Icon.png" alt="">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</a>
+						<a href="#" class="arrivals__items-item">
+							<picture>
+								<img src="img/Product_Img-2.jpg"  width="159" height="214" alt="">
+							</picture>
+							<h4>Reebok Track Jacket</h4>
+							<p>$100</p>
+							<div class="arrivals__items-item--inner">
+								<picture>
+									<img src="img/Product_Img-4.jpg" width="70" height="87"  alt="">
+								</picture>
+								<h4>Reebok Track Jacket</h4>
+								<p>sizes    :    s - m - l - xl</p>
+								<div>
+									<span class="red"></span>
+									<span class="black"></span>
+									<span class="blue"></span>
+									<span class="green"></span>
+								</div>
+								<ul>
+									<li>
+										<span >
+											<img class="arrivals-img" src="img/Share_Icon.png" alt="">
+										</span>
+									</li>
+									<li><span >
+											<img class="arrivals-img" src="img/Add_To_Cart_Icon.png" alt="">
+										</span>
+									</li>		
+									<li><span >
+											<img class="arrivals-img" src="img/Like_Icon.png" alt="">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</a>
+						<a href="#" class="arrivals__items-item">
+							<picture>
+								<img src="img/Product_Img-3.jpg"  width="170" height="211" alt="">
+							</picture>
+							<h4>Reebok Track Jacket</h4>
+							<p>$100</p>
+							<div class="arrivals__items-item--inner">
+								<picture>
+									<img src="img/Product_Img-4.jpg" width="70" height="87"  alt="">
+								</picture>
+								<h4>Reebok Track Jacket</h4>
+								<p>sizes    :    s - m - l - xl</p>
+								<div>
+									<span class="red"></span>
+									<span class="black"></span>
+									<span class="blue"></span>
+									<span class="green"></span>
+								</div>
+								<ul>
+									<li>
+										<span >
+											<img class="arrivals-img" src="img/Share_Icon.png" alt="">
+										</span>
+									</li>
+									<li><span >
+											<img class="arrivals-img" src="img/Add_To_Cart_Icon.png" alt="">
+										</span>
+									</li>		
+									<li><span >
+											<img class="arrivals-img" src="img/Like_Icon.png" alt="">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</a>
+						<a href="#" class="arrivals__items-item">
+							<picture>
+								<img src="img/Product_Img-3.jpg"  width="170" height="211" alt="">
+							</picture>
+							<h4>Reebok Track Jacket</h4>
+							<p>$100</p>
+							<div class="arrivals__items-item--inner">
+								<picture>
+									<img src="img/Product_Img-4.jpg" width="70" height="87"  alt="">
+								</picture>
+								<h4>Reebok Track Jacket</h4>
+								<p>sizes    :    s - m - l - xl</p>
+								<div>
+									<span class="red"></span>
+									<span class="black"></span>
+									<span class="blue"></span>
+									<span class="green"></span>
+								</div>
+								<ul>
+									<li>
+										<span >
+											<img class="arrivals-img" src="img/Share_Icon.png" alt="">
+										</span>
+									</li>
+									<li><span >
+											<img class="arrivals-img" src="img/Add_To_Cart_Icon.png" alt="">
+										</span>
+									</li>		
+									<li><span >
+											<img class="arrivals-img" src="img/Like_Icon.png" alt="">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</a>
 						</div>
-					</div>
+						<div class="arrivals__more">
+							<div class="arrivals__more-items">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
 					</div>
 			</section>	
 			<section class="sale">
@@ -533,5 +675,13 @@
 				$(".navigation__column-list").toggleClass("navigation__column-list--active");
 			});
 		});
+
+		$(document).ready(function(){
+			$(".arrivals__more-items").click(function(){
+				$(".arrivals__items__hidden").toggleClass("arrivals__items__show");
+
+			});
+		});
 	</script>
 </html>
+
