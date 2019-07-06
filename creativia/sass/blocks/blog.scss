@@ -1,0 +1,158 @@
+.blog-capture{
+	font-family: Raleway;
+	font-size: 30px;
+	font-weight: 700;
+	color: #262626;
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom: 44px;
+	span{
+		color: #ff0036;
+	}
+}
+
+.blog-title{
+	color: #505050;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-bottom: 97px;
+	text-align: center;
+	span{
+		color: #ff0036;
+	}
+}
+
+.blog-item{
+	display: flex;
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.blog-item__stat-capture{
+	color: #2e2e2e;
+font-family: "Raleway";
+font-size: 20px;
+font-weight: 700;
+line-height: 21px;
+margin-bottom: 18px;
+}
+
+.blog-item__stat-title{
+	color: #505050;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 27px;
+}
+
+.blog-item__stat-link{
+	background-color: #262626;
+	max-width: 120px;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	&:hover{
+		background-color: #ff0036;
+	}
+}
+
+.blog-item__stat-link--active{
+	background-color: #ff0036;
+}
+
+
+.blog{
+	justify-content: space-between;
+}
+
+.blog-item > picture{
+	max-width: 370px;
+	width: 100%;
+	img{
+		height: 200px;
+	}
+}
+
+.blog-item__stat{
+	max-width: 570px;
+	width: 100%;
+}
+
+.blog-more{
+	width: 43px;
+	height: 43px;
+	background-color: #f2f2f2;
+	border-radius: 50%;
+	margin: 0 auto;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 43px;
+
+	&:hover{
+		box-shadow: 0px 0px 14px 0px black;
+		transition: all .1s ease-out;
+	}
+
+	&:not(hover){
+		transition: all .1s ease-out;
+	}
+}
+
+.blog-more--active{
+	transform: rotate(180deg);
+	box-shadow: inset 0px 0px 7px 0px black !important;
+	
+	&:not(hover){
+		box-shadow: none;
+	}
+}
+
+.blog__inner-more{
+	display: none;
+}
+
+.blog__inner-more--active{
+	display: block;
+}
+
+@media(max-width: 920px){
+	.blog-item{
+		align-items: center;
+    	justify-content: center;
+	}
+
+	.blog-item__stat-capture{
+		margin-top: 18px;
+		text-align: center;
+	}
+
+	.blog-item__stat{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.user{
+		justify-content: center;
+	}
+
+	.blog-item__stat-link{
+		margin: 0 auto;
+	}
+}

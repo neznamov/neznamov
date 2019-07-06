@@ -1,0 +1,125 @@
+.feature__item{
+	max-width: 270px;
+	width: 100%;
+
+	h4{
+		margin-top: 35px;
+		margin-bottom: 25px;
+		color: #262626;
+		font-size: 20px;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-family: Raleway;
+		text-align: center;
+	}
+
+	p{
+		color: #505050;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		font-family: Lato;
+		text-align: center;
+	}
+}
+
+.feature{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 97px;
+}
+
+.feature__item-icon{
+	margin: 0 auto;
+	width: 88px;
+	height: 76px;
+	cursor: pointer;
+	position: relative;
+	&:hover .svg-color{
+		fill: #ff0036;
+		transition: all .3s;
+		
+	}
+
+	&:hover .border-color{
+		stroke: #ff0036;
+	}
+}
+
+.feature__item-icon--heart:before{
+	content: "";
+	width: 24px;
+	height: 21px;
+	background-image: url("../img/heart.png");
+	left: 32px;
+    top: 29px;
+    position: absolute;
+    filter: invert(100%);
+    transition: all .3s;
+}
+
+.feature__item-icon--heart:hover:before{
+	filter: invert(0%);
+}
+
+.feature__item-icon--ok:before{
+	content: "";
+	width: 33px;
+	height: 33px;
+	background-image: url("../img/ok.png");
+	left: 26px;
+    top: 23px;
+    position: absolute;
+    transition: all .3s;
+}
+
+.feature__item-icon--ok:hover:before{
+	filter: invert(100%);
+}
+
+.feature__item-icon--phone:before{
+	content: "";
+	width: 26px;
+	height: 31px;
+	background-image: url("../img/phone.png");
+	left: 30px;
+    top: 23px;
+    position: absolute;
+    transition: all .3s;
+}
+
+.feature__item-icon--phone:hover:before{
+	filter: invert(100%);
+}
+
+
+.feature__item-icon--ok:hover:before{
+	filter: invert(100%);
+}
+
+.feature__item-icon--fire:before{
+	transition: all .3s;
+	content: "";
+width: 31px;
+height: 39px;
+	background-image: url("../img/fire.png");
+	left: 26px;
+    top: 18px;
+    position: absolute;
+}
+
+.feature__item-icon--fire:hover:before{
+	filter: invert(100%);
+}
+
+@media(max-width: 920px){
+	.feature{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.feature__item{
+		margin-bottom: 50px;
+	}
+}
+

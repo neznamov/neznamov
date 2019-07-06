@@ -1,0 +1,84 @@
+.follow{
+	background: #060609 url("../img/follow-bg.jpg") center center no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	span{
+		color: #ff0036;
+	}
+}
+
+.follow-capture{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 49px;
+	font-family: Raleway;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: 700;
+	margin-top: 100px;
+	margin-bottom: 
+	span{
+		color: #ff0036;
+	}
+}
+
+.follow-item{
+	display: flex;
+	width: 75px;
+	height: 68px;
+	background-image: url("../img//fallow-icon/follow-shape.png");
+	position: relative;
+	cursor: pointer;
+	&:hover{
+		background-image: url("../img//fallow-icon/follow-shape.svg");
+		transition: all .3s;
+	}
+
+	&:hover .follow-item__icon-color{
+		fill: #ffffff;
+		transition: all .3s;
+	}
+}
+
+.follow-item__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.follow__inner{
+	display: flex;
+	justify-content: space-around;
+	    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    p{
+    	text-align: center;
+    	color: #ffffff;
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-top: 40px; 
+    }
+}
+
+.follow-item--acitve{
+	background-image: url("../img//fallow-icon/follow-shape.svg");
+}
+
+.follow-item__inner{
+	margin-bottom: 40px;
+}
+
+@media(max-width: 920px){
+	.follow{
+		background-position-x: 36%;
+		background-size: cover;
+	}
+}

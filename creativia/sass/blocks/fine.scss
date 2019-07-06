@@ -1,0 +1,73 @@
+.fine-capture{
+	color: #262626;
+	font-family: Raleway;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: center;
+	span{
+		color: #ff0036;
+	}
+}
+
+.fine-title{
+	text-align: center;
+	color: #505050;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-bottom: 97px;
+	span{
+		color: #ff0036;
+	}
+}
+
+.fine-map{
+	display: flex;
+	background: #f4f3f2 url("../img/fine-map.jpg") center center no-repeat;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	height: 575px;
+}
+
+.fine-map__item{
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.fine{
+	margin: 0 auto;
+}
+
+.fine-map__wrapper{
+	position: relative;
+	max-width: 970px;
+	display: flex;
+}
+
+.fine-map__address{
+	position: relative;
+	z-index: 50;
+}
+
+.fine-map__address{
+	background-image: url("../img/footer-shape.svg");
+	width: 300px;
+	height: 226px;
+	padding-left: 24px;
+	padding-top: 34px;
+	position: absolute;
+	bottom: 98px;
+	p{
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 25px;
+	}
+}

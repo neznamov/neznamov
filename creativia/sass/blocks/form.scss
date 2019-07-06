@@ -1,0 +1,88 @@
+.form{
+	max-width: 470px;
+	width: 100%;
+	box-shadow: 0 0 9px rgba(5, 5, 6, 0.17);
+	height: 457px;
+	z-index: 50;
+	background-color: #ffffff;
+	padding-left: 43px;
+	padding-right: 43px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	z-index: 50;
+	right: 0px;
+    bottom: 0px;
+	input{
+		width: 100%;
+		background-color: inherit;
+		border: 1px solid #e7e7e7;
+		height: 35px;
+		margin-bottom: 15px;
+		color: #505050;
+			font-family: Lato;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 25px;
+			padding-left: 16px;
+
+		&::placeholder{
+			color: #505050;
+			font-family: Lato;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 25px;
+			opacity: 0.5;
+		}
+	}
+
+	textarea{
+		width: 100%;
+		border: 1px solid #e7e7e7;
+		height: 88px;
+		margin-bottom: 27px;
+		resize: none;
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 25px;
+		padding-left: 16px;
+			&::placeholder{
+				color: #505050;
+				font-family: Lato;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 25px;
+				opacity: 0.5;
+		}
+	}
+}
+
+.form-capture{
+	color: #262626;
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.form-submit{
+	max-width: 120px;
+	height: 40px;
+	background-color: #262626;
+	width: 100%;
+	display: flex;
+	border: none;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+    align-self: flex-end;
+}

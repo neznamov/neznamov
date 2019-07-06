@@ -1,0 +1,28 @@
+.user{
+	display: flex;
+}
+
+.user-admin,
+.user-message,
+.user-view{
+	display: flex;
+	align-items: center;
+	padding-right: 22px; 
+}
+
+.user-admin__name,
+.user-message__posts,
+.user-view__number{
+	color: #a2a2a2;
+	font-family: Lato;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 34px;
+}
+
+.user-message__icon,
+.user-admin__icon,
+.user-view__icon{
+	display: block;
+	padding-right: 8px;
+}
