@@ -236,11 +236,6 @@ html {
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
 
-.main__maket--10 {
-  background: #000 url("../img/crios.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
 
 .main__maket--11 {
   background: #000 url("../img/fashion.jpg") no-repeat center center;
@@ -253,3 +248,8 @@ html {
   background-size: 100% 100%;
   -webkit-box-shadow: 0 0 10px #91ab9e;
           box-shadow: 0 0 10px #91ab9e; }
+
+.main__maket--13 {
+  background: #000 url("../img/creativia.jpg") no-repeat center center;
+  background-size: 100% 100%;
+    box-shadow: 0 0 10px #c90028; }
