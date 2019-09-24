@@ -722,7 +722,8 @@ html {
 
 .result__paggination {
   margin: 60px auto;
-  width: 104px; }
+  width: 104px;
+  padding-bottom: 30px; }
 
 .result__paggination .result__paggination--active {
   background-color: #18a3dd; }
