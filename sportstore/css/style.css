@@ -761,7 +761,8 @@ html {
 .footer__social-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .footer__social h3 {
   color: #3753da;
