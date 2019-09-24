@@ -145,8 +145,7 @@ html {
 .main__maket--2 {
   background: #000 url("../img/dart.jpg") no-repeat center center;
   background-size: 100% 100%;
-  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+  box-shadow: 0 0 10px rgb(0, 255, 243); }
 
 .main__maket--3 {
   background: #000 url("../img/pink.jpg") no-repeat center center;
