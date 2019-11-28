@@ -160,10 +160,10 @@ html {
           box-shadow: 0 0 10px rgba(175, 169, 169, 0.8); }
 
 .main__maket--5 {
-  background: #000 url("../img/atract.jpg") no-repeat center center;
+  background: #000 url("../img/wheel.jpg") no-repeat center center;
   background-size: 100% 100%;
-  -webkit-box-shadow: 0 0 10px rgba(180, 0, 255, 0.8);
-          box-shadow: 0 0 10px rgba(180, 0, 255, 0.8); }
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
 
 .main__maket--6 {
   background: #000 url("../img/techno.jpg") no-repeat center center;
