@@ -222,6 +222,10 @@ html {
   transition: all 0.2s ease-out; }
 
 @media (max-width: 920px) {
+  .header-nav__list a:after{
+    content: none;
+  }
+
   .header {
     min-height: 500px; }
   .header-bottom {
@@ -257,6 +261,7 @@ html {
     right: 20px; }
   .header-nav__list {
     margin: 0px; } }
+
 
 .navigation {
   transition: all .2s ease-out;
