@@ -1,0 +1,127 @@
+.form legend{
+	font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+margin-bottom: 20px;
+font-weight: 500;
+}
+
+.form-inputs__item{
+	width: 100px;
+height: 24px;
+font-family: 'Lato', sans-serif;
+font-size: 14px;
+    padding: 0 0 0 5px;
+color: #1A212F;
+outline: none;
+border: 1px solid #E1E1E1;
+}
+
+.form-inputs{
+	margin-bottom: 35px;
+	max-width: 210px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-checkboxes__items label{
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	padding: 0 0 0 35px;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	&:hover{
+		opacity: 0.5;
+	}
+	&:before{
+		content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #E1E1E1;
+	position: absolute;
+    left: 0px;
+
+
+	}
+}
+
+.form-checkboxes__items{
+	    margin: 0px 0 20px 0px;
+}
+
+.form-checkboxes__items input[type=checkbox]:checked ~ label:after{
+	content: "";
+	background-image: url("../img//svg/apply.png");
+	width: 11px;
+	height: 8px;
+	position: absolute;
+	top: 4px;
+	display: block;
+	left: 4px;
+}
+
+.form-number{
+	margin-top: 20px;
+}
+
+.form-submit__reset{
+	font-weight: 600;
+font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	width: 185px;
+	border-radius: 25px;
+	border: 2px solid #FAC663;
+	background-color: inherit;
+height: 42px;
+outline: none;
+cursor: pointer;
+    margin: 15px 0 0 0;
+    transition: all 0.2s ease-out;
+    &:hover{
+    	    box-shadow: 0 0 25px rgba(26, 33, 47, 0.2);
+    }
+
+    &:active{
+    	box-shadow: inset 0 0 25px 20px rgba(26, 33, 47, 0.2);
+    }
+}
+
+.form{
+	max-width: 210px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-close{
+	display: none;
+}
+
+.form-submit__reset--mod{
+	background: #FAC663;
+}
+
+@media(max-width: 768px){
+	.form-submit__reset--mod{
+		background: #FAC663;
+		display: block;
+	}
+
+	.form-close{
+		display: block;
+		border: none;
+		background-color: inherit;
+		width: 16px;
+		height: 16px;
+		background-image: url("../img/button-close.png");
+		position: absolute;
+		right: 25px;
+		top: 25px;
+		cursor: pointer;
+	}
+}

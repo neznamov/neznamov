@@ -1,0 +1,112 @@
+.find-left__capture{
+font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+margin-bottom: 50px;
+margin-top: 70px;
+
+}
+
+.find-left .find-left__address p:nth-child(2){
+	font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+margin-bottom: 35px;
+
+}
+
+.find-left__address-capture{
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+margin-bottom: 15px;
+}
+
+.find{
+	background-color: #FAC663;
+	position: relative;
+	overflow: hidden;
+}
+
+.find-left{
+	display: flex;
+    flex-direction: column;
+    padding-left: 198px;
+    max-width: 568px;
+    width: 100%;
+    background-color: #FAC663;
+}
+
+.find--wrapper{
+	display: flex;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.find-left__address-list{
+	display: flex;
+	max-width: 106px;
+	width: 100%;
+	justify-content: space-between;  
+}
+
+.find-right__map .map{
+	display: flex;
+	width: 100%;
+	height: 580px;
+	position: absolute;
+}
+
+.find-right{
+	display: flex;
+    max-width: 798px;
+    width: 100%;
+}
+
+.find-right__map{
+		display: flex;
+    max-width: 798px;
+    width: 100%;
+}
+
+.find-left__address a{
+	font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+color: #1A212F;
+text-decoration: none;
+&:hover{
+	text-decoration: underline;
+}
+}
+
+.find-left__address-list a:hover{
+	opacity: 0.6;
+}
+
+.find-left__address:last-child{
+	margin-bottom: 24px;
+}
+
+@media(max-width: 768px){
+	.find-left{
+		max-width: 369px;
+		padding-left: 45px;
+	}
+}
+
+@media(max-width: 570px){
+	.find--wrapper{
+		flex-direction: column;
+	}
+
+	.find-right__map{
+		height: 320px;
+	}
+}

@@ -1,0 +1,241 @@
+.reservation--wrapper{
+	display: flex;
+	flex-direction: column;
+	max-width: 570px;
+	background: #FFFEFD;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 10px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 70px;
+	padding-right: 70px;
+	position: fixed;
+	left: 0;
+    right: 0;
+    z-index: 2000;
+        overflow: hidden;
+    &:before{
+    	content: "";
+    	position: absolute;
+    	width: 162px;
+    	height: 151px;
+    	top: -12px;
+    	left: -32px;
+    	background-image: url("../img/paw-order.png");
+    }
+}
+
+.reservation{
+	display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 200px;
+}
+
+.reservation--active{
+	display: block;
+}
+
+.reservatin__order-close{
+	background-image: url("../img/svg/order-close.svg");
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	cursor: pointer;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+
+.reservation-form{
+	display: flex;
+	flex-direction: column;
+}
+
+.reservation-capture{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.reservetion-form__input-name{
+	border: 1px solid #D7D7D7;
+	border-radius: 25px;
+	max-width: 430px;
+	height: 52px;
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	padding-left: 20px;
+	outline: none;
+	transition: all 0.2s ease-out;
+	&:hover{
+		box-shadow: 0 0 25px rgba(26, 33, 47, 0.2);
+	}
+
+	&:focus{
+		box-shadow: inset 0 0 7px rgba(26, 33, 47, 0.2);
+	}
+	&::-webkit-input-placeholder{
+		font-family: "Lato", sans-serif;
+		color: #1A212F;
+	}
+}
+
+.reservation-form__from{
+	label{
+		font-family: "Lato", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		padding: 0 0px 0 0;
+		display: flex;
+		margin: 0 10px 0 0px;
+	}
+}
+
+.reservation-form__to{
+	display: flex;
+	label{
+		font-family: "Lato", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		padding: 0 0px 0 0;
+		display: flex;
+		margin: 0 10px 0 10px;
+	}
+}
+
+.reservation-form__date{
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	    white-space: nowrap;
+}
+
+.reservation-form__from{
+	display: flex;
+}
+
+.reservation-form--wrapper input{
+	border: 1px solid #D7D7D7;
+	border-radius: 25px;
+	max-width: 129px;
+	height: 52px;
+	outline: none;
+	text-align: center;
+	width: 100%;
+	transition: all 0.2s ease-out;
+	&::-webkit-input-placeholder{
+		font-family: "Lato", sans-serif;
+		font-size: 16px;
+		text-align: center;
+	}
+	&:hover{
+		box-shadow: 0 0 25px rgba(26, 33, 47, 0.2);
+	}
+
+	&:focus{
+		box-shadow: inset 0 0 7px rgba(26, 33, 47, 0.2);
+	}
+}
+
+.reservation-form--wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.reservation-form__submit{
+	background: #FF7236;
+	box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+	border-radius: 25px;
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	max-width: 230px;
+	width: 100%;
+	outline: none;
+	height: 50px;
+	border: none;
+	margin: 0 auto;
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+	color: #FFFEFD;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	&:hover{
+		box-shadow: 0 0 25px rgba(26, 33, 47, 0.2);
+	}
+}
+
+.reservation-form__from--inner{
+	display: flex;
+}
+
+@media(max-width: 768px){
+	.reservation--wrapper{
+		    top: 30px;
+		    max-width: 502px;
+		    padding-left: 30px;
+    padding-right: 30px;
+	}
+}
+
+@media(max-width: 570px){
+	.reservation--wrapper{
+		max-width: 290px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.reservation-form__from--inner{
+		display: flex;
+	}
+
+	.reservation-form--wrapper{
+		flex-direction: column;
+		align-items: inherit;
+	}
+
+	.reservation-form__date{
+		margin-bottom: 15px;
+	}
+
+	.reservation-form__to label {
+		margin: 0 10px 0 10px;
+	}
+
+	.reservatin__order-close{
+		right: 20px;
+    	top: 20px;
+	}
+
+	.reservation-capture{
+		font-size: 24px;
+		    margin-top: 60px;
+    margin-bottom: 40px;
+	}
+
+	.reservation--wrapper:before{
+		top: -40px;
+    left: -40px;
+	}
+}

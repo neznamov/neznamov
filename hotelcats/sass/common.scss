@@ -1,0 +1,118 @@
+body{
+    font-weight: 400;
+    color: #3b3b3b;
+    font-family: "Lato";
+    transition: all 0.2s ease-out;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    background-color: #FFFEFD;
+}
+
+aside{
+    max-width: 210px;
+    width: 100%;
+}
+
+main{
+
+}
+
+img{
+    box-sizing: content-box;
+    max-width: 100%;
+    height: auto;
+}
+
+picture{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.visually-hidden{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{
+        background-color: #FAC663 !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background-color: #E1E1E1 !important;
+        width: 12px !important;
+    height: 12px !important;
+}
+
+.bx-wrapper{
+    background: inherit !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.bx-wrapper .bx-pager{
+        margin: 0px 0 -120px 0 !important;
+}
+
+@media(max-width: 768px){
+    .aside{
+        display: none;
+        position: absolute;
+        background: #FFFEFD;
+        box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+        border-radius: 6px;
+        max-width: 332px;
+        z-index: 1000;
+        padding-left: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aside--active{
+        display: flex;
+        z-index: 100;
+    }
+
+    .overlay--active{
+       position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    }
+}
+
+@media(max-width: 570px){
+    .bx-wrapper .bx-pager{
+           margin: 0px 0 0 0 !important; 
+    }
+}

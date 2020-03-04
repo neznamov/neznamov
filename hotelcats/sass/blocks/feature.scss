@@ -1,0 +1,165 @@
+.feature__wrapper{
+	max-width: 1210px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+	overflow: hidden;
+	&:before{
+		content: "";
+		position: absolute;
+		background-image: url("../img/paw.png");
+		right: 0px;
+		top: 0px;
+		width: 425px;
+		height: 426px;
+		z-index: 1;
+		overflow: hidden;
+	}
+}
+
+.feature-capture{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 140px;
+	margin-bottom: 70px;
+}
+
+.feature-items__item{
+	position: relative;
+	z-index: 2;
+	display: flex;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 8px;
+	max-width: 370px;
+	width: 100%;
+	padding: 25px;
+	height: 321px;
+	margin-bottom: 20px;
+	flex-direction: column;
+
+}
+
+.feature__items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.feature-items__item-svg{
+	background: #FAC663;
+	border-radius: 100px;
+	display: flex;
+	flex-direction: column;
+	height: 91px;
+	width: 91px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.feature-items__item-capture{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	color: #1A212F;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.feature-items__item-title{
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+@media(max-width: 768px){
+	.feature-items{
+		max-width: 324px;
+		justify-content: space-around;
+	}
+
+	.feature-items__item{
+		max-width: 324px ;
+	}
+
+	.feature-items__item-title{
+		font-size: 15px ;
+	}
+
+	.feature-items__item-capture{
+		font-size: 20px;
+	}
+
+	.feature-items__item-svg{
+		    height: 75px;
+    		width: 75px;
+	}
+
+	.feature-items__item{
+		padding-left: 25px;
+		padding-right: 40px;	
+		padding-bottom: 25px;
+	}
+
+	.feature__wrapper{
+		padding-left: 45px;
+    	padding-right: 45px;
+	}
+}
+
+@media(max-width: 570px){
+	.feature-capture{
+		margin-top: 70px;
+		font-size: 28px;
+		position: relative;
+		z-index: 100;
+		    margin-bottom: 40px;
+	}
+
+	.feature__wrapper{
+		&:before{
+			content: "";
+		position: absolute;
+		background-image: url("../img/paw-m.png");
+
+		right: 0px;
+		top: 0px;
+		width: 144px;
+		height: 134px;
+		z-index: 1;
+		overflow: hidden;
+		}
+	}
+
+	.feature-items__item-capture{
+		font-size: 18px;
+	}
+
+	.feature-items__item-title{
+		font-size: 15px;
+	}
+
+	.feature-items__item{
+		    padding-right: 32px;
+		max-width: 290px;
+		height: auto;
+	}
+
+	.feature__items{
+		width: 290px;
+	}
+
+	.feature__wrapper{
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+}

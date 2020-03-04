@@ -1,0 +1,128 @@
+.adw--wrapper{
+	max-width: 1170px+40px;
+	width: 100%;
+	padding-left: 270px;
+	padding-right: 20px;
+	background-image: url("../img/bg-catalog.jpg");
+	background-size: 100% 100%;
+	margin: 0 auto;
+	height: 379px;
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 140px;
+    &:before{
+    	content: "";
+    	background-image: url("../img/paw-catalog.png");
+    	height: 317px;
+    	width: 317px;
+    	position: absolute;
+    	top: -82px;
+    	left: -54px;
+    }
+}
+
+.adw-capture__up{
+	font-weight: bold;
+	font-size: 36px;
+	font-family: Rubik;
+	line-height: 43px;
+	margin-top: 70px;
+}
+
+.adw-capture__down{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 66px;
+}
+
+.adw-title{
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 140%;
+	margin-bottom: 35px;
+}
+
+.adw-order{
+	width: 206px;
+	height: 50px;
+	cursor: pointer;
+	background: #FFFEFD;
+	box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+	border-radius: 25px;
+	border: none;
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 0 20px 0 0px;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		background-image: url("../img/svg/paw-catalog.svg");
+		top: 7px;
+    right: 7px;
+		width: 36px;
+		height: 36px
+	}
+}
+
+@media(max-width: 768px){
+	.adw--wrapper{
+		padding-left: 50px;
+		width: 678px;
+		background-image: url("../img/bg-catalog-t@2.jpg");
+	}
+
+	.adw{
+		padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+	}
+}
+
+@media(max-width: 570px){
+	.adw--wrapper{
+		background-image: url("../img/bg-catalog-m@2.jpg");
+		height: 496px;
+		padding: 0px;
+	}
+
+	.adw-capture__up{
+		font-size: 24px;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.adw-capture__down{
+		text-align: center;
+		font-size: 37px;
+		margin-bottom: 15px;
+		line-height: 41px;
+	}
+
+	.adw-title{
+		text-align: center;
+		    margin-bottom: 16px;
+		font-size: 15px;
+	}
+
+	.adw-order{
+		margin: 0 auto;
+	}
+	
+	.adw--wrapper:before{
+		width: 227px;
+		height: 227px;
+    	top: -60px;
+    	left: -65px;
+		    background-image: url("../img/paw-catalog-m@2x.png");
+	}
+
+}
