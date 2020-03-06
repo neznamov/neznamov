@@ -278,6 +278,8 @@ html {
   width: 100%;
   justify-content: space-between;
   transition: all 0.2s ease-out; }
+  .navigation__list .active {
+    opacity: 1; }
   .navigation__list a {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
@@ -285,7 +287,8 @@ html {
     font-size: 16px;
     font-weight: 700;
     position: relative;
-    transition: all 0.2s ease-out; }
+    transition: all 0.2s ease-out;
+    opacity: 0.5; }
     .navigation__list a:hover:after {
       width: 100%; }
     .navigation__list a:after {

@@ -4,6 +4,9 @@
 	width: 100%;
 	justify-content: space-between;
 	transition: all 0.2s ease-out;
+		.active{
+		opacity: 1;
+	}	
 	a{
 		font-family: 'Lato', sans-serif;
 		text-decoration: none; 
@@ -12,6 +15,7 @@
 		font-weight: 700;
 		position: relative;
 		transition: all 0.2s ease-out;
+		opacity: 0.5;
 
 		&:hover:after{
 			width: 100%;
