@@ -64,6 +64,10 @@
 	}
 }
 
+.room-slider__pagination{
+	display: none;
+}
+
 @media(max-width: 768px){
 	.room-slider__pagination{
 		display: none;

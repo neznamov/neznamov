@@ -27,6 +27,10 @@ $(".reservatin__order-close").click(function(){
 	$(".reservation").removeClass("reservation--active");
 }) 
 
+$(".form-submit__reset").click(function(){
+	$(".form-checkboxes__items-item").prop("checked", false);
+})
+
 $(document).ready(function(){
       $('.slider').bxSlider({
       	controls: false,
@@ -35,4 +39,5 @@ $(document).ready(function(){
       	minSlides: 2,
     	maxSlides: 2,
       });
-    });
+ });
+

@@ -56,7 +56,6 @@ html{
     border: 0;
 }
 
-
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{
         background-color: #FAC663 !important;
 }
@@ -67,6 +66,30 @@ html{
     height: 12px !important;
 }
 
+@font-face{
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "Lato";
+    src: url("../fonts/Lato-bold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@keyframes change-yey{
+  100%{fill: #FFAA50; }
+}
+
+.header__logo:hover .animation-svg-eye,
+.about-top__logo:hover .animation-svg-eye{
+    animation: change-yey .2s, popup 2s;
+    animation-iteration-count: 2.3;
+}
+
 .bx-wrapper{
     background: inherit !important;
     border: none !important;
@@ -75,6 +98,10 @@ html{
 
 .bx-wrapper .bx-pager{
         margin: 0px 0 -120px 0 !important;
+}
+
+.bx-viewport{
+    height: auto !important;
 }
 
 @media(max-width: 768px){
@@ -116,3 +143,75 @@ html{
            margin: 0px 0 0 0 !important; 
     }
 }
+
+
+.placemark_layout_container { 
+            position: relative;
+            font-family: Georgia;
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        /* Квадратный макет метки */
+        .square_layout {
+            position: absolute;
+            left: -23px;
+            top: -23px;
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
+            border: 2px solid #218703;
+            background-color: #F8FDF7;
+            color: #218703;
+        }
+        
+        /* Круглый макет метки */
+        .circle_layout {
+            background-color: white;
+            position: absolute;
+            left: -23px;
+            top: -23px;
+            width: 46px;
+            height: 46px;
+            border: 2px solid #225D9C;
+            color: #225D9C;
+            line-height: 46px;
+            /* Это CSS свойство не будет работать в Internet Explorer 8 */
+            border-radius: 50px;
+        }
+        
+        /* Макет метки с "хвостиком" */
+        .polygon_layout {
+            position: relative;
+            background: #ffffff;
+            border: 4px solid #943A43;
+            width: 50px; 
+            height: 50px;
+            position: absolute;
+            left: -28px;
+            top: -76px;
+            color: #943A43;
+        }
+        
+        .polygon_layout:after, .polygon_layout:before {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+        }
+        
+        .polygon_layout:after {
+            border-top-color: #943A43;
+            border-width: 10px;
+            margin-left: -10px;
+        }
+        
+        .polygon_layout:before {
+            border-top-color: #943A43;
+            border-width: 16px;
+            margin-left: -16px;
+        }
