@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $(".header-burger").click(function(){
 	$(".header-wrapper").toggleClass("header-wrapper--closed");
 	$(".navigation-contact").toggleClass("navigation-contact--closed");
@@ -31,13 +33,11 @@ $(".form-submit__reset").click(function(){
 	$(".form-checkboxes__items-item").prop("checked", false);
 })
 
-$(document).ready(function(){
-      $('.slider').bxSlider({
+    $('.slider').bxSlider({
       	controls: false,
       	auto: true,
       	infiniteLoop: true,
       	minSlides: 2,
     	maxSlides: 2,
       });
- });
-
+});
