@@ -116,7 +116,7 @@
 							</div>
 							<div class="form-label__items">
 								<label for="input-number">Number</label>
-								<input id="input-number" class="form-label__items-input" type="text" placeholder="Number" title="number">
+								<input id="input-number" class="form-label__items-input" type="text" placeholder="8999999999" title="number" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
 								<div class="form-label__items-help">
 									<p>Enter number</p>
 								</div>
