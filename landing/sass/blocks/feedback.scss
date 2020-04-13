@@ -1,0 +1,76 @@
+.feedback__capture{
+	color:#000;
+	font-size: 18px;
+line-height: 22px;
+font-weight: 600;
+margin-top: 85px;
+}
+
+.feedback .container{
+	position: relative;
+	&:before{
+		    content: "";
+    position: absolute;
+    height: 1px;
+    display: block;
+    background-color: #E0E0E0;
+    top: 0px;
+    width: 100%;
+	left: 0px;
+	}
+}
+
+.feedback__title{
+font-size: 16px;
+line-height: 25px;
+color: #999;
+margin-bottom: 25px;
+}
+
+.feedback__input{
+	max-width: 490px;
+	width: 100%;
+	input{
+		border: none;
+		height: 45px;
+		padding-left: 33px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		outline: none;
+		box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+	}
+}
+
+.feedback__input button{
+	border: none;
+	max-width: 194px;
+	width: 100%;
+}
+
+
+.input-group-append{
+	max-width: 194px;
+}
+
+.feedback__title-spam{
+	font-size: 13px;
+line-height: 21px;
+color: #999;
+font-weight: normal;
+margin-bottom: 85px;
+margin-top: 35px;
+}
+
+.input-group{
+	margin: 0px !important;
+}
+
+.form-control{
+	min-width: 100px !important;
+}
+
+@media(max-width: 768px){
+	.video__block{
+		height: 400px;
+	}
+}

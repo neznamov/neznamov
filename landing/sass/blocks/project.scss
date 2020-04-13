@@ -1,0 +1,39 @@
+.project{
+	    background-color: #F6F6F8;
+}
+
+.project__capture{
+	line-height: 53px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	color:#000;
+	font-weight: bold;
+}
+
+.project__title{
+	font-size: 16px;
+line-height: 25px;
+color:#999;
+margin-bottom: 70px;
+}
+
+.project__img{
+	margin-bottom: 10px;
+}
+
+.project .link{
+margin-bottom: 130px !important;	
+}
+
+.project__item{
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+@media(max-width: 768px){
+	.project__capture{
+		font-size: 25px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+}

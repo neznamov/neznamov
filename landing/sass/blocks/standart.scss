@@ -1,0 +1,66 @@
+.standart{
+	background: #F6F6F8;
+}
+
+.standart-capture{
+	font-weight: bold;
+font-size: 36px;
+color:#000;
+margin-bottom: 40px;
+}
+
+.standart-title{
+	font-size: 16px;
+line-height: 25px;
+margin-bottom: 30px;
+color: #999;
+}
+
+.standart .col--right{
+	margin-top: 100px;
+}
+
+.col--left{
+	margin-top: 152px;
+}
+
+.standart__container--top .row{
+	padding-bottom: 90px;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.standart__container-item__cost{
+	color: #000000;
+	font-size: 36px;
+	margin: 0px;
+}
+
+.standart__container-item__title{
+	color: #999999;
+	margin-bottom: 70px;
+	font-size: 16px;
+}
+
+.standart__container--bottom > .row{
+	margin-top: 70px;
+}
+
+.standart__container-item div{
+	margin: 0 auto;
+	max-width: 104px;
+	width: 100%;
+}
+
+@media(max-width: 768px){
+	.col--left{
+		margin-top: 65px;
+	}
+
+	.standart-capture{
+		font-size: 25px;
+	}
+
+	.standart .col--right {
+    margin-top: 50px;
+}
+}

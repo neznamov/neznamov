@@ -1,0 +1,144 @@
+.header{
+    min-height: 900px;
+
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header .navbar-light .navbar-nav .nav-link{
+    margin: 0 0 0 40px;
+
+    color: $white;
+}
+
+header .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus{
+    color: rgba(255, 255, 255, .7);
+}
+
+header .nav-link{
+    position: relative;
+
+    padding-top: 40px;
+    padding-bottom: 39px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+    &:hover::before{
+        position: absolute;
+        bottom: 2px;
+
+        display: block;
+
+        width: 100%;
+        height: 2px;
+
+        content: '';
+
+        background-color: #fff;
+        left: 0px;
+        right: 0px;
+    }
+}
+
+header .container-fluid{
+    position: relative;
+
+    padding: 0;
+}
+
+header .container-fluid:before{
+    position: absolute;
+    top: 100px;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    opacity: .5;
+    background-color: #a1a1a1;
+}
+
+header .navbar{
+    padding: 0;
+}
+
+header .title{
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-top: 219px;
+    margin-bottom: 72px;
+}
+
+header .capture{
+    font-size: 46px;
+
+    margin-bottom: 50px;
+}
+
+.navbar-toggler{
+	z-index: 1000;
+}
+
+
+@media(max-width: 991px){
+	.navbar .navbar-nav {
+		// background-color: #272727;
+		position: relative;
+		&:before{
+			content: "";
+			height: 100%;
+			width: 100%;
+			background: inherit; 
+			display: block;
+			position: absolute;
+			background-color: rgba(255, 255, 255, .15);  
+ backdrop-filter: blur(5px);
+		}
+	}
+
+	header .navbar-light .navbar-nav .nav-link{
+		display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+	}
+
+	.navbar-light .navbar-toggler{
+		position: absolute;
+		top: 30px;
+    right: 30px;
+
+	}
+
+	header .navbar-light .navbar-nav .nav-link{
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 768px){
+
+
+
+    .header{
+        min-height: 500px;
+    }
+
+    header .capture {
+        font-size: 30px;
+
+        br{
+        	display: none;
+        }
+    }
+
+    header .title{
+    margin-top: 155px;
+    margin-bottom: 39px;
+    }
+}

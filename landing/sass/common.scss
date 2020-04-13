@@ -1,0 +1,73 @@
+body{
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.2s ease-out;
+    font-size: 16px;
+    color:#fff;
+}
+
+img{
+    box-sizing: content-box;
+    height: auto;
+}
+
+picture{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.link{
+    width: 200px;
+    height: 45px;
+
+    color: #fff;
+    border-radius: 30px;
+    background: #4985ff;
+    box-shadow: 0 0 10px rgba(111, 111, 111, .25);
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visually-hidden{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+
+@mixin shadow{
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.navbar-light .navbar-toggler{
+    background-color: #fff;
+    outline: none;
+}
