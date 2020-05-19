@@ -1,0 +1,82 @@
+body{
+    font-weight: 400;
+    color: #3b3b3b;
+    font-family: "Bitter";
+    font-family: 'Circe';
+    transition: all 0.2s ease-out;
+    overflow-x: hidden;
+}
+
+a{
+
+    transition: all 0.2s ease-out;
+    &:hover{
+        color: #FFC41E;
+    }
+
+    &:active{
+        transition: all 0.0s ease-out;
+        opacity: 0.5;
+    }
+}
+
+img{
+    box-sizing: content-box;
+    max-width: 100%;
+    height: auto;
+}
+
+picture{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.section{
+    max-width: 1112px+40px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.visually-hidden{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+@font-face {
+font-family: 'Circe';
+src: url('../fonts/Circe-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Plumb';
+src: url('../fonts/plumb-light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+

@@ -1,0 +1,92 @@
+.client{
+	background-color: #2378FC;
+}
+
+.client-capture{
+	font-family: "Plumb";
+	font-weight: 500;
+	font-size: 30px;
+line-height: 130%;
+color: #FFFFFF;
+padding-top: 75px;
+margin-bottom: 30px;
+}
+
+.client-wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.client-list a{
+	text-decoration: none;
+	font-family: "Circe";
+	font-size: 16px;
+	line-height: 135%;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+	display: block;
+	&:hover{
+		text-decoration: underline;
+		color: #FFC41E;
+	}
+}
+
+.client-list{
+	margin-bottom: 75px;
+}
+
+@media(max-width: 720px){
+	.client-wrapper{
+		justify-content: space-around;
+	}
+}
+
+@media(max-width: 320px){
+	.client-capture{
+		font-size: 30px;
+		padding-top: 21px;
+		text-align: center;
+	}
+
+	.client-list a{
+		display: flex;
+    justify-content: center;
+	}
+
+	.client-list{
+		margin-bottom: 26px;
+	}
+}
+
+@media(max-width: 375px){
+	.client-capture{
+		text-align: center;
+		padding-top: 0px;
+		margin-top: 40px;
+	}
+
+	.client-list a{
+		text-align: center;
+	}
+
+	.client-list{
+		margin-bottom: 50px;
+	}
+}
+
+@media(max-width:  414px){
+	.client-capture{
+		text-align: center;
+		padding-top: 0px;
+		margin-top: 40px;
+	}
+
+	.client-list a{
+		text-align: center;
+	}
+
+	.client-list{
+		margin-bottom: 50px;
+	}
+}
