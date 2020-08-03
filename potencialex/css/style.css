@@ -432,6 +432,12 @@ input:focus + p {
   .form button {
     width: 100%; }
 
+@media (max-width: 450px) {
+  .form {
+    max-width: 100%; }
+  .form__filed {
+    max-width: 100%; } }
+
 .footer__bottom {
   height: 40px;
   background: #458FF6;
