@@ -1,0 +1,48 @@
+.user{
+	display: flex;
+	align-items: center;
+	min-width: 320px;
+	justify-content: space-between;
+	padding-bottom: 79px;
+
+}
+
+.user__name{
+	padding-left: 29px;
+	h4{
+		font-size: 22px;
+line-height: 48px;
+font-weight: bold;
+		margin: 0;
+	}
+	span{
+		font-size: 18px;
+		margin: 0px;
+	}
+}
+
+@media(max-width: 1024px){
+	.user{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		padding-bottom: 0px;
+	}
+
+	.user__name h4{
+		text-align: center;
+	}
+
+	.user__name{
+		padding-left: 0px;
+		    display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
+}
+
+@media(max-width: 414px){
+	.user{
+		min-width: 100%;
+	}
+}

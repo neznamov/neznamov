@@ -1,0 +1,17 @@
+.capture{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 56px;
+	color: #000000;
+	margin-bottom: 25px;
+	margin-top: 186px;
+}
+
+@media(max-width: 768px){
+	.capture-head{
+		text-align: center;
+		margin-top: 90px;
+		font-size: 35px;
+		margin-bottom: 10px;
+	}	
+}

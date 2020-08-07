@@ -1,0 +1,26 @@
+.text{
+	text-align: center;
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 33px;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.feature__right button{
+	margin: 0px;
+	margin-top: 40px;
+}
+
+.text-white{
+	text-align: left;
+	color:#fff;
+}
+
+@media(max-width: 1024px){
+	.text-left{
+		text-align: center;
+	}
+}

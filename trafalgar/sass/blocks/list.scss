@@ -1,0 +1,21 @@
+.list h5{
+	font-weight: bold;
+font-size: 20px;
+line-height: 60px;
+color: #FFFFFF;
+
+}
+
+.list a{
+	font-weight: 300;
+font-size: 18px;
+line-height: 38px;
+color: #FFFFFF;
+&:hover{
+	text-decoration: underline;
+}
+}
+
+@media(max-width: 1024px){
+	
+}

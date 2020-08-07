@@ -1,0 +1,62 @@
+body,html{
+    transition: all 0.2s ease-out;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7D7987;
+    overflow-x: hidden;
+}
+
+
+
+img{
+    box-sizing: content-box;
+    max-width: 100%;
+    height: auto;
+}
+
+picture{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.visually-hidden{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+@media(max-width: 1024px){
+     .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}
