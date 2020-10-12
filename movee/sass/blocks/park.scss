@@ -1,0 +1,49 @@
+.park__wrapper{
+	max-width: 1120px + 40px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow-x: hidden;
+}
+
+.park .title{
+	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	margin-top: 15px;
+	margin-bottom: 60px;
+}
+
+.park__name{
+	font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+margin-bottom: 37px;
+}
+
+.park__list li{
+	position: relative;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 28px;
+	padding-left: 30px;
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 4px;
+		width: 13px;
+		height: 14px;
+		background-image: url("../img/black-arrow.svg");
+	}
+}
+
+.park__info{
+	position: relative;
+	z-index: 10;
+}
+
+.park__info-adaptive{
+	display: none;
+}
