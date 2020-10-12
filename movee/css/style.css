@@ -881,6 +881,15 @@ table {
 @media (max-width: 920px) {
   .work__item {
     width: 100%; }
+  .call-ring {
+    position: fixed;
+    right: 15px;
+    bottom: 20px; }
+  .header__nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .comment__item button {
     text-align: left; }
   .comment__inner {
