@@ -38,6 +38,13 @@ ul{
     box-sizing: inherit;
 }
 
+.call-ring{
+    position: absolute;
+    z-index: 1000;
+    right: 237px;
+    bottom: 37px;
+}
+
 .visually-hidden{
     position: absolute;
 

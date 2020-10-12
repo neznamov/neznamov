@@ -29,7 +29,9 @@
 
 .header__nav{
 	display: flex;
-
+	ul{
+		display: flex;
+	}
 	a{
 		font-weight: 500;
 		font-size: 18px;

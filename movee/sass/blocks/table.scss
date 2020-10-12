@@ -54,5 +54,13 @@ margin-bottom: 52px;
 		max-width: 250px;
 		margin: 0 auto;
 		margin-bottom: 66px;
+		border: 1px solid #FED100;
+		&:hover{
+			background-color: inherit;
+			transition: all 0.2s ease-out;
+		}
+		&:not(hover){
+			transition: all 0.2s ease-out;
+		}
 	}
 }

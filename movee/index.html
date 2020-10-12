@@ -7,8 +7,6 @@
 		<link rel="icon" href="img/favicon.png" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/jquery-ui.js"></script>
 		<script src="js/slick.min.js"></script>
@@ -19,10 +17,12 @@
 			<div class="header__top">
 				<h1><a href="" class="header__logo">movee</a></h1>
 				<nav class="header__nav">
-					<li><a href="">Цены</a></li>
-					<li><a href="">Автопарк</a></li>
-					<li><a href="">Отзывы</a></li>
-					<li><a href="">Контакты</a></li>
+					<ul>
+						<li><a href="">Цены</a></li>
+						<li><a href="">Автопарк</a></li>
+						<li><a href="">Отзывы</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>	
 				</nav>
 				<a href="tel:88000801213" class="header__call">8(800)-080-12-13</a>
 				<div class="header__burger">
@@ -58,6 +58,7 @@
 					<img src="img/car-bg.png" width="509" height="310" alt="">
 					<a href="" class="button">Заказать</a>
 				</div>
+				<a class="call-ring" href="tel:88000801213"><img src="img/ring.svg" alt=""></a>
 			</div>
 		</header>
 		<main class="main">
@@ -66,31 +67,31 @@
 				<div class="work__wrapper">
 					<div class="work__item">
 						<h5>01</h5>
-						<span>
+						<div>
 							<h4>Оценка объема предстоящих работ</h4>
 							<p>Стоимость переезда зависит от количества комнат, вещей и мебели.</p>
-						</span>
+						</div>
 					</div>
 					<div class="work__item">
 						<h5>02</h5>
-						<span>
+						<div>
 							<h4>Упаковка вещей</h4>
 							<p>Упаковываем вещи в коробки, подписываем. Габаритное и деликатное, упаковываем отдельно.</p>
-						</span>
+						</div>
 					</div>
 					<div class="work__item">
 						<h5>03</h5>
-						<span>
+						<div>
 							<h4>Погрузка и транспортировка вещей</h4>
 							<p>В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</p>
-						</span>
+						</div>
 					</div>
 					<div class="work__item">
 						<h5>04</h5>
-						<span>
+						<div>
 							<h4>Распаковка и расстановка мебели</h4>
 							<p>Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.</p>
-						</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -381,7 +382,7 @@
 			<section class="order">
 				<h3 class="capture">Закажи переезд прямо сейчас</h3>
 				<div>Мы перезвоним в течении 10 секунд</div>
-				<form class="form" action="">
+				<form class="form" action="#">
 					<div class="form__inputs">
 						<input class="form__inputs-name" type="text" placeholder="Ваше имя">
 						<input class="form__inputs-phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" placeholder="Телефон">
@@ -396,7 +397,8 @@
 				</form>
 			</section>
 			<section class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143804.89407285405!2d37.607733065984085!3d55.72459554696274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab5269715db59%3A0x3c9ede46f385b391!2z0JLQvtC70LPQvtCz0YDQsNC00YHQutC40Lkg0L_RgC3Rgi4sIDM4LCDQnNC-0YHQutCy0LAsIDEwOTMxNg!5e0!3m2!1sru!2sru!4v1601373234826!5m2!1sru!2sru" height="666" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<h3 class="visually-hidden">Карта</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143804.89407285405!2d37.607733065984085!3d55.72459554696274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab5269715db59%3A0x3c9ede46f385b391!2z0JLQvtC70LPQvtCz0YDQsNC00YHQutC40Lkg0L_RgC3Rgi4sIDM4LCDQnNC-0YHQutCy0LAsIDEwOTMxNg!5e0!3m2!1sru!2sru!4v1601373234826!5m2!1sru!2sru" height="666"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				<div class="map__wrapper">
 					<div class="map__address">
 						<a href="" class="map__logo">Movee</a>

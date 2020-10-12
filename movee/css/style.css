@@ -50,6 +50,12 @@ ul {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
+.call-ring {
+  position: absolute;
+  z-index: 1000;
+  right: 237px;
+  bottom: 37px; }
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -94,6 +100,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .header__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .header__nav a {
     font-weight: 500;
     font-size: 18px;
@@ -247,9 +257,17 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 130px; }
+  margin-bottom: 130px;
+  border: 1px solid #FED100; }
   .button--park:before {
     content: none; }
+  .button--park:hover {
+    background-color: inherit;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .button--park:not(hover) {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
 
 .cost__button {
   display: none; }
@@ -285,11 +303,11 @@ ul {
     margin-right: 42px;
     text-shadow: 2px 0px 2px #fed100;
     min-width: 66px; }
-  .work__item span {
+  .work__item div {
     font-size: 16px;
     line-height: 21px;
     padding-right: 40px; }
-    .work__item span h4 {
+    .work__item div h4 {
       font-weight: 500;
       font-size: 20px;
       line-height: 24px;
@@ -376,7 +394,15 @@ table {
   padding-bottom: 12px;
   max-width: 250px;
   margin: 0 auto;
-  margin-bottom: 66px; }
+  margin-bottom: 66px;
+  border: 1px solid #FED100; }
+  .table__order a:hover {
+    background-color: inherit;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .table__order a:not(hover) {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
 
 .comment {
   background: #FED100;
@@ -727,8 +753,7 @@ table {
   max-width: 1160px;
   margin: 0 auto;
   padding-left: 20px;
-  padding-right: 20px;
-  overflow-x: hidden; }
+  padding-right: 20px; }
 
 .park .title {
   text-align: center;
@@ -842,6 +867,8 @@ table {
 @media (max-width: 1024px) {
   .park__info {
     padding: 0 0 0 40px; }
+  .park__wrapper {
+    overflow-x: hidden; }
   .slick__item img {
     right: 20px;
     top: -60px; } }

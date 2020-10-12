@@ -42,6 +42,7 @@
 	&:before{
 		content: none;
 	}
+
 }
 
 .button--park{
@@ -58,10 +59,18 @@
 	font-family: Montserrat;
 	justify-content: center;
 	align-items: center;
-	    margin-top: 40px;
-	    margin-bottom: 130px;
+	margin-top: 40px;
+	margin-bottom: 130px;
+	border: 1px solid #FED100;
 	&:before{
 		content: none;
+	}
+	&:hover{
+		background-color: inherit;
+		transition: all 0.2s ease-out;
+	}
+	&:not(hover){
+		transition: all 0.2s ease-out;
 	}
 }
 
