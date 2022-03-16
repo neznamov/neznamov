@@ -1,1 +1,1 @@
-# neznamov.github.io
+http://neznamov.space/
