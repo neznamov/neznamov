@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="icon" href="img/svg/favicon.svg" type="image/x-icon"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<title>test</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<a href="nav__logo" class="logo">
+				<img src="img/svg/logo.svg" alt="Логотип">
+			</a>
+			<div class="nav__wrapper">
+				<ul class="nav_menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Курсы</a></li>
+					<li><a href="#">Расписание</a></li>
+					<li><a href="#">Преподаватели</a></li>
+					<li><a href="#">Рассылка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<button class="button button__cabinet">Зайти в кабинет</button>
+			</div>	
+			<div class="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+		<div class="header__title defaultCountdown">
+			<h3>Первый курс<br> по компьютерной сборке</h3>
+			<div class="header__timer countdown-row countdown-show4">
+				<div class="header__timer-item">
+					<div id="days"></div>
+					<span >Дней</span>
+				</div>
+				<div class="header__timer-item">
+					<div id="hours"></div>
+					<span>Часов</span>
+				</div>
+				<div class="header__timer-item">
+					<div id="minutes"></div>
+					<span>Минут</span>
+				</div>
+				<div class="header__timer-item">
+					<div id="seconds"></div>
+					<span>Секунд</span>
+				</div>
+			</div>	
+		</div>
+	</header>
+	<main class="main">
+		<section class="stat">
+			<h3 class="visually-hidden">Стастика</h3>
+			<div class="stat__wrapper">
+				<button class="button button__stat">Заказать курс</button>
+				<div class="stat__student">
+					<div class="stat__student-all">
+						<span>Учеников всего:</span>
+						<span>200</span>
+					</div>
+					<div class="stat__student-course">
+						<span>Успешно закончили курс:</span>
+						<span>190</span>
+					</div>
+				</div>
+				<div class="stat__earned">
+					<div class="stat__earned-student">
+						<span>Заработано учениками:</span>
+						<span>400 000₽</span>
+					</div>
+					<div class="stat__earned-progress">
+						<div></div>
+					</div>
+					<div class="stat__total">
+						<span>0</span>
+						<span>1 000 000</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="doing">
+			<div class="wrapper">
+				<div class="doing__block">
+					<div class="picture">
+						<img src="img/svg/Rectangle25.svg" width="526" height="499" alt="Компьютер">
+						<img src="img/image.png" width="446" height="466" alt="Компьютер">
+					</div>
+				</div>
+				<div class="doing__block">
+					<h3 class="doing__block-capture">
+						Чем мы занимаемся?
+					</h3>
+					<p class="doing__block-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="start">
+			<div class="wrapper">
+				<div class="capture__wrapper">
+					<img src="img/svg/Stroke.svg" alt="">
+					<h3 class="capture">Быстрый старт</h3>
+				</div>	
+				<p>Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+				<div class="statistic">
+					<div class="statistic__item">
+						100%
+						<div class="statistic__item-line">
+							<div class="statistic__item-line--first statistic__item-line"></div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+						</p>
+					</div>
+					<div class="statistic__item">
+						80%
+						<div class="statistic__item-line">
+							<div class="statistic__item-line--second statistic__item-line"></div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+						</p>
+					</div>
+					<div class="statistic__item">
+						60%
+						<div class="statistic__item-line">
+							<div class="statistic__item-line--third statistic__item-line"></div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+						</p>
+					</div>
+					<div class="statistic__item">
+						Итог
+						<div class="statistic__item-line">
+							<div class="statistic__item-line--four statistic__item-line"></div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="prof">
+			<div class="wrapper">
+				<h3 class="prof__capture capture">Получите профессию прямо сейчас</h3>
+				<div class="prof__works">
+					<div class="prof__works-items">
+						<img src="img/svg/comp.svg" alt="">
+						<h4>Только практические навыки в работе</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+					</div>
+					<div class="prof__works-items">
+						<img src="img/svg/usb.svg" alt="">
+						<h4>Работа на самом современном оборудовании</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+					</div>
+					<div class="prof__works-items">
+						<img src="img/svg/path.svg" alt="">
+						<h4>Сертификация по окончании обучения</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="partner">
+			<div class="wrapper">
+				<div class="capture__wrapper">
+					<img src="img/svg/Stroke.svg" alt="">
+					<h3 class="capture">Партнеры - топовые бренды</h3>
+				</div>
+				<div class="partners__items">
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+					<div class="partners__items-item">
+						<img src="img/logo.png" alt="" width="190" height="93">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="education">
+			<div class="wrapper">
+				<picture>
+					<img src="img/svg/Ellipse-up.svg" alt="">
+				</picture>	
+				<h3>Программа обучения</h3>
+				<p>Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+				<div class="education__wrapper">
+					<div class="education__column-left">
+						<div class="education__column-item">
+							<h5>Неделя №1</h5>
+							<p>Красивая часть курса, которая помогает в успехе</p>
+						</div>
+						<div class="education__column-item">
+							<h5>Неделя №3</h5>
+							<p>Красивая часть курса, которая помогает в успехе</p>
+						</div>
+						<div class="education__column-item">
+							<h5>Неделя №5</h5>
+							<p>Красивая часть курса, которая помогает в успехе</p>
+						</div>
+						<div class="education__column-item">
+							<h5>Неделя №7</h5>
+							<p>Красивая часть курса, которая помогает в успехе</p>
+						</div>
+					</div>
+					<div class="education__column-right">
+						<div class="education__column-item">
+							<h5>Неделя №2</h5>
+							<p>Красивая часть курса, которая помогает в успехе</p>
+						</div>
+						<div class="education__column-item">
+							<h5>Неделя №4</h5>
+							<p>Красивая часть курса, которая помогает в успехе</p>
+						</div>
+						<div class="education__column-item">
+							<h5>Неделя №6</h5>
+							<p>Красивая часть курса, которая помогает в успехе</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="teacher">
+			<div class="wrapper">
+				<div class="capture__wrapper">
+					<img src="img/svg/Stroke.svg" alt="">
+					<h3 class="capture">Ваши преподаватели</h3>
+				</div>
+				<div class="teacher__items">
+					<div class="teacher__items-item">
+						<picture>
+							<img src="img/photo1.png" width="190" height="190" alt="photo-teacher">
+						</picture>	
+						<h4>Дмитрий Иванов</h4>
+						<h5>Специалист по видеокартам</h5>
+						<a href="#">Биография</a>
+					</div>	
+					<div class="teacher__items-item">
+						<picture>
+							<img src="img/photo2.png" width="190" height="190" alt="photo-teacher">
+						</picture>	
+						<h4>Дмитрий Иванов</h4>
+						<h5>Специалист по видеокартам</h5>
+						<a href="#">Биография</a>
+					</div>
+					<div class="teacher__items-item">
+						<picture>
+							<img src="img/photo3.png" width="190" height="190" alt="photo-teacher">
+						</picture>	
+						<h4>Дмитрий Иванов</h4>
+						<h5>Специалист по видеокартам</h5>
+						<a href="#">Биография</a>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="news">
+			<div class="wrapper">
+				<h3 class="news__capture capture">Статьи каждую неделю</h3>
+				<p class="news__title">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+			
+				<form class="form" action="https://echo.htmlacademy.ru">
+					<div class="form__wrapper">
+						<input placeholder="E-mail" name="Почта" type="text">
+						<button>Подписаться</button>
+					</div>
+				</form>
+				<div class="news__social">
+					<div class="news__social-link">
+						<a href="#">
+							<img src="img/svg/vk.svg" alt="">
+						</a>
+					</div>
+					<div class="news__social-link">
+						<a href="#"><img src="img/svg/youtube.svg" alt=""></a>
+					</div>
+					<div class="news__social-link">
+						<a href="#"><img src="img/svg/facebook.svg" alt=""></a>
+					</div>
+					<div class="news__social-link">
+						<a href="#"><img src="img/svg/instagram.svg" alt=""></a>
+					</div>
+				</div>
+			</div>	
+		</section>
+	</main>
+	<footer class="footer">
+	</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
