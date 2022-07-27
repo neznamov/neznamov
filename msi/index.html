@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- <link rel="icon" href="img/svg/favicon.svg" type="image/x-icon"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,10 +14,14 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<title>test</title>
+  <script src="js/wow.min.js"></script>
+	<script>
+    	new WOW().init();
+    </script>
+	<title>MSI</title>
 </head>
 <body>
-	<header class="header">
+	<header class="header" >
 		<nav class="nav">
 			<a href="nav__logo" class="logo">
 				<img src="img/svg/logo.svg" alt="Логотип">
@@ -24,11 +29,11 @@
 			<div class="nav__wrapper">
 				<ul class="nav_menu">
 					<li><a href="#">Главная</a></li>
-					<li><a href="#">Курсы</a></li>
-					<li><a href="#">Расписание</a></li>
-					<li><a href="#">Преподаватели</a></li>
-					<li><a href="#">Рассылка</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#course">Курсы</a></li>
+					<li><a href="#timetable">Расписание</a></li>
+					<li><a href="#teachers">Преподаватели</a></li>
+					<li><a href="#link">Рассылка</a></li>
+					<li><a href="#contact">Контакты</a></li>
 				</ul>
 				<button class="button button__cabinet">Зайти в кабинет</button>
 			</div>	
@@ -61,7 +66,7 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="stat">
+		<section class="stat" data-stellar-ratio="2">
 			<h3 class="visually-hidden">Стастика</h3>
 			<div class="stat__wrapper">
 				<button class="button button__stat">Заказать курс</button>
@@ -91,14 +96,14 @@
 			</div>
 		</section>
 		<section class="doing">
-			<div class="wrapper">
-				<div class="doing__block">
+			<div class="wrapper"> 
+				<div class="doing__block wow fadeInLeft">
 					<div class="picture">
 						<img src="img/svg/Rectangle25.svg" width="526" height="499" alt="Компьютер">
 						<img src="img/image.png" width="446" height="466" alt="Компьютер">
 					</div>
 				</div>
-				<div class="doing__block">
+				<div class="doing__block wow fadeInRight">
 					<h3 class="doing__block-capture">
 						Чем мы занимаемся?
 					</h3>
@@ -108,15 +113,15 @@
 				</div>
 			</div>
 		</section>
-		<section class="start">
+		<section class="start" id="course">
 			<div class="wrapper">
 				<div class="capture__wrapper">
-					<img src="img/svg/Stroke.svg" alt="">
-					<h3 class="capture">Быстрый старт</h3>
+					<img src="img/svg/Stroke.svg" class="wow zoomIn" alt="">
+					<h3 class="capture wow zoomIn">Быстрый старт</h3>
 				</div>	
-				<p>Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+				<p class="wow zoomIn">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
 				<div class="statistic">
-					<div class="statistic__item">
+					<div class="statistic__item wow fadeInLeft" data-wow-delay="0.5s">
 						100%
 						<div class="statistic__item-line">
 							<div class="statistic__item-line--first statistic__item-line"></div>
@@ -125,7 +130,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
 						</p>
 					</div>
-					<div class="statistic__item">
+					<div class="statistic__item wow fadeInLeft" data-wow-delay="0.8s">
 						80%
 						<div class="statistic__item-line">
 							<div class="statistic__item-line--second statistic__item-line"></div>
@@ -134,7 +139,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
 						</p>
 					</div>
-					<div class="statistic__item">
+					<div class="statistic__item wow fadeInLeft" data-wow-delay="1.0s">
 						60%
 						<div class="statistic__item-line">
 							<div class="statistic__item-line--third statistic__item-line"></div>
@@ -143,7 +148,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
 						</p>
 					</div>
-					<div class="statistic__item">
+					<div class="statistic__item wow fadeInLeft" data-wow-delay="1.2s">
 						Итог
 						<div class="statistic__item-line">
 							<div class="statistic__item-line--four statistic__item-line"></div>
@@ -157,19 +162,19 @@
 		</section>
 		<section class="prof">
 			<div class="wrapper">
-				<h3 class="prof__capture capture">Получите профессию прямо сейчас</h3>
+				<h3 class="prof__capture capture wow zoomIn">Получите профессию прямо сейчас</h3>
 				<div class="prof__works">
-					<div class="prof__works-items">
+					<div class="prof__works-items wow fadeInLeft">
 						<img src="img/svg/comp.svg" alt="">
 						<h4>Только практические навыки в работе</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
 					</div>
-					<div class="prof__works-items">
+					<div class="prof__works-items wow bounceInUp ">
 						<img src="img/svg/usb.svg" alt="">
 						<h4>Работа на самом современном оборудовании</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
 					</div>
-					<div class="prof__works-items">
+					<div class="prof__works-items wow fadeInRight">
 						<img src="img/svg/path.svg" alt="">
 						<h4>Сертификация по окончании обучения</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
@@ -180,73 +185,73 @@
 		<section class="partner">
 			<div class="wrapper">
 				<div class="capture__wrapper">
-					<img src="img/svg/Stroke.svg" alt="">
-					<h3 class="capture">Партнеры - топовые бренды</h3>
+					<img src="img/svg/Stroke.svg" class="wow zoomIn" alt="">
+					<h3 class="capture wow zoomIn">Партнеры - топовые бренды</h3>
 				</div>
 				<div class="partners__items">
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInLeft">
 					</div>
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInLeft">
 					</div>
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInRight">
 					</div>
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInRight">
 					</div>
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInLeft">
 					</div>
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInLeft">
 					</div>
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInRight">
 					</div>
 					<div class="partners__items-item">
-						<img src="img/logo.png" alt="" width="190" height="93">
+						<img src="img/logo.png" alt="" width="190" height="93" class="wow fadeInRight">
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="education">
+		<section class="education" id="timetable">
 			<div class="wrapper">
 				<picture>
 					<img src="img/svg/Ellipse-up.svg" alt="">
 				</picture>	
-				<h3>Программа обучения</h3>
-				<p>Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
-				<div class="education__wrapper">
+				<h3 class="wow zoomIn">Программа обучения</h3>
+				<p class="wow zoomIn">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+				<div class="education__wrapper wow zoomIn" data-wow-delay="0.1s">
 					<div class="education__column-left">
-						<div class="education__column-item">
+						<div  class="education__column-item wow fadeInLeft">
 							<h5>Неделя №1</h5>
 							<p>Красивая часть курса, которая помогает в успехе</p>
 						</div>
-						<div class="education__column-item">
+						<div data-wow-delay="0.6s" class="education__column-item wow fadeInLeft">
 							<h5>Неделя №3</h5>
 							<p>Красивая часть курса, которая помогает в успехе</p>
 						</div>
-						<div class="education__column-item">
+						<div data-wow-delay="1.2s" class="education__column-item wow fadeInLeft">
 							<h5>Неделя №5</h5>
 							<p>Красивая часть курса, которая помогает в успехе</p>
 						</div>
-						<div class="education__column-item">
+						<div data-wow-delay="1.7s" class="education__column-item wow fadeInLeft">
 							<h5>Неделя №7</h5>
 							<p>Красивая часть курса, которая помогает в успехе</p>
 						</div>
 					</div>
 					<div class="education__column-right">
-						<div class="education__column-item">
+						<div data-wow-delay="0.3s" class="education__column-item wow fadeInRight">
 							<h5>Неделя №2</h5>
 							<p>Красивая часть курса, которая помогает в успехе</p>
 						</div>
-						<div class="education__column-item">
+						<div data-wow-delay="0.9s" class="education__column-item wow fadeInRight">
 							<h5>Неделя №4</h5>
 							<p>Красивая часть курса, которая помогает в успехе</p>
 						</div>
-						<div class="education__column-item">
+						<div data-wow-delay="1.5s" class="education__column-item wow fadeInRight">
 							<h5>Неделя №6</h5>
 							<p>Красивая часть курса, которая помогает в успехе</p>
 						</div>
@@ -254,14 +259,14 @@
 				</div>
 			</div>	
 		</section>
-		<section class="teacher">
+		<section class="teacher" id="teachers">
 			<div class="wrapper">
 				<div class="capture__wrapper">
-					<img src="img/svg/Stroke.svg" alt="">
-					<h3 class="capture">Ваши преподаватели</h3>
+					<img src="img/svg/Stroke.svg" class="wow zoomIn" alt="">
+					<h3 class="capture wow zoomIn">Ваши преподаватели</h3>
 				</div>
 				<div class="teacher__items">
-					<div class="teacher__items-item">
+					<div class="teacher__items-item wow flipInY">
 						<picture>
 							<img src="img/photo1.png" width="190" height="190" alt="photo-teacher">
 						</picture>	
@@ -269,7 +274,7 @@
 						<h5>Специалист по видеокартам</h5>
 						<a href="#">Биография</a>
 					</div>	
-					<div class="teacher__items-item">
+					<div class="teacher__items-item wow flipInY" >
 						<picture>
 							<img src="img/photo2.png" width="190" height="190" alt="photo-teacher">
 						</picture>	
@@ -277,7 +282,7 @@
 						<h5>Специалист по видеокартам</h5>
 						<a href="#">Биография</a>
 					</div>
-					<div class="teacher__items-item">
+					<div class="teacher__items-item wow flipInY">
 						<picture>
 							<img src="img/photo3.png" width="190" height="190" alt="photo-teacher">
 						</picture>	
@@ -288,12 +293,12 @@
 				</div>
 			</div>	
 		</section>
-		<section class="news">
+		<section class="news" id="link">
 			<div class="wrapper">
 				<h3 class="news__capture capture">Статьи каждую неделю</h3>
 				<p class="news__title">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
 			
-				<form class="form" action="https://echo.htmlacademy.ru">
+				<form id="contact" class="form" action="https://echo.htmlacademy.ru">
 					<div class="form__wrapper">
 						<input placeholder="E-mail" name="Почта" type="text">
 						<button>Подписаться</button>

@@ -40,10 +40,51 @@ function updater(d, h, m, s) {
 
     // следующий раз вызываем себя, когда закончится текущая секунда
     setTimeout(update, millis);
-}
-setTimeout(update, 0);
+  }
+  setTimeout(update, 0);
 }
 updater(document.getElementById("days"),
-document.getElementById("hours"), document.getElementById("minutes"),
-document.getElementById("seconds"));
+  document.getElementById("hours"), document.getElementById("minutes"),
+  document.getElementById("seconds"));
  //End
+
+//Paralax Start
+$(window).scroll("load", function() {
+  let st = $(this).scrollTop();
+  let parallax = $(".stat").offset().top;
+  if ($(window).width() >= 1200) {
+    $(".header").css({
+      "background-position-y": "+" + st / 5 + "px"
+    });
+    // $(".header__timer").css({
+    //   "transform": "translate(0%, " + st / 4.5 + "%"
+    // });
+
+    // $(".header__title h3").css({
+    //   "transform": "translate(0%, " + st / 6 + "%"
+    // })
+  }if($(window).scrollTop()>= parallax){
+    $(".header").css({
+      "background-position-y": "+" + st / 0 + "px"
+    });
+    // $(".header__timer").css({
+    //   "transform": "translate(0%, " + st / 0 + "%"
+    // });
+
+    // $(".header__title h3").css({
+    //   "transform": "translate(0%, " + st / 0 + "%"
+    // });
+  }
+});
+// END
+
+//Плавный якорь Start
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
+
+//End
