@@ -1,0 +1,35 @@
+.burger{
+	display: none;
+}
+
+@media(max-width: 940px){
+	.burger{
+		display: block;
+		position: absolute;
+		right: 21px;
+		z-index: 1000;
+		cursor: pointer;
+		top: 30px;
+		height: 39px;
+	}
+}
+
+.burger{
+
+	span{
+		position: relative;
+		background-color: #fff;
+		height: 4px;
+		width: 30px;
+		display: block;
+		border-radius: 2px;
+		&:first-child{
+			bottom: -28px;
+		}
+
+		&:last-child{
+			top: 8px;
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+.link{
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 30px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	background-color: $blue;
+	transition: all 0.3s ease-out;
+	white-space: nowrap;
+	&:active{
+		background-color: black;
+		    transition: all 0s ease-out;
+	}
+
+	&:hover{
+		transition: all 0.3s ease-out;
+		opacity: 0.6;
+	}
+}
+
+.link--triangle img{
+	margin-right: 10px;
+}
+
