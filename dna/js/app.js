@@ -3679,7 +3679,7 @@
     let burgerMenu = document.querySelector(".nav__burger");
     let headerMenu = document.querySelector(".header");
     $(document).ready((function() {
-        $(burgerMenu).click((function() {
+        $(burgerMenu).click((function(e) {
             if (!$(headerMenu).hasClass("header--active")) {
                 $(headerMenu).addClass("header--active");
                 $(".header__menu ul").css({
@@ -3692,6 +3692,14 @@
                 });
             }
         }));
+    }));
+    $(".header__menu").click((function(e) {
+        if (e.target.matches(".header__menu-item li a") || e.target !== headerMenu) {
+            $(headerMenu).removeClass("header--active");
+            $(".header__menu ul").css({
+                visibility: "hidden"
+            });
+        }
     }));
     $(window).scroll("load", (function() {
         let st = $(this).scrollTop();
