@@ -4108,6 +4108,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 768px) {
+  video {
+    display: none;
+  }
+
   .header__swiper-left .swiper-slide picture img,
   .header__swiper-right .swiper-slide picture img {
     width: 255px;
@@ -4626,6 +4630,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 0.9375rem;
   }
 
+  .about .about__employees-item--question h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.9375rem;
+  }
+
+  .about .about__employees-item--question p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
   .content__container .tabs__body-wrapper {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -4698,6 +4712,104 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .screenwriters__item {
     padding-left: 0rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .header .header__container h1 {
+    margin-left: 0px;
+  }
+
+  .client__our .client__our-client {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project .project__container .project__column--left h2 {
+    font-size: 2.5rem;
+  }
+
+  .about__employees {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .about__employees .about__employees-item a:before {
+    content: none;
+  }
+
+  .employee__container .employee__social {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .employee__container .employee__social a:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .employee__container .employee__social a b {
+    font-size: 1rem;
+  }
+
+  .employee__container .empolyee__info .empolyee__agent,
+  .employee__container .empolyee__info .empolyee__phone,
+  .employee__container .empolyee__info .empolyee__email {
+    font-size: 0.875rem;
+  }
+
+  .employee__container .empolyee__info .empolyee__agent span,
+  .employee__container .empolyee__info .empolyee__phone span,
+  .employee__container .empolyee__info .empolyee__email span {
+    font-size: 0.875rem;
+  }
+
+  .employee__container .employee__contact {
+    font-size: 1rem;
+    padding: 0.625rem 1.875rem;
+  }
+
+  .employee__container .employee__skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .employee__container .employee__skills .employee__education {
+    margin-right: 0px;
+  }
+
+  .employee__container .employee__skills .employee__ability ul li {
+    text-align: center;
+  }
+
+  .employee__container .employee__skills b {
+    text-align: center;
+  }
+
+  .employee__ability {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .employee__container .employee__skills picture {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .employee__bottom {
+    padding-left: 0.625rem;
   }
 }
 

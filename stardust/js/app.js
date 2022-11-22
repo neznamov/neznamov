@@ -5842,7 +5842,7 @@ PERFORMANCE OF THIS SOFTWARE.
             if (e.target !== nav && !nav.contains(e.target)) {
                 console.log("wer");
                 menu.classList.remove("navigation__wrapper--active");
-                menuBurger.classList.remove("navigation__wrapper--active");
+                menuBurger.classList.remove("navigation__menu-burger--open");
             }
         }));
         window["FLS"] = true;
