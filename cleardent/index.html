@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230215220646">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20230215220646" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230215224556">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20230215224556" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,6 +123,7 @@
 				</div>
 			</section>
 			<section class="about">
+				<h3 class="visually-hidden">О нас</h3>
 				<div class="__container about__container">
 					<p class="about__text--up">Фиксируйте результат с помощью шкалы оттенков зубов перед началом курса отбеливания и также после каждого сеанса отбеливания.</p>
 					<b class="about__text--sub">Вы достигнете оптимальных результатов уже через 2-3 сеанса.</b>
@@ -426,10 +427,10 @@
 						</div>
 						<!-- If we need navigation buttons -->
 						<div class="swiper-button-prev swiper-button">
-							<img src="img/svg/array.svg" alt="">
+							<img src="img/svg/array.svg" width="14" height="37" alt="">
 						</div>
 						<div class="swiper-button-next swiper-button">
-							<img src="img/svg/array.svg" alt="">
+							<img src="img/svg/array.svg" width="14" height="37" alt="">
 						</div>
 					</div>
 				</div>
@@ -458,18 +459,18 @@
 
 										</div>
 										<div class="rating__items">
-											<input type="radio" class="rating__item" value="1" name="rating">
-											<input type="radio" class="rating__item" value="2" name="rating">
-											<input type="radio" class="rating__item" value="3" name="rating">
-											<input type="radio" class="rating__item" value="4" name="rating">
-											<input type="radio" class="rating__item" value="5" name="rating">
+											<label for="radio-btn-1"><input type="radio" id="radio-btn-1" class="rating__item" value="1" name="rating"></label>
+											<label for="radio-btn-2"><input type="radio" id="radio-btn-2" class="rating__item" value="2" name="rating"></label>
+											<label for="radio-btn-3"><input type="radio" id="radio-btn-3" class="rating__item" value="3" name="rating"></label>
+											<label for="radio-btn-4"><input type="radio" id="radio-btn-4" class="rating__item" value="4" name="rating"></label>
+											<label for="radio-btn-5"><input type="radio" id="radio-btn-5" class="rating__item" value="5" name="rating"></label>
 										</div>
 									</div>
 									<div class="rating__value"></div>
 								</div>
 								<div class="form__textarea">
 									<label for="form__textarea">Ваш отзыв*</label>
-									<textarea id="form__textarea" name="" id="" cols="30" rows="10"></textarea>
+									<textarea id="form__textarea" name="textarea" cols="30" rows="10"></textarea>
 									<p>*Обязательно к заполнению</p>
 								</div>
 								<button class="button form__button" type="submit"><span>Оставить отзыв</span></button>
@@ -477,6 +478,7 @@
 						</form>
 					</div>
 					<div class="feedback__rate">
+						<h3 class="visually-hidden">Отзыв</h3>
 						<div class="feedback__total">
 							<span>5</span>
 							<div class="feedback__total-item">
@@ -592,8 +594,8 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230215220646"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20230215220646"></script>
+	<script src="js/app.min.js?_v=20230215224556"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20230215224556"></script>
 	<script>
 		AOS.init();
 	</script>
