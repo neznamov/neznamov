@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230215224556">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20230215224556" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230216124641">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20230216124641">
 	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -36,7 +36,7 @@
 								1200₽
 							</span>
 						</div>
-						<button class="header__back-call button">Обратный звонок</button>
+						<button class="header__back-call button" data-ripple>Обратный звонок</button>
 						<div class="menu-open icon-menu">
 							<span></span>
 						</div>
@@ -266,7 +266,7 @@
 											</picture>
 											<div class="swiper__rating">
 												<h5 class="swiper__name">Варвара</h5>
-												<time class="swiper__data" datetime="2022-30-11 00:00">30 ноября, 2022</time>
+												<time class="swiper__data" datetime="2022-11-30 00:00">30 ноября, 2022</time>
 												<div class="swiper__stars">
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
@@ -294,7 +294,7 @@
 											</picture>
 											<div class="swiper__rating">
 												<h5 class="swiper__name">Ирина</h5>
-												<time class="swiper__data" datetime="2022-21-11 00:00">21 ноября, 2022</time>
+												<time class="swiper__data" datetime="2022-11-21 00:00">21 ноября, 2022</time>
 												<div class="swiper__stars">
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
@@ -349,7 +349,7 @@
 											</picture>
 											<div class="swiper__rating">
 												<h5 class="swiper__name">Варвара</h5>
-												<time class="swiper__data" datetime="2022-30-11 00:00">30 ноября, 2022</time>
+												<time class="swiper__data" datetime="2022-11-30 00:00">30 ноября, 2022</time>
 												<div class="swiper__stars">
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
@@ -377,7 +377,7 @@
 											</picture>
 											<div class="swiper__rating">
 												<h5 class="swiper__name">Ирина</h5>
-												<time class="swiper__data" datetime="2022-21-11 00:00">21 ноября, 2022</time>
+												<time class="swiper__data" datetime="2022-11-21 00:00">21 ноября, 2022</time>
 												<div class="swiper__stars">
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
 													<span class="swiper__star"><img src="img/svg/rate-stars.svg" width="15" height="14" alt="Звезда"></span>
@@ -434,105 +434,105 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="feedback">
-				<div class="__container">
-					<div class="form">
-						<form action="#">
-							<div class="form__container">
-								<div class="form__wrapper">
-									<div class="form__input form__input--name">
-										<label for="form__name">Ваше имя*</label>
-										<input id="form__name" type="text">
-									</div>
-									<div class="form__input form__input--file">
-										<span>Добавить файл</span>
-										<label for="form__file" class="form__file">Добавить</label>
-										<input class="visually-hidden" id="form__file" type="file">
-
-									</div>
-								</div>
-								<span class="form-rate">Ваша оценка</span>
-								<div class="rating rating_set">
-									<div class="rating__body">
-										<div class="rating__active">
+				<div class="feedback">
+					<div class="__container">
+						<div class="form">
+							<form action="#">
+								<div class="form__container">
+									<div class="form__wrapper">
+										<div class="form__input form__input--name">
+											<label for="form__name">Ваше имя*</label>
+											<input id="form__name" type="text">
+										</div>
+										<div class="form__input form__input--file">
+											<span>Добавить файл</span>
+											<label for="form__file" class="form__file">Добавить</label>
+											<input class="visually-hidden" id="form__file" type="file">
 
 										</div>
-										<div class="rating__items">
-											<label for="radio-btn-1"><input type="radio" id="radio-btn-1" class="rating__item" value="1" name="rating"></label>
-											<label for="radio-btn-2"><input type="radio" id="radio-btn-2" class="rating__item" value="2" name="rating"></label>
-											<label for="radio-btn-3"><input type="radio" id="radio-btn-3" class="rating__item" value="3" name="rating"></label>
-											<label for="radio-btn-4"><input type="radio" id="radio-btn-4" class="rating__item" value="4" name="rating"></label>
-											<label for="radio-btn-5"><input type="radio" id="radio-btn-5" class="rating__item" value="5" name="rating"></label>
-										</div>
 									</div>
-									<div class="rating__value"></div>
+									<span class="form-rate">Ваша оценка</span>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active">
+
+											</div>
+											<div class="rating__items">
+												<input type="radio" id="radio-btn-1" class="rating__item" value="1" name="rating1">
+												<input type="radio" id="radio-btn-2" class="rating__item" value="2" name="rating2">
+												<input type="radio" id="radio-btn-3" class="rating__item" value="3" name="rating3">
+												<input type="radio" id="radio-btn-4" class="rating__item" value="4" name="rating4">
+												<input type="radio" id="radio-btn-5" class="rating__item" value="5" name="rating5">
+											</div>
+										</div>
+										<div class="rating__value"></div>
+									</div>
+									<div class="form__textarea">
+										<label for="form__textarea">Ваш отзыв*</label>
+										<textarea id="form__textarea" name="textarea" cols="30" rows="10"></textarea>
+										<p>*Обязательно к заполнению</p>
+									</div>
+									<button class="button form__button" type="submit"><span>Оставить отзыв</span></button>
 								</div>
-								<div class="form__textarea">
-									<label for="form__textarea">Ваш отзыв*</label>
-									<textarea id="form__textarea" name="textarea" cols="30" rows="10"></textarea>
-									<p>*Обязательно к заполнению</p>
-								</div>
-								<button class="button form__button" type="submit"><span>Оставить отзыв</span></button>
-							</div>
-						</form>
-					</div>
-					<div class="feedback__rate">
-						<h3 class="visually-hidden">Отзыв</h3>
-						<div class="feedback__total">
-							<span>5</span>
-							<div class="feedback__total-item">
-								<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
-							</div>
-							<div class="feedback__total-item">
-								<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
-							</div>
-							<div class="feedback__total-item">
-								<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
-							</div>
-							<div class="feedback__total-item">
-								<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
-							</div>
-							<div class="feedback__total-item">
-								<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
-							</div>
+							</form>
 						</div>
-						<span class="feedback__title">5 из 5 звёзд (основано на 3 отзывах)</span>
-						<div class="feedback__indicators">
-							<div class="feedback-stat">
-								<div class="feedback__grade">
-									Отлично
+						<div class="feedback__rate">
+							<h3 class="visually-hidden">Отзыв</h3>
+							<div class="feedback__total">
+								<span>5</span>
+								<div class="feedback__total-item">
+									<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
 								</div>
-								<div class="feedback__line"></div>
-								<div class="feedback__percent">100%</div>
+								<div class="feedback__total-item">
+									<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
+								</div>
+								<div class="feedback__total-item">
+									<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
+								</div>
+								<div class="feedback__total-item">
+									<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
+								</div>
+								<div class="feedback__total-item">
+									<img src="img/svg/rate-stars.svg" width="20" height="19" alt="">
+								</div>
 							</div>
-							<div class="feedback-stat">
-								<div class="feedback__grade">
-									Очень хорошо
+							<span class="feedback__title">5 из 5 звёзд (основано на 3 отзывах)</span>
+							<div class="feedback__indicators">
+								<div class="feedback-stat">
+									<div class="feedback__grade">
+										Отлично
+									</div>
+									<div class="feedback__line"></div>
+									<div class="feedback__percent">100%</div>
 								</div>
-								<div class="feedback__line"></div>
-								<div class="feedback__percent">0%</div>
-							</div>
-							<div class="feedback-stat">
-								<div class="feedback__grade">
-									Средне
+								<div class="feedback-stat">
+									<div class="feedback__grade">
+										Очень хорошо
+									</div>
+									<div class="feedback__line"></div>
+									<div class="feedback__percent">0%</div>
 								</div>
-								<div class="feedback__line"></div>
-								<div class="feedback__percent">0%</div>
-							</div>
-							<div class="feedback-stat">
-								<div class="feedback__grade">
-									Плохо
+								<div class="feedback-stat">
+									<div class="feedback__grade">
+										Средне
+									</div>
+									<div class="feedback__line"></div>
+									<div class="feedback__percent">0%</div>
 								</div>
-								<div class="feedback__line"></div>
-								<div class="feedback__percent">0%</div>
-							</div>
-							<div class="feedback-stat">
-								<div class="feedback__grade">
-									Ужасно
+								<div class="feedback-stat">
+									<div class="feedback__grade">
+										Плохо
+									</div>
+									<div class="feedback__line"></div>
+									<div class="feedback__percent">0%</div>
 								</div>
-								<div class="feedback__line"></div>
-								<div class="feedback__percent">0%</div>
+								<div class="feedback-stat">
+									<div class="feedback__grade">
+										Ужасно
+									</div>
+									<div class="feedback__line"></div>
+									<div class="feedback__percent">0%</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -594,10 +594,13 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230215224556"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20230215224556"></script>
+	<script src="js/app.min.js?_v=20230216124641"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20230216124641"></script>
 	<script>
-		AOS.init();
+		AOS.init({
+			disable: window.innerWidth < 1000
+
+		});
 	</script>
 </body>
 
