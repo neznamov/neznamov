@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230216185444">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20230216185444">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230220121456">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20230220121456">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
 								1200₽
 							</span>
 						</div>
-						<button class="header__back-call button" data-ripple>Обратный звонок</button>
+						<button class="header__back-call button" data-popup="#popup" data-ripple>Обратный звонок</button>
 						<div class="menu-open icon-menu">
 							<span></span>
 						</div>
@@ -249,7 +249,7 @@
 			<section class="client">
 				<div class="__container">
 					<div class="caption">
-						<h3>Нам<span class="color">доверяют</span>свои зубы<br>более <span class="color">1000+</span> клиентов</h3>
+						<h3>Нам <span class="color">доверяют</span> свои зубы<br>более <span class="color">1000+</span> клиентов</h3>
 					</div>
 					<!-- Slider main container -->
 					<div class="swiper-container">
@@ -593,9 +593,31 @@
 			<div class="footer__container">
 			</div>
 		</footer>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__text">
+						<form action="#">
+							<div class="popup__wrapper">
+								<label for="popup__name">Ваше имя*
+									<input type="text" name="Имя" placeholder="Ваше имя" class="popup__name" id="popup__name" data-validate data-required="Имя">
+								</label>
+							</div>
+							<div class="popup__wrapper">
+								<label for="popup__phone">
+									Ваш телефон*
+									<input type="text" id="popup__phone" placeholder="Ваш телефон" name="Телефон" data-validate data-required="Телефон" class="popup__phone">
+								</label>
+							</div>
+							<button type="submit" class="button"><span>Отправить</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230216185444"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20230216185444"></script>
+	<script src="js/app.min.js?_v=20230220121456"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20230220121456"></script>
 	<script>
 		AOS.init({
 			disable: window.innerWidth < 1000
